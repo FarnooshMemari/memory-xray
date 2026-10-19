@@ -2,6 +2,11 @@
 
 **Do an LLM's self-reported evidence citations match the evidence that actually drives its decisions?**
 
+[![Verify release](https://github.com/FarnooshMemari/memory-xray/actions/workflows/verify.yml/badge.svg)](https://github.com/FarnooshMemari/memory-xray/actions/workflows/verify.yml)
+[![Deploy explorer](https://github.com/FarnooshMemari/memory-xray/actions/workflows/explorer-pages.yml/badge.svg)](https://github.com/FarnooshMemari/memory-xray/actions/workflows/explorer-pages.yml)
+[![Live demo](https://img.shields.io/badge/live_demo-farnooshmemari.github.io%2Fmemory--xray-012169)](https://farnooshmemari.github.io/memory-xray/)
+[![License: MIT](https://img.shields.io/badge/code-MIT-00539b)](LICENSE)
+
 > ### Research Poster (PDF)
 > **[Memory-X-Ray-Research-Poster.pdf](poster/Memory-X-Ray-Research-Poster.pdf)**: the final research poster (36 × 24 in,
 > landscape) with the question, method, findings and limits on one page.
@@ -10,6 +15,8 @@
 > **[farnooshmemari.github.io/memory-xray](https://farnooshmemari.github.io/memory-xray/)**: remove evidence records and
 > watch the model's answer change, then compare what it cites with what measurably moved it. Every number is read
 > from the saved results in this repository; no model runs in your browser. Source: [`explorer/`](explorer/).
+>
+> [![The live explorer: four evidence records, their measured pull, and the model's answer](explorer/screenshots/01-desktop-first-view.png)](https://farnooshmemari.github.io/memory-xray/)
 >
 > ### Research code, results and documentation
 > This repository: the saved runs, the [results report](results/RESULTS_AND_DISCUSSION.md), a
@@ -26,7 +33,8 @@ two agree.
 
 ![Experiment workflow](results/figures/publication/fig0_workflow.png)
 
-**Contents:** [Key findings](#key-findings) · [Quick start (no GPU)](#quick-start-no-gpu) ·
+**Contents:** [Contributions](#contributions) · [Responsible AI and XAI concepts](#how-this-connects-to-responsible-ai-and-xai) ·
+[Evaluate in five minutes](#for-reviewers-evaluate-in-five-minutes) · [Key findings](#key-findings) · [Quick start (no GPU)](#quick-start-no-gpu) ·
 [Method](#method) · [Limitations](#limitations) · [Reproducing the experiment](#re-running-the-gpu-experiment-optional) ·
 [Repository structure](#repository-structure) · [Documentation](#documentation) · [Citation and license](#citation-and-license)
 
@@ -55,6 +63,56 @@ Related work that this study builds on and does not claim to supersede includes 
 (ContextCite; SelfCite), self-consistency tests of LLM self-explanations (Madsen et al., 2024; Parcalabescu & Frank,
 2024), and the distinction between citation correctness and faithfulness (Wallat et al., 2025). Full references are in
 [`poster_materials/REFERENCES.md`](poster_materials/REFERENCES.md).
+
+## Contributions
+
+This is a small, controlled case study, not a general claim about LLMs. Within that scope it adds:
+
+1. **An evaluation that puts self-reported citations next to exact attribution.**
+   - Six designed and realistic scenarios have a known causal structure.
+   - Every one of the 16 evidence subsets is scored in 3 fixed orderings, so Shapley values are exact, with no sampling.
+   - The model's own citations are scored against those values with pre-registered necessity, sufficiency and top-k
+     metrics.
+2. **Evidence that plausible citations need not be faithful.**
+   - A post hoc citer that never looks at the model scores as well as the model's own citations: 1.000 / 0.939 / 1.000
+     against 0.896 / 0.848 / 0.883.
+   - So high citation scores alone do not show that a self-report is faithful.
+3. **Label-conditional rationales.**
+   - In 3 of 18 orderings the citation prompt showed a label that was not the model's own answer.
+   - The model still cited records that push toward the shown label: all 8 partial citations there beat chance for it.
+4. **An interactive explorer for non-specialists.**
+   - The [live demo](https://farnooshmemari.github.io/memory-xray/) replays all 288 saved states.
+   - It shows the gap between what the model cites and what measurably moves its answer, with observed results,
+     interpretations and limitations labeled separately.
+5. **A fully reproducible, CPU-only release.**
+   - An independent re-implementation reproduces every saved number.
+   - One command re-verifies the whole release; [CI](.github/workflows/verify.yml) runs it on every push.
+
+## How this connects to Responsible AI and XAI
+
+| Course concept | Where it appears in this project |
+|---|---|
+| **Faithfulness vs plausibility of explanations** (Jacovi & Goldberg, 2020; Agarwal et al., 2024) | The central question. The content-only baseline shows how plausible citations can score well without tracking the model. |
+| **Feature attribution with Shapley values; removal-based explanation** (Shapley, 1953; Lundberg & Lee, 2017; Covert et al., 2021) | Exact Shapley values over all 16 evidence subsets. Leave-one-out is shown as a contrast, and it fails under redundancy (S-redundant). |
+| **Evaluating rationales by necessity and sufficiency** (DeYoung et al., 2020) | The pre-registered citation scores: does removing the cited records hurt the answer more than removing other sets of the same size? Does keeping only them preserve it? |
+| **LLM self-explanations and unfaithful rationales** (Turpin et al., 2023; Madsen et al., 2024; Parcalabescu & Frank, 2024) | The model's self-reported citations, and its rationales for an injected label it did not choose. |
+| **Attribution and citation in retrieval-augmented generation** (Gao et al., 2023; Cohen-Wang et al., 2024; Wallat et al., 2025) | Evidence records stand in for retrieved context. A correct-looking citation is not evidence of faithfulness. |
+| **Robustness and sensitivity to prompt order** (Lu et al., 2022; Liu et al., 2024) | Three fixed orderings per scenario. Order sensitivity is reported, including the S-conflict order effect. |
+| **Responsible AI practice: transparency, honest evaluation and accountability** (Doshi-Velez & Kim, 2017) | Pre-registered metrics frozen before the run, an independent reanalysis, and a failed control kept and reported. Claims are limited to behavior, with an explicit [Limitations](#limitations) section. |
+| **Alignment and honesty of model self-reports** | Can we trust what a model says about why it answered? Here, citations are consistent with the evidence's effect, but not shown to be introspective. |
+
+Full references: [`poster_materials/REFERENCES.md`](poster_materials/REFERENCES.md).
+
+## For reviewers: evaluate in five minutes
+
+1. **See it.** Open the [live demo](https://farnooshmemari.github.io/memory-xray/) and press *Take the 40-second tour*.
+2. **Read it.** Read the [poster](poster/Memory-X-Ray-Research-Poster.pdf), [Key findings](#key-findings) and
+   [Limitations](#limitations). The full report is [`results/RESULTS_AND_DISCUSSION.md`](results/RESULTS_AND_DISCUSSION.md).
+3. **Check it.** Run the following on any laptop CPU, in about a minute:
+   `pip install -r requirements.txt && python scripts/verify_release.py` (expect `RELEASE VERIFIED`). The same check
+   runs on every push; see the *Verify release* badge above.
+4. **Inspect it.** The saved runs are in [`runs/`](runs/) and the frozen scenarios in [`scenarios/`](scenarios/). The
+   [Method](#method) section explains how each number is computed.
 
 ## Key findings
 
@@ -300,6 +358,7 @@ memory-xray/
 ├── records/                      run log and records, checksums, AI-label provenance, original-package checksums
 ├── docs/                         protocol, approval packet, research summary, post hoc addendum, release docs
 ├── poster/                       the final research poster (PDF)
+├── .github/workflows/            verify.yml (re-verifies the release on every push), explorer-pages.yml (deploys the demo)
 ├── poster_materials/             poster text, key numbers, figures and captions, references, layout, talk outline
 └── explorer/                     interactive explorer, the live demo (static site built only from the saved results;
                                   deployed to GitHub Pages by .github/workflows/explorer-pages.yml)

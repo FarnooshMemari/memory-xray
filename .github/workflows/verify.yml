@@ -1,0 +1,26 @@
+# Re-verifies the whole release on every push: checksums of the saved runs, the frozen design,
+# an independent reanalysis that must reproduce every committed number, release hygiene, and the
+# offline test suite. CPU only; no model download, no GPU, no API key.
+
+name: Verify release
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"            # the version the run used; regenerates committed files byte-for-byte
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/verify_release.py --tests   # expect "RELEASE VERIFIED"
