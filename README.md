@@ -2,10 +2,18 @@
 
 **Do an LLM's self-reported evidence citations match the evidence that actually drives its decisions?**
 
+> ### Research Poster (PDF)
+> **[Memory-X-Ray-Research-Poster.pdf](poster/Memory-X-Ray-Research-Poster.pdf)**: the final research poster (36 × 24 in,
+> landscape) with the question, method, findings and limits on one page.
+>
 > ### Live Interactive Demo
 > **[farnooshmemari.github.io/memory-xray](https://farnooshmemari.github.io/memory-xray/)**: remove evidence records and
 > watch the model's answer change, then compare what it cites with what measurably moved it. Every number is read
 > from the saved results in this repository; no model runs in your browser. Source: [`explorer/`](explorer/).
+>
+> ### Research code, results and documentation
+> This repository: the saved runs, the [results report](results/RESULTS_AND_DISCUSSION.md), a
+> [CPU-only quick start](#quick-start-no-gpu) that re-checks every number, and the [documentation](#documentation).
 
 Memory X-Ray is an independent research project in explainable and responsible AI at Duke University: a small, fully
 reproducible case study. A language model (Phi-3-mini) answers questions from four evidence records. We measure which
@@ -291,6 +299,7 @@ memory-xray/
 ├── colab/                        the original Colab notebooks used for the published runs (unchanged)
 ├── records/                      run log and records, checksums, AI-label provenance, original-package checksums
 ├── docs/                         protocol, approval packet, research summary, post hoc addendum, release docs
+├── poster/                       the final research poster (PDF)
 ├── poster_materials/             poster text, key numbers, figures and captions, references, layout, talk outline
 └── explorer/                     interactive explorer, the live demo (static site built only from the saved results;
                                   deployed to GitHub Pages by .github/workflows/explorer-pages.yml)
@@ -308,6 +317,7 @@ memory-xray/
 | [`records/RUN_LOG.md`](records/RUN_LOG.md) | Every run, including the failed one |
 | [`docs/RELEASE_VALIDATION_REPORT.md`](docs/RELEASE_VALIDATION_REPORT.md) | Tests and reproducibility checks for this release |
 | [`CHANGES.md`](CHANGES.md) | What changed relative to the original results package, and why |
+| [`poster/Memory-X-Ray-Research-Poster.pdf`](poster/Memory-X-Ray-Research-Poster.pdf) | The final research poster (36 × 24 in) |
 | [`poster_materials/`](poster_materials/) | Content for the research poster |
 
 ## Data integrity
