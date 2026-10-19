@@ -113,12 +113,43 @@ sizes, and spot-checked at 768–1280 px. The visual passes fixed the following:
   dumbbell chart now switch to layouts drawn for narrow screens.
 - Legend markers sat too close to their text.
 
+## Deployment (2026-10-19)
+
+The explorer is published at **https://farnooshmemari.github.io/memory-xray/** by
+`.github/workflows/explorer-pages.yml`.
+
+**The deploy run.** On GitHub's runner it installed with `npm ci`, ran the unit tests and
+`npm run data:verify` against the saved run files in the repository, built the site and
+deployed it. Every step passed.
+
+**What the public URL serves.** This was checked by fetching the URL directly:
+
+- The page has the new title and description, without the old version label.
+- It serves the fingerprinted bundle `assets/index-DBgYY84E.js` and stylesheet
+  `assets/index-9aJtXRXr.css`. These are the same content-hashed files as the build tested here.
+
+**Click-through on the deployed files.** The test environment cannot open github.io, so the
+interaction checks were run on those same files, served at the same `/memory-xray/` path as
+GitHub Pages. In Chromium at 1440×900 and on a Pixel 7, 63 of 63 checks passed:
+
+- every scenario shows its saved answer;
+- removing and restoring records, "Remove all", "Show all four" and changing the ordering all
+  match the saved probabilities;
+- the traces, the answer ring and its bars, the 16-node lattice, the Shapley context chart, the
+  citation bars and ledger (with their injected-decision flags), the "catch" chart and the
+  citation banner all render;
+- all eight tour steps load their saved states and the tour closes;
+- on the phone, the answer stays pinned;
+- there is no horizontal overflow, no failed request and no console error.
+
+**Repository checks.** With `explorer/` added, the repository's own `scripts/verify_release.py`
+passed 18 of 18 checks on a clean checkout. Its pytest suite passed 123 tests, with 1 skipped.
+
 ## Scope checks
 
-- The explorer is a separate folder. The main repository, frozen experiments, reports and
-  poster were not modified: no file there changed after work on the explorer began. The v0.2
-  release ZIP still has SHA-256 `ce06ed1c…a500e`.
-- Nothing was pushed or deployed.
+- The integration adds `explorer/` and `.github/workflows/explorer-pages.yml`, plus a demo link
+  near the top of the main README. No frozen experiment, result, report or poster file was
+  modified.
 - No external client or organization is named anywhere in the source, docs or build (checked by text search).
 
 ## Not covered
@@ -128,5 +159,5 @@ sizes, and spot-checked at 768–1280 px. The visual passes fixed the following:
   checked.
 - **Screen readers.** The page has not been tested with a physical screen reader. It was checked
   only with axe and by reviewing its roles and labels.
-- **Deployment.** The GitHub Pages workflow has been validated as YAML but has not been run on
-  GitHub.
+- **Live clicks.** The interaction checks ran on the deployed files, not through the github.io
+  host itself (see Deployment above).

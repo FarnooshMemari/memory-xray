@@ -2,6 +2,11 @@
 
 **Do an LLM's self-reported evidence citations match the evidence that actually drives its decisions?**
 
+> ### Live Interactive Demo
+> **[farnooshmemari.github.io/memory-xray](https://farnooshmemari.github.io/memory-xray/)**: remove evidence records and
+> watch the model's answer change, then compare what it cites with what measurably moved it. Every number is read
+> from the saved results in this repository; no model runs in your browser. Source: [`explorer/`](explorer/).
+
 Memory X-Ray is an independent research project in explainable and responsible AI at Duke University: a small, fully
 reproducible case study. A language model (Phi-3-mini) answers questions from four evidence records. We measure which
 records actually move its answer by removing them, then ask the model which records it relied on and check whether the
@@ -286,7 +291,9 @@ memory-xray/
 ├── colab/                        the original Colab notebooks used for the published runs (unchanged)
 ├── records/                      run log and records, checksums, AI-label provenance, original-package checksums
 ├── docs/                         protocol, approval packet, research summary, post hoc addendum, release docs
-└── poster_materials/             poster text, key numbers, figures and captions, references, layout, talk outline
+├── poster_materials/             poster text, key numbers, figures and captions, references, layout, talk outline
+└── explorer/                     interactive explorer, the live demo (static site built only from the saved results;
+                                  deployed to GitHub Pages by .github/workflows/explorer-pages.yml)
 ```
 
 ## Documentation

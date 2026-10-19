@@ -1,5 +1,7 @@
 # Memory X-Ray Explorer
 
+**Live:** https://farnooshmemari.github.io/memory-xray/
+
 An interactive, static web page for the Memory X-Ray v0.2 experiment. Visitors can remove
 evidence records and watch a small language model's answer change. They can then compare what
 the model *says* it relied on with what measurably moved its answer.
