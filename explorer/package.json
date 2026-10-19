@@ -1,0 +1,40 @@
+{
+  "name": "memory-xray-explorer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive explorer for the Memory X-Ray v0.2 experiment (saved results only; no model, no backend).",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "data:build": "python3 scripts/build_data.py",
+    "data:verify": "python3 scripts/verify_data.py",
+    "screenshots": "SCREENSHOTS=1 playwright test tests/e2e/screenshots.spec.ts --project=chromium"
+  },
+  "dependencies": {
+    "@fontsource-variable/instrument-sans": "5.3.0",
+    "@fontsource-variable/newsreader": "5.3.0",
+    "d3-shape": "3.2.0",
+    "framer-motion": "12.43.0",
+    "react": "19.1.10",
+    "react-dom": "19.1.10"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.56.1",
+    "@types/d3-shape": "3.1.7",
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.4",
+    "playwright-core": "1.56.1",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "4.1.12"
+  }
+}

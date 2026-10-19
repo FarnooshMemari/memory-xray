@@ -1,0 +1,57 @@
+# Builds the interactive explorer in explorer/ and publishes it with GitHub Pages:
+# https://farnooshmemari.github.io/memory-xray/
+# Requires Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
+
+name: Deploy explorer to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "explorer/**"
+      - ".github/workflows/explorer-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  EXPLORER_DIR: explorer
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.EXPLORER_DIR }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ${{ env.EXPLORER_DIR }}/package-lock.json
+      - run: npm ci
+      - run: npm test                       # unit tests on the saved data file
+      - run: npm run data:verify            # data file vs the saved run files in this repository
+      - run: npm run build                  # static site in dist/, relative asset paths
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ${{ env.EXPLORER_DIR }}/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

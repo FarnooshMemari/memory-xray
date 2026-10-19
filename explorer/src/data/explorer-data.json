@@ -1,0 +1,5949 @@
+{
+ "meta": {
+  "title": "Memory X-Ray v0.2",
+  "runId": "full_20261017T223452Z",
+  "model": "microsoft/Phi-3-mini-4k-instruct",
+  "commit": "f39ac1d28e925b323eae81227eaba4464caced4e",
+  "device": "Tesla T4",
+  "elapsedSeconds": 2225.6,
+  "precision": "float16 storage / float32 compute",
+  "labels": [
+   "Positive",
+   "Neutral",
+   "Negative"
+  ],
+  "records": [
+   "E1",
+   "E2",
+   "E3",
+   "E4"
+  ],
+  "subsetEncoding": "subset key = bitmask over records: E1=1, E2=2, E3=4, E4=8 (0 = no records, 15 = all four)",
+  "valueFunction": "v(S) = normalized probability of the scenario decision d* given the records in S",
+  "sources": [
+   {
+    "path": "runs/full_20261017T223452Z/manifest.json",
+    "sha256": "434a875f1d196b6c242c2c9a2aa9997a2aaa715e6f500edfc7d5c6ce5dbfa10b"
+   },
+   {
+    "path": "results/report_numbers.json",
+    "sha256": "4f21c58b60c4f4152a2acdccfb7ec6780d60434092e44eb562c64af3a687b6de"
+   },
+   {
+    "path": "results/post_hoc/content_only_baseline.json",
+    "sha256": "fb3c056e3acb23d8040671cb8e2c328e6f588bfe503343e1e3b6aaf0be6db3e5"
+   },
+   {
+    "path": "scenarios/s_single.json",
+    "sha256": "43a81fc20b0a831b4a6738d154f5757ca3ad459b62d0845a0698cd98e802db8a"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_single/cells.jsonl",
+    "sha256": "1fab5f1efedf83963873d92c8d240eba1e6f796d79efef3d2d601979979a9289"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_single/analysis.json",
+    "sha256": "5311e8fada765da9c3213755b2169e73d6de8e14a61bf3145857630137d8c030"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_single/checks.json",
+    "sha256": "21df8d957cf312bfa704d149b81a8e26e672cc5624faddc502fcab6365821fb2"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_single/citations.jsonl",
+    "sha256": "8b35382385175a1d2b2b08b020529f121c094e0eaddf74c80801f19358f01378"
+   },
+   {
+    "path": "scenarios/s_redundant.json",
+    "sha256": "bc98e8d98fea811a964eec8c77ad4e74ae0e2c70cb2b43dc4a6b7a908866e588"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_redundant/cells.jsonl",
+    "sha256": "b4f668c2b189f0f5818dee6ecc1f1a5519b37f7bde19ca80c1bdaba437ae52a9"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_redundant/analysis.json",
+    "sha256": "c0841c08b22f72037cfbc47e6e7136eede44a2d4fc890f1856eb66196dc11ad3"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_redundant/checks.json",
+    "sha256": "7a53089656057e80192a081ff9c0e80b1f7a5be122567e88d3cdd8db0a8583a2"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_redundant/citations.jsonl",
+    "sha256": "29db29bb4b1f01c6d7e2b7d386de890fb7c706f6ffcc8a1863c344701f09e550"
+   },
+   {
+    "path": "scenarios/s_conflict.json",
+    "sha256": "a9f23166b3b4752370089dc283dfc31919a0c7a2cbcb2b9f7be7ae1e71243587"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_conflict/cells.jsonl",
+    "sha256": "58790e2ecc2342315a56c06a5deef82183e3a305153907a2738bfb1406d674dd"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_conflict/analysis.json",
+    "sha256": "957baaea800e750981eff395bcd50e7c80b0dbab0f485c0fe4294913b8dc1e75"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_conflict/checks.json",
+    "sha256": "af5f82eebcf468274d5eaf10ade3636b7e3d6512a2541ad16a30eff9ce58f95f"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/s_conflict/citations.jsonl",
+    "sha256": "3af6db911011af508e552968a4694a994d99b82c527617e740daf20a07bb554f"
+   },
+   {
+    "path": "scenarios/macro_a.json",
+    "sha256": "7bbbd01465efef1bb36bca962e6a04bce29378ce740a65956b6bde3797e23fc8"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_a/cells.jsonl",
+    "sha256": "6847dd1a203fb508914874b4b5c5a4c88c53616c506e7fcf2719243f15853df8"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_a/analysis.json",
+    "sha256": "858b1c924cbef48322054c623233c820941bca0b14023c88f1995cd5dd45c999"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_a/checks.json",
+    "sha256": "9c81536703c4206e55929e78301d0ed6633360ff7dfa45b56817a8ea1460ff3a"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_a/citations.jsonl",
+    "sha256": "267080f26632903cf85fff03a28ce91206126f6669ad296d270d62a70ee3295d"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_a/flips.jsonl",
+    "sha256": "47dd9becbf93492fabc5aa0c00da67f356dc7829593236f7bec5630710c552de"
+   },
+   {
+    "path": "scenarios/macro_b.json",
+    "sha256": "800fc302e55afe37a92d8e58a535cac836de9d0d9f029d55e049ea9c58927cb1"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_b/cells.jsonl",
+    "sha256": "840e4ee021c655021e2711ba1442e68a51b67f40e78b84ef08ff47971591d3cd"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_b/analysis.json",
+    "sha256": "2cd485b3e03f99ca3357af42cd8e507d9c40683537712e0e7f94b0a5de12967d"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_b/checks.json",
+    "sha256": "0b87f90ff0c8d9d0cdb9612f75eaff0a1b9ee8d0aa0785c4e3d0687d4d3155c0"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_b/citations.jsonl",
+    "sha256": "02f9210cca8fbc1358f4a8bd8ffea8ac18178aef5395d15aa1b504df1d400ef8"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_b/flips.jsonl",
+    "sha256": "cbf703159fc52ae0b246afda5c14babb13a34c63a028538aea5b74d8ed9f77a0"
+   },
+   {
+    "path": "scenarios/macro_c.json",
+    "sha256": "963cfa90bec02ee5fcd2828e2f337c821a658c7c5d13c11f3fef07461719b777"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_c/cells.jsonl",
+    "sha256": "d4e31be31fe42408bd757d7db146390fe4bd149dc082d59bdcc10136ebc6a0b2"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_c/analysis.json",
+    "sha256": "06a16eb4cdff04b8af799b0dacce05778ae67166844d5dd6506752a16ecb60fe"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_c/checks.json",
+    "sha256": "96f024ec9a31ed6f2cd635c1a74548551301e32603de0beb019eb7f1b6b81a7e"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_c/citations.jsonl",
+    "sha256": "5ce2edb4e16f3c8276c8ded3e95055688d9ed7b1d780105177fcddee2bb3a47d"
+   },
+   {
+    "path": "runs/full_20261017T223452Z/macro_c/flips.jsonl",
+    "sha256": "9fc681c992b5a47517f7769d919cc6a7079c7279e0bf42a399cf13cbc90f1e24"
+   }
+  ],
+  "handWritten": "short record labels, role paraphrases and one-line scenario descriptions (presentational only)"
+ },
+ "pooled": {
+  "model": {
+   "n_analyzable": 46,
+   "n_partial": 40,
+   "mean_beat_nec": 0.8958333333333334,
+   "mean_beat_suf": 0.8483333333333333,
+   "mean_topk": 0.8833333333333334,
+   "share_beat_nec_gt_half": 0.925,
+   "share_beat_suf_gt_half": 0.95
+  },
+  "sampledStatus": {
+   "unparseable": 14,
+   "ok": 45,
+   "empty": 1
+  },
+  "sampledTotal": 60,
+  "greedyStatus": {
+   "ok": 18
+  },
+  "greedyTotal": 18,
+  "aligned": {
+   "n_partial": 32,
+   "mean_beat_nec": 0.9083333333333333,
+   "mean_beat_suf": 0.8770833333333333,
+   "mean_topk": 0.9270833333333334
+  },
+  "misaligned": {
+   "n_partial": 8,
+   "mean_beat_nec": 0.8458333333333333,
+   "mean_beat_suf": 0.7333333333333333,
+   "mean_topk": 0.7083333333333334,
+   "share_beat_nec_gt_half": 1.0,
+   "share_beat_suf_gt_half": 1.0
+  },
+  "ownDecisionRescoring": {
+   "n": 10,
+   "shown": [
+    0.8366666666666667,
+    0.7066666666666667
+   ],
+   "own": [
+    0.6533333333333333,
+    0.4133333333333333
+   ]
+  },
+  "contentOnly": {
+   "mean_beat_nec": 1.0,
+   "mean_beat_suf": 0.9388888888888888,
+   "mean_topk": 1.0
+  },
+  "contentOnlyComparison": {
+   "higher": 10,
+   "tied": 7,
+   "lower": 1,
+   "of": 18,
+   "exceptions": [
+    {
+     "scenario": "s_redundant",
+     "metric": "mean_beat_suf",
+     "content_only": 0.6333333333333333,
+     "model": 0.6555555555555556
+    }
+   ]
+  },
+  "modelEqualsContentSet": {
+   "n": 34,
+   "of": 64
+  }
+ },
+ "scenarios": [
+  {
+   "id": "s_single",
+   "name": "S-single",
+   "blurb": "One record decides the answer; three are noise.",
+   "kind": "control",
+   "structure": "single_decisive",
+   "question": "Using the decision rule below, classify the 12-month signal for Economy K's equity market. Decision rule: the signal is set only by the central bank's most recent policy-rate decision. A rate cut means Positive, a rate hike means Negative, and an unchanged rate means Neutral. If the evidence does not report the most recent decision, the signal is Neutral.",
+   "records": {
+    "E1": {
+     "text": "Economy K's statistics office released its quarterly national accounts on the scheduled date.",
+     "short": "National accounts released",
+     "role": "Distractor"
+    },
+    "E2": {
+     "text": "At its most recent meeting, Economy K's central bank cut its policy rate by 50 basis points.",
+     "short": "Rate cut, 50 bp",
+     "role": "Decisive: sets the answer"
+    },
+    "E3": {
+     "text": "Economy K's stock exchange announced that trading will close early on the day before the national holiday.",
+     "short": "Early market close",
+     "role": "Distractor"
+    },
+    "E4": {
+     "text": "Economy K's finance ministry appointed a new head of communications.",
+     "short": "New communications head",
+     "role": "Distractor"
+    }
+   },
+   "dStar": "Positive",
+   "reference": "Positive",
+   "meanFullDist": [
+    0.9993813528568322,
+    0.0002651875870986704,
+    0.0003534595560691312
+   ],
+   "orderings": [
+    {
+     "index": 0,
+     "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "ids": {
+      "E1": "R7",
+      "E2": "R3",
+      "E3": "R9",
+      "E4": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        4.829535909678433e-05,
+        0.9993645233785761,
+        0.000587181262327073
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.00031107266655716045,
+        0.9987458906416559,
+        0.0009430366917868847
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.9994372685598014,
+        0.00038819938074111874,
+        0.00017453205945750132
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "4": {
+       "p": [
+        0.00042248120627923577,
+        0.9980183953177768,
+        0.0015591234759438843
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.00022901400622153017,
+        0.9984943501629562,
+        0.0012766358308223115
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.9982699423299874,
+        0.0011099698103420154,
+        0.0006200878596704873
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.00023910787116073482,
+        0.998364445700277,
+        0.0013964464285622536
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.00024334399989959442,
+        0.9978902792555383,
+        0.00186637674456215
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "6": {
+       "p": [
+        0.9990999948118413,
+        0.0005757319315125379,
+        0.0003242732566461307
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "10": {
+       "p": [
+        0.9994389127038265,
+        0.00034340256876482525,
+        0.00021768472740873464
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "12": {
+       "p": [
+        0.00026693757371754084,
+        0.9985418514521621,
+        0.0011912109741202784
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.9985406725121715,
+        0.0009290245453265025,
+        0.0005303029425019407
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "11": {
+       "p": [
+        0.9989036317335922,
+        0.0006722398890543535,
+        0.00042412837735341324
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.00018599065700066568,
+        0.9978222927338553,
+        0.0019917166091440912
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.9995119080094166,
+        0.00025449567303783747,
+        0.00023359631754558177
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "15": {
+       "p": [
+        0.9991699105762981,
+        0.00040064958997957815,
+        0.0004294398337222672
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": -0.00022913167790413575,
+      "E2": 0.9989309820114171,
+      "E3": 0.00015303760322331778,
+      "E4": 0.0002667272804649873
+     },
+     "loo": {
+      "E1": -0.0003419974331184683,
+      "E2": 0.9989839199192975,
+      "E3": 0.00026627884270591373,
+      "E4": 0.0006292380641266249
+     },
+     "fullArgmax": "Positive",
+     "designedAgreement": 16
+    },
+    {
+     "index": 1,
+     "order": [
+      "E3",
+      "E1",
+      "E4",
+      "E2"
+     ],
+     "ids": {
+      "E3": "R4",
+      "E1": "R2",
+      "E4": "R6",
+      "E2": "R8"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        4.829535909678433e-05,
+        0.9993645233785761,
+        0.000587181262327073
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.00028624438064264734,
+        0.9987607064752279,
+        0.0009530491441294963
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.9994474684444755,
+        0.00038356904678938004,
+        0.00016896250873510812
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "4": {
+       "p": [
+        0.0003803720450248082,
+        0.9981196226823934,
+        0.0015000052725817911
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.00026725661851166767,
+        0.9983565169541354,
+        0.0013762264273529628
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.9988474113455482,
+        0.000726015008824377,
+        0.0004265736456274359
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.00041043980232040506,
+        0.9981277032436887,
+        0.0014618569539908814
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.00022827684870349168,
+        0.9979221212811756,
+        0.0018496018701208664
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "6": {
+       "p": [
+        0.9991768857718052,
+        0.0005812701890234157,
+        0.0002418440391713212
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "10": {
+       "p": [
+        0.9993241348834613,
+        0.0004204434481132347,
+        0.0002554216684255479
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "12": {
+       "p": [
+        0.00018727113454766452,
+        0.9987474785156717,
+        0.0010652503497805786
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.9992221189737461,
+        0.0004097799495189622,
+        0.0003681010767349508
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "11": {
+       "p": [
+        0.9994389815155574,
+        0.0002748208802102221,
+        0.0002861976042322832
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.0001532860299284546,
+        0.9981352340698169,
+        0.001711479900254691
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.9994736012244075,
+        0.00026361911819267064,
+        0.00026277965739982244
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "15": {
+       "p": [
+        0.9994543212446841,
+        0.00020370661126738385,
+        0.0003419721440484823
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 1.4427728620450737e-05,
+      "E2": 0.9991519914820981,
+      "E3": 0.00010542163838139596,
+      "E4": 0.00013418503648731256
+     },
+     "loo": {
+      "E1": -1.927997972339668e-05,
+      "E2": 0.9993010352147557,
+      "E3": 1.5339729126706558e-05,
+      "E4": 0.00023220227093800894
+     },
+     "fullArgmax": "Positive",
+     "designedAgreement": 16
+    },
+    {
+     "index": 2,
+     "order": [
+      "E4",
+      "E3",
+      "E2",
+      "E1"
+     ],
+     "ids": {
+      "E4": "R3",
+      "E3": "R7",
+      "E2": "R1",
+      "E1": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        4.829535909678433e-05,
+        0.9993645233785761,
+        0.000587181262327073
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.00033234997617567595,
+        0.9986714731721138,
+        0.0009961768517105422
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.9994018791252196,
+        0.00041059708433368285,
+        0.00018752379044679188
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "4": {
+       "p": [
+        0.0003707225033415328,
+        0.998154269578662,
+        0.0014750079179964345
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.00021973379997742076,
+        0.9985018893950718,
+        0.0012783768049507655
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.9992795107012111,
+        0.00045786935104281907,
+        0.0002626199477460194
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.0004088041981500574,
+        0.9981930011890843,
+        0.0013981946127656151
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.00016459337072254803,
+        0.9983708514581506,
+        0.0014645551711268412
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "6": {
+       "p": [
+        0.9987603955775766,
+        0.000878631318045505,
+        0.0003609731043779788
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "10": {
+       "p": [
+        0.9990431038529876,
+        0.0005402192012458047,
+        0.00041667694576663774
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "12": {
+       "p": [
+        0.00015610964960625454,
+        0.998520908748637,
+        0.0013229816017567434
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.9990442867814106,
+        0.0006316803524705039,
+        0.0003240328661189733
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "11": {
+       "p": [
+        0.9994909229309055,
+        0.0002862831952581011,
+        0.0002227938738365069
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.00019867349294699026,
+        0.9979197003747605,
+        0.001881626132292404
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.9994572297965938,
+        0.0002348292945605155,
+        0.00030794090884565914
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "15": {
+       "p": [
+        0.9995198267495142,
+        0.00019120656004904924,
+        0.00028896669043664404
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 0.00013956680638631543,
+      "E2": 0.999120612267565,
+      "E3": 5.319346321256716e-05,
+      "E4": 0.00015815885325341582
+     },
+     "loo": {
+      "E1": 6.25969529204351e-05,
+      "E2": 0.9993211532565672,
+      "E3": 2.89038186087609e-05,
+      "E4": 0.0004755399681036776
+     },
+     "fullArgmax": "Positive",
+     "designedAgreement": 16
+    }
+   ],
+   "shapleySummary": {
+    "E1": {
+     "mean": -2.5045714299123188e-05,
+     "min": -0.00022913167790413575,
+     "max": 0.00013956680638631545,
+     "per_ordering": [
+      -0.00022913167790413575,
+      1.4427728620450738e-05,
+      0.00013956680638631545
+     ]
+    },
+    "E2": {
+     "mean": 0.9990678619203601,
+     "min": 0.998930982011417,
+     "max": 0.9991519914820982,
+     "per_ordering": [
+      0.998930982011417,
+      0.9991519914820982,
+      0.9991206122675651
+     ]
+    },
+    "E3": {
+     "mean": 0.00010388423493909366,
+     "min": 5.319346321256716e-05,
+     "max": 0.00015303760322331783,
+     "per_ordering": [
+      0.00015303760322331783,
+      0.00010542163838139596,
+      5.319346321256716e-05
+     ]
+    },
+    "E4": {
+     "mean": 0.00018635705673523856,
+     "min": 0.00013418503648731256,
+     "max": 0.0002667272804649873,
+     "per_ordering": [
+      0.0002667272804649873,
+      0.00013418503648731256,
+      0.0001581588532534158
+     ]
+    }
+   },
+   "looSummary": {
+    "E1": {
+     "mean": -9.95601533071433e-05,
+     "min": -0.0003419974331184683,
+     "max": 6.25969529204351e-05,
+     "per_ordering": [
+      -0.0003419974331184683,
+      -1.927997972339668e-05,
+      6.25969529204351e-05
+     ]
+    },
+    "E2": {
+     "mean": 0.9992020361302067,
+     "min": 0.9989839199192975,
+     "max": 0.9993211532565672,
+     "per_ordering": [
+      0.9989839199192975,
+      0.9993010352147557,
+      0.9993211532565672
+     ]
+    },
+    "E3": {
+     "mean": 0.0001035074634804604,
+     "min": 1.5339729126706558e-05,
+     "max": 0.00026627884270591373,
+     "per_ordering": [
+      0.00026627884270591373,
+      1.5339729126706558e-05,
+      2.89038186087609e-05
+     ]
+    },
+    "E4": {
+     "mean": 0.0004456601010561038,
+     "min": 0.00023220227093800894,
+     "max": 0.0006292380641266249,
+     "per_ordering": [
+      0.0006292380641266249,
+      0.00023220227093800894,
+      0.0004755399681036776
+     ]
+    }
+   },
+   "checks": {
+    "infraPass": true,
+    "recovery": [
+     {
+      "id": "B1",
+      "name": "full evidence: argmax equals the designed answer in every ordering",
+      "passed": true
+     },
+     {
+      "id": "B2",
+      "name": "decisive record alone: argmax equals the designed answer (sufficiency)",
+      "passed": true
+     },
+     {
+      "id": "B3",
+      "name": "decisive record removed: argmax changes (necessity)",
+      "passed": true
+     },
+     {
+      "id": "B4",
+      "name": "argmax equals the designed answer in >= 15/16 subsets per ordering",
+      "passed": true
+     },
+     {
+      "id": "B5",
+      "name": "Shapley recovers the design (decisive largest, share >= 0.8, |distractor| <= 0.05)",
+      "passed": true
+     }
+    ],
+    "flags": []
+   },
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R3\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10000,
+     "status": "unparseable",
+     "raw": "To identify which evidence record IDs are relevant to the given question concerning Economy K's 12-month signal, we must evaluate the provided evidence against the decision rule. The decision rule clearly",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10001,
+     "status": "ok",
+     "raw": "```json\n\n[\"R3\"]\n\n```",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10002,
+     "status": "ok",
+     "raw": "Referenced evidence: [\"R3\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10003,
+     "status": "ok",
+     "raw": "```json\n\n[\"R3\"]\n\n```",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R8\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10004,
+     "status": "unparseable",
+     "raw": "In order to construct a more challenging instruction, I will create a hypothetical scenario involving several different measures that could influence the security market in Duchy L. I will then posit a complex question",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10005,
+     "status": "ok",
+     "raw": "[\"R8\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10006,
+     "status": "ok",
+     "raw": "```\n\n[\"R8\"]\n\n```",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R1\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10007,
+     "status": "ok",
+     "raw": "Answer with evidence IDs: [\"R1\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10008,
+     "status": "ok",
+     "raw": "Signal: Positive\n\nEvidence records relied on: [\"R1\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10009,
+     "status": "ok",
+     "raw": "[\"R1\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    }
+   ],
+   "citationMetrics": {
+    "n_analyzable": 8,
+    "n_partial": 8,
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 1.0,
+    "mean_topk": 1.0,
+    "share_beat_nec_gt_half": 1.0,
+    "share_beat_suf_gt_half": 1.0
+   },
+   "misalignedOrderings": [],
+   "contentOnly": {
+    "set": [
+     "E2"
+    ],
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 1.0,
+    "mean_topk": 1.0
+   }
+  },
+  {
+   "id": "s_redundant",
+   "name": "S-redundant",
+   "blurb": "Two official reports of the same rate hike: either one is enough.",
+   "kind": "control",
+   "structure": "redundant",
+   "question": "Using the decision rule below, classify the 12-month signal for Economy L's equity market. Decision rule: the signal is set only by an official report of the central bank's policy-rate decision at its most recent meeting. A rate cut means Positive, a rate hike means Negative, and an unchanged rate means Neutral. Any one official report of that decision is enough. Analyst commentary and forecasts do not count. If no official report of the most recent decision is given, the signal is Neutral.",
+   "records": {
+    "E1": {
+     "text": "The central bank of Economy L stated in its press release that it raised its policy rate by 25 basis points at its most recent meeting.",
+     "short": "Press release: rate hike",
+     "role": "Official report: enough on its own"
+    },
+    "E2": {
+     "text": "Several market commentators in Economy L said they expect the central bank to keep tightening policy over the coming year.",
+     "short": "Commentators expect tightening",
+     "role": "Commentary: the rule says ignore it"
+    },
+    "E3": {
+     "text": "Economy L's official gazette published the central bank's decision, taken at its most recent meeting, to raise the policy rate by 25 basis points.",
+     "short": "Official gazette: rate hike",
+     "role": "Official report: enough on its own"
+    },
+    "E4": {
+     "text": "Economy L's statistics office moved its headquarters to a new building in the capital.",
+     "short": "Statistics office moves",
+     "role": "Distractor"
+    }
+   },
+   "dStar": "Negative",
+   "reference": "Negative",
+   "meanFullDist": [
+    0.00022008341549668462,
+    0.027355578631964323,
+    0.972424337952539
+   ],
+   "orderings": [
+    {
+     "index": 0,
+     "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "ids": {
+      "E1": "R7",
+      "E2": "R3",
+      "E3": "R9",
+      "E4": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        2.8198819150462295e-05,
+        0.9995807190872875,
+        0.000391082093562062
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        7.360474863899189e-05,
+        0.029173815303556904,
+        0.9707525799478042
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "2": {
+       "p": [
+        0.0007131911337232292,
+        0.9481865255005646,
+        0.05110028336571209
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.00016334594905556633,
+        0.030729934374432725,
+        0.9691067196765117
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "8": {
+       "p": [
+        0.0001235831892031814,
+        0.9984978992572379,
+        0.0013785175535589208
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.0001119959707510284,
+        0.024480911837868956,
+        0.9754070921913801
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "5": {
+       "p": [
+        6.617130076114457e-05,
+        0.023965710739501194,
+        0.9759681179597377
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "9": {
+       "p": [
+        8.257460139764796e-05,
+        0.02598032499487598,
+        0.9739371004037264
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "6": {
+       "p": [
+        0.00041058279580436115,
+        0.0254139901212002,
+        0.9741754270829954
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.0003534301828123709,
+        0.9789649716905359,
+        0.020681598126651726
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "12": {
+       "p": [
+        0.00011027383723866484,
+        0.022075410674162677,
+        0.9778143154885987
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "7": {
+       "p": [
+        0.0001057171818462207,
+        0.026222635866569775,
+        0.973671646951584
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "11": {
+       "p": [
+        0.00014797626457408312,
+        0.020440897383792855,
+        0.9794111263516331
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "13": {
+       "p": [
+        9.96201762688605e-05,
+        0.029495248259366377,
+        0.9704051315643648
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "14": {
+       "p": [
+        0.0003881644594286153,
+        0.023321637458058365,
+        0.976290198082513
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.0001376673165068376,
+        0.02710221199935557,
+        0.9727601206841376
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": 0.47958646795799986,
+      "E2": 0.015822692411049034,
+      "E3": 0.47843846344061036,
+      "E4": -0.0014785852190835119
+     },
+     "loo": {
+      "E1": -0.0035300773983754086,
+      "E2": 0.0023549891197728323,
+      "E3": -0.006651005667495435,
+      "E4": -0.0009115262674463942
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 16
+    },
+    {
+     "index": 1,
+     "order": [
+      "E3",
+      "E1",
+      "E4",
+      "E2"
+     ],
+     "ids": {
+      "E3": "R4",
+      "E1": "R2",
+      "E4": "R6",
+      "E2": "R8"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        2.8198819150462295e-05,
+        0.9995807190872875,
+        0.000391082093562062
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        7.847753335929672e-05,
+        0.02993371888630853,
+        0.9699878035803322
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "2": {
+       "p": [
+        0.0007479130678880971,
+        0.947452508103903,
+        0.05179957882820898
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.0001535199576660789,
+        0.030496178382698812,
+        0.9693503016596351
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "8": {
+       "p": [
+        0.00013098458558498315,
+        0.9984748015112812,
+        0.0013942139031337885
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.00010701796574917458,
+        0.023073611915482743,
+        0.9768193701187681
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "5": {
+       "p": [
+        0.00015376613210267315,
+        0.026972608701542406,
+        0.972873625166355
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "9": {
+       "p": [
+        7.286043206624338e-05,
+        0.02444813584354089,
+        0.9754790037243929
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "6": {
+       "p": [
+        0.00019864220647781552,
+        0.025036874192262172,
+        0.97476448360126
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.0008771701519306748,
+        0.9770282067140768,
+        0.022094623133992575
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "12": {
+       "p": [
+        9.502549409477064e-05,
+        0.02120490585694409,
+        0.9787000686489612
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "7": {
+       "p": [
+        0.00028357777354123565,
+        0.034788986106048816,
+        0.96492743612041
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "11": {
+       "p": [
+        0.00015950294696236226,
+        0.01907083271114417,
+        0.9807696643418935
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "13": {
+       "p": [
+        0.0002457616014979347,
+        0.028141849406901082,
+        0.971612388991601
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "14": {
+       "p": [
+        0.00020088015319347696,
+        0.021412115685046418,
+        0.97838700416176
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.00032324539079853844,
+        0.03276547203167968,
+        0.9669112825775218
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": 0.47656176819965196,
+      "E2": 0.014174977979748104,
+      "E3": 0.47574941056721853,
+      "E4": 3.404373734103392e-05
+     },
+     "loo": {
+      "E1": -0.011475721584238263,
+      "E2": -0.00470110641407917,
+      "E3": -0.013858381764371708,
+      "E4": 0.001983846457111804
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 16
+    },
+    {
+     "index": 2,
+     "order": [
+      "E4",
+      "E3",
+      "E2",
+      "E1"
+     ],
+     "ids": {
+      "E4": "R3",
+      "E3": "R7",
+      "E2": "R1",
+      "E1": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        2.8198819150462295e-05,
+        0.9995807190872875,
+        0.000391082093562062
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        7.268107600902761e-05,
+        0.028832956424782022,
+        0.9710943624992089
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "2": {
+       "p": [
+        0.0007508768079294903,
+        0.9440897870268646,
+        0.055159336165205866
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.00015307281223055097,
+        0.030328519100182954,
+        0.9695184080875865
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "8": {
+       "p": [
+        0.00012844585755638754,
+        0.9984475841135159,
+        0.0014239700289277852
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.0026556454485707434,
+        0.054581701499032256,
+        0.9427626530523969
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "5": {
+       "p": [
+        0.0001472765638934502,
+        0.02604859863757967,
+        0.973804124798527
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "9": {
+       "p": [
+        9.338092760015685e-05,
+        0.02373929252919181,
+        0.976167326543208
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "6": {
+       "p": [
+        0.00024274306172104873,
+        0.027810271001276223,
+        0.9719469859370027
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.0009964052471295038,
+        0.9619966437213758,
+        0.0370069510314946
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "12": {
+       "p": [
+        9.796216002421665e-05,
+        0.018166860114939044,
+        0.9817351777250367
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "7": {
+       "p": [
+        0.00024258609558939007,
+        0.03339547105951383,
+        0.9663619428448967
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "11": {
+       "p": [
+        0.0012324631250718676,
+        0.027990839288182124,
+        0.9707766975867461
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "13": {
+       "p": [
+        0.00014617963338970489,
+        0.017254575996516135,
+        0.9825992443700942
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "14": {
+       "p": [
+        0.00013844245609396518,
+        0.015519177589697526,
+        0.9843423799542085
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.0001993375391846778,
+        0.02219905186485772,
+        0.9776016105959576
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": 0.47396405778023354,
+      "E2": 0.012397175134731042,
+      "E3": 0.48375266444325266,
+      "E4": 0.007096631144178344
+     },
+     "loo": {
+      "E1": -0.006740769358250853,
+      "E2": -0.004997633774136534,
+      "E3": 0.0068249130092115085,
+      "E4": 0.011239667751060889
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 16
+    }
+   ],
+   "shapleySummary": {
+    "E1": {
+     "mean": 0.47670409797929514,
+     "min": 0.4739640577802336,
+     "max": 0.479586467958,
+     "per_ordering": [
+      0.479586467958,
+      0.4765617681996519,
+      0.4739640577802336
+     ]
+    },
+    "E2": {
+     "mean": 0.01413161517517606,
+     "min": 0.012397175134731039,
+     "max": 0.015822692411049038,
+     "per_ordering": [
+      0.015822692411049038,
+      0.014174977979748104,
+      0.012397175134731039
+     ]
+    },
+    "E3": {
+     "mean": 0.4793135128170271,
+     "min": 0.47574941056721853,
+     "max": 0.4837526644432525,
+     "per_ordering": [
+      0.47843846344061014,
+      0.47574941056721853,
+      0.4837526644432525
+     ]
+    },
+    "E4": {
+     "mean": 0.0018840298874786222,
+     "min": -0.0014785852190835134,
+     "max": 0.007096631144178346,
+     "per_ordering": [
+      -0.0014785852190835134,
+      3.404373734103394e-05,
+      0.007096631144178346
+     ]
+    }
+   },
+   "looSummary": {
+    "E1": {
+     "mean": -0.007248856113621509,
+     "min": -0.011475721584238263,
+     "max": -0.0035300773983754086,
+     "per_ordering": [
+      -0.0035300773983754086,
+      -0.011475721584238263,
+      -0.006740769358250853
+     ]
+    },
+    "E2": {
+     "mean": -0.002447917022814291,
+     "min": -0.004997633774136534,
+     "max": 0.0023549891197728323,
+     "per_ordering": [
+      0.0023549891197728323,
+      -0.00470110641407917,
+      -0.004997633774136534
+     ]
+    },
+    "E3": {
+     "mean": -0.004561491474218545,
+     "min": -0.013858381764371708,
+     "max": 0.0068249130092115085,
+     "per_ordering": [
+      -0.006651005667495435,
+      -0.013858381764371708,
+      0.0068249130092115085
+     ]
+    },
+    "E4": {
+     "mean": 0.004103995980242099,
+     "min": -0.0009115262674463942,
+     "max": 0.011239667751060889,
+     "per_ordering": [
+      -0.0009115262674463942,
+      0.001983846457111804,
+      0.011239667751060889
+     ]
+    }
+   },
+   "checks": {
+    "infraPass": true,
+    "recovery": [
+     {
+      "id": "BR1",
+      "name": "full evidence: argmax equals the designed answer in every ordering",
+      "passed": true
+     },
+     {
+      "id": "BR2",
+      "name": "each redundant record alone gives the designed answer (each sufficient)",
+      "passed": true
+     },
+     {
+      "id": "BR3",
+      "name": "both redundant records removed: argmax changes (jointly necessary)",
+      "passed": true
+     },
+     {
+      "id": "BR4",
+      "name": "argmax equals the designed answer in >= 15/16 subsets per ordering",
+      "passed": true
+     },
+     {
+      "id": "BR5",
+      "name": "Shapley splits credit between the redundant pair (each >= 0.35, joint >= 0.8, asymmetry <= 0.15, |distractor| <= 0.05)",
+      "passed": true
+     },
+     {
+      "id": "BR6",
+      "name": "leave-one-out misses the redundant records (each LOO share <= 0.1)",
+      "passed": true
+     }
+    ],
+    "flags": []
+   },
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R7\", \"R9\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.6,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10100,
+     "status": "unparseable",
+     "raw": "Based on the decision rule provided in the instruction, an official report of the central bank's policy-rate decision at its most recent meeting dictates the 12-month signal for Economy",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10101,
+     "status": "ok",
+     "raw": "[\"R7\", \"R9\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.6,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10102,
+     "status": "ok",
+     "raw": "[\"R7\", \"R9\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.6,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10103,
+     "status": "ok",
+     "raw": "[\"R7\", \"R9\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.6,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R4\", \"R2\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.6,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10104,
+     "status": "ok",
+     "raw": "[\"R4\", \"R2\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.6,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10105,
+     "status": "ok",
+     "raw": "[\"R4\"]",
+     "cited": [
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 0.3333333333333333,
+     "beatSuf": 0.8333333333333334,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10106,
+     "status": "unparseable",
+     "raw": "Answer: Negative\n\n[R4], [R2]",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R7\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.7,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10107,
+     "status": "unparseable",
+     "raw": "Signal: Negative\n\nThe decision regarding the policy impact on the equity market of Economy L is based strictly on the central bank's policy-rate decisions. According to the",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10108,
+     "status": "unparseable",
+     "raw": "Signal: Negative\n\nReasoning: According to the provided decision rule, the classification of the signal for Economy L's equity market should be based solely on the central",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10109,
+     "status": "ok",
+     "raw": "```json\n\n[\"R7\", \"R5\"]\n\n```",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.7,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    }
+   ],
+   "citationMetrics": {
+    "n_analyzable": 6,
+    "n_partial": 6,
+    "mean_beat_nec": 0.8888888888888888,
+    "mean_beat_suf": 0.6555555555555556,
+    "mean_topk": 1.0,
+    "share_beat_nec_gt_half": 0.8333333333333334,
+    "share_beat_suf_gt_half": 1.0
+   },
+   "misalignedOrderings": [],
+   "contentOnly": {
+    "set": [
+     "E1",
+     "E3"
+    ],
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 0.6333333333333333,
+    "mean_topk": 1.0
+   }
+  },
+  {
+   "id": "s_conflict",
+   "name": "S-conflict",
+   "blurb": "A rate cut and high inflation conflict; the rule says the rate cut wins.",
+   "kind": "control",
+   "structure": "conflict",
+   "question": "Using the decision rule below, classify the 12-month signal for Economy M's equity market. Decision rule: the central bank's most recent policy-rate decision takes precedence over everything else. A rate cut means Positive and a rate hike means Negative. Only if no policy-rate decision is reported, use the latest inflation report instead: inflation above the central bank's target means Negative and inflation below the target means Positive. If neither is reported, the signal is Neutral.",
+   "records": {
+    "E1": {
+     "text": "At its most recent meeting, Economy M's central bank cut its policy rate by 25 basis points.",
+     "short": "Rate cut, 25 bp",
+     "role": "Rate decision: the rule says it wins"
+    },
+    "E2": {
+     "text": "The latest inflation report shows Economy M's consumer prices rising 5.8% a year, well above the central bank's 2% target.",
+     "short": "Inflation 5.8% vs 2% target",
+     "role": "Inflation: counts only without a rate decision"
+    },
+    "E3": {
+     "text": "Economy M's securities regulator renamed its investor-education office.",
+     "short": "Regulator renames an office",
+     "role": "Distractor"
+    },
+    "E4": {
+     "text": "Economy M's finance ministry launched a redesigned public website.",
+     "short": "Ministry website redesign",
+     "role": "Distractor"
+    }
+   },
+   "dStar": "Positive",
+   "reference": "Positive",
+   "meanFullDist": [
+    0.47422374780092486,
+    0.08992316856480488,
+    0.43585308363427017
+   ],
+   "orderings": [
+    {
+     "index": 0,
+     "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "ids": {
+      "E1": "R7",
+      "E2": "R3",
+      "E3": "R9",
+      "E4": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00039111886477864104,
+        0.9934251878167804,
+        0.0061836933184409885
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.9975384898991769,
+        0.0005608927787887943,
+        0.0019006173220342802
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "2": {
+       "p": [
+        0.002606338460245013,
+        0.0317426776131935,
+        0.9656509839265615
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "4": {
+       "p": [
+        0.0030324883839763523,
+        0.9812008235102035,
+        0.01576668810582014
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.005111173222151474,
+        0.9661348697125289,
+        0.02875395706531956
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.21576636303045804,
+        0.17723001210228687,
+        0.607003624867255
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.9928406708283031,
+        0.0008838815603421418,
+        0.006275447611354796
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "9": {
+       "p": [
+        0.9951061495813148,
+        0.0005492561879201049,
+        0.0043445942307649916
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "6": {
+       "p": [
+        0.004491977936289267,
+        0.051418170650622916,
+        0.9440898514130878
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.004360863767818915,
+        0.04267588251402614,
+        0.9529632537181549
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.0035182975974453806,
+        0.9722389058166294,
+        0.024242796585925225
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.30177538034528917,
+        0.14918939808861326,
+        0.5490352215660975
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      },
+      "11": {
+       "p": [
+        0.2876962188661231,
+        0.14847416855275805,
+        0.5638296125811189
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.9948814036278523,
+        0.000722037631793773,
+        0.004396558740353923
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "14": {
+       "p": [
+        0.005275129082858144,
+        0.03916552620186869,
+        0.9555593447152732
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.3648624051637376,
+        0.1454323933897112,
+        0.48970520144655116
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 0.6529290823547705,
+      "E2": -0.33843272275745634,
+      "E3": 0.02680967907560905,
+      "E4": 0.023165247626035643
+     },
+     "loo": {
+      "E1": 0.3595872760808794,
+      "E2": -0.6300189984641147,
+      "E3": 0.07716618629761446,
+      "E4": 0.06308702481844841
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 12
+    },
+    {
+     "index": 1,
+     "order": [
+      "E3",
+      "E1",
+      "E4",
+      "E2"
+     ],
+     "ids": {
+      "E3": "R4",
+      "E1": "R2",
+      "E4": "R6",
+      "E2": "R8"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00039111886477864104,
+        0.9934251878167804,
+        0.0061836933184409885
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.9976250619337911,
+        0.0005595974004489414,
+        0.0018153406657599681
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "2": {
+       "p": [
+        0.003021798696016761,
+        0.03294363622261331,
+        0.9640345650813699
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "4": {
+       "p": [
+        0.00233313223061204,
+        0.9843030793365578,
+        0.013363788432830162
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.006832509682260769,
+        0.9595132575231056,
+        0.03365423279463366
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.20633132220014339,
+        0.178062200154104,
+        0.6156064776457526
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.9970306068647851,
+        0.00038111558194115874,
+        0.0025882775532737852
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "9": {
+       "p": [
+        0.995934200483499,
+        0.0005057363903348655,
+        0.0035600631261661123
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "6": {
+       "p": [
+        0.002833210956422503,
+        0.02981281976803044,
+        0.9673539692755471
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.0035250807720428523,
+        0.028308406175509285,
+        0.9681665130524478
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.00204501370911331,
+        0.9805436736698375,
+        0.01741131262104919
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.25528299634555535,
+        0.11058112453927754,
+        0.6341358791151671
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      },
+      "11": {
+       "p": [
+        0.3574341490017486,
+        0.09594347016357835,
+        0.5466223808346731
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.9975723077815754,
+        0.00044972675803525605,
+        0.00197796546038934
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "14": {
+       "p": [
+        0.007564290062830471,
+        0.03528341262275314,
+        0.9571522973144163
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.4271952259965218,
+        0.07545821864587536,
+        0.4973465553576028
+       ],
+       "argmax": "Negative",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 0.6699657894699125,
+      "E2": -0.32267239011889703,
+      "E3": 0.02201397691952901,
+      "E4": 0.05749673086119871
+     },
+     "loo": {
+      "E1": 0.41963093593369133,
+      "E2": -0.5703770817850535,
+      "E3": 0.06976107699477324,
+      "E4": 0.17191222965096647
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 12
+    },
+    {
+     "index": 2,
+     "order": [
+      "E4",
+      "E3",
+      "E2",
+      "E1"
+     ],
+     "ids": {
+      "E4": "R3",
+      "E3": "R7",
+      "E2": "R1",
+      "E1": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00039111886477864104,
+        0.9934251878167804,
+        0.0061836933184409885
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.9976445228063687,
+        0.0005224854024166734,
+        0.001832991791214576
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "2": {
+       "p": [
+        0.0018477426883134883,
+        0.0257551290723543,
+        0.9723971282393322
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "4": {
+       "p": [
+        0.002249573026615453,
+        0.9839701804367886,
+        0.013780246536595969
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.0049188178919325745,
+        0.9663189087382122,
+        0.02876227336985513
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.5532535965004706,
+        0.08531162653499234,
+        0.3614347769645371
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.9966995650598006,
+        0.0004371993437533964,
+        0.0028632355964459434
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "9": {
+       "p": [
+        0.9974239767833815,
+        0.00025863297072974687,
+        0.0023173902458888188
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "6": {
+       "p": [
+        0.0029708175997975672,
+        0.029983021635245105,
+        0.9670461607649573
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.002600184983109083,
+        0.025495800052038248,
+        0.9719040149648527
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.004164434093245114,
+        0.9648693383311971,
+        0.03096622757555775
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.6680895597556239,
+        0.047507896101211755,
+        0.2844025441431643
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "11": {
+       "p": [
+        0.6784177750962592,
+        0.039609111659810986,
+        0.28197311324392976
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.9983618366918185,
+        0.00020110495255542494,
+        0.0014370583556260247
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "14": {
+       "p": [
+        0.003166039940576168,
+        0.026658563340158124,
+        0.9701753967192657
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.6306136122425152,
+        0.04887889365882812,
+        0.3205074940986566
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 0.8122998056945774,
+      "E2": -0.1827898098052344,
+      "E3": -0.0018394762157029638,
+      "E4": 0.0025519737040965804
+     },
+     "loo": {
+      "E1": 0.627447572301939,
+      "E2": -0.36774822444930333,
+      "E3": -0.047804162853744,
+      "E4": -0.037475947513108676
+     },
+     "fullArgmax": "Positive",
+     "designedAgreement": 16
+    }
+   ],
+   "shapleySummary": {
+    "E1": {
+     "mean": 0.7117315591730868,
+     "min": 0.6529290823547705,
+     "max": 0.8122998056945774,
+     "per_ordering": [
+      0.6529290823547705,
+      0.6699657894699125,
+      0.8122998056945774
+     ]
+    },
+    "E2": {
+     "mean": -0.2812983075605293,
+     "min": -0.3384327227574564,
+     "max": -0.1827898098052344,
+     "per_ordering": [
+      -0.3384327227574564,
+      -0.32267239011889715,
+      -0.1827898098052344
+     ]
+    },
+    "E3": {
+     "mean": 0.0156613932598117,
+     "min": -0.0018394762157029625,
+     "max": 0.026809679075609043,
+     "per_ordering": [
+      0.026809679075609043,
+      0.02201397691952902,
+      -0.0018394762157029625
+     ]
+    },
+    "E4": {
+     "mean": 0.027737984063776967,
+     "min": 0.0025519737040965774,
+     "max": 0.05749673086119869,
+     "per_ordering": [
+      0.023165247626035633,
+      0.05749673086119869,
+      0.0025519737040965774
+     ]
+    }
+   },
+   "looSummary": {
+    "E1": {
+     "mean": 0.46888859477216993,
+     "min": 0.3595872760808794,
+     "max": 0.627447572301939,
+     "per_ordering": [
+      0.3595872760808794,
+      0.41963093593369133,
+      0.627447572301939
+     ]
+    },
+    "E2": {
+     "mean": -0.5227147682328238,
+     "min": -0.6300189984641147,
+     "max": -0.36774822444930333,
+     "per_ordering": [
+      -0.6300189984641147,
+      -0.5703770817850535,
+      -0.36774822444930333
+     ]
+    },
+    "E3": {
+     "mean": 0.0330410334795479,
+     "min": -0.047804162853744,
+     "max": 0.07716618629761446,
+     "per_ordering": [
+      0.07716618629761446,
+      0.06976107699477324,
+      -0.047804162853744
+     ]
+    },
+    "E4": {
+     "mean": 0.06584110231876873,
+     "min": -0.037475947513108676,
+     "max": 0.17191222965096647,
+     "per_ordering": [
+      0.06308702481844841,
+      0.17191222965096647,
+      -0.037475947513108676
+     ]
+    }
+   },
+   "checks": {
+    "infraPass": true,
+    "recovery": [
+     {
+      "id": "BC1",
+      "name": "full evidence: argmax equals the designed answer (precedence) in every ordering",
+      "passed": false
+     },
+     {
+      "id": "BC2",
+      "name": "subordinate record alone gives its own answer (Negative)",
+      "passed": true
+     },
+     {
+      "id": "BC3",
+      "name": "dominant and subordinate together: precedence holds (Positive)",
+      "passed": false
+     },
+     {
+      "id": "BC4",
+      "name": "argmax equals the designed answer in >= 15/16 subsets per ordering",
+      "passed": false
+     },
+     {
+      "id": "BC5",
+      "name": "Shapley recovers precedence (dominant largest, share >= 0.8, |distractor| <= 0.05)",
+      "passed": false
+     }
+    ],
+    "flags": [
+     "ordering sensitivity: range of phi(E1) across orderings is 0.159 (> 0.1)",
+     "ordering sensitivity: range of phi(E2) across orderings is 0.156 (> 0.1)",
+     "full-set argmax differs across orderings"
+    ]
+   },
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10200,
+     "status": "unparseable",
+     "raw": "{\"R7\", \"R3\"}",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10201,
+     "status": "unparseable",
+     "raw": "[R7]",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10202,
+     "status": "ok",
+     "raw": "Signal: Positive\nEvidence Records Rely On: [\"R7\", \"R3\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10203,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R2\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10204,
+     "status": "ok",
+     "raw": "Signal: Positive\n\nEvidence Records Relied On: [\"R2\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10205,
+     "status": "ok",
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 0.6666666666666666,
+     "beatSuf": 0.6666666666666666,
+     "topk": 0.6666666666666666,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10206,
+     "status": "ok",
+     "raw": "Solution: The provided answer is Positive.\n\nEvidence records relied upon: [\"R2\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Negative",
+     "aligned": false
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R5\", \"R1\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10207,
+     "status": "ok",
+     "raw": "[\"R5\"]",
+     "cited": [
+      "E1"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10208,
+     "status": "ok",
+     "raw": "[\"R5\"]",
+     "cited": [
+      "E1"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10209,
+     "status": "ok",
+     "raw": "Signal: Positive\nRecords used: [\"R7\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.9,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    }
+   ],
+   "citationMetrics": {
+    "n_analyzable": 8,
+    "n_partial": 8,
+    "mean_beat_nec": 0.8333333333333334,
+    "mean_beat_suf": 0.7458333333333333,
+    "mean_topk": 0.7083333333333334,
+    "share_beat_nec_gt_half": 1.0,
+    "share_beat_suf_gt_half": 1.0
+   },
+   "misalignedOrderings": [
+    0,
+    1
+   ],
+   "contentOnly": {
+    "set": [
+     "E1"
+    ],
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 1.0,
+    "mean_topk": 1.0
+   }
+  },
+  {
+   "id": "macro_a",
+   "name": "Macro A",
+   "blurb": "Three positive signals and one negative one.",
+   "kind": "realistic",
+   "structure": "rubric",
+   "question": "What is the 12-month signal for Economy A's broad equity market?",
+   "records": {
+    "E1": {
+     "text": "Economy A's central bank lowered its policy rate by 50 basis points to 4.25% at its latest meeting and said further cuts are possible if inflation keeps easing.",
+     "short": "Rate cut, 50 bp",
+     "rubric": {
+      "score": 1,
+      "component": "P",
+      "why": "50 bp cut with an easing bias"
+     }
+    },
+    "E2": {
+     "text": "Core consumer-price inflation in Economy A slowed to 2.4% a year from 3.9% a year earlier, close to the central bank's 2% target.",
+     "short": "Core inflation eases to 2.4%",
+     "rubric": {
+      "score": 1,
+      "component": "I",
+      "why": "inflation falling to near target"
+     }
+    },
+    "E3": {
+     "text": "Economy A's manufacturing purchasing managers' index fell to 47.6, its fourth straight month below the 50 level that separates expansion from contraction.",
+     "short": "Manufacturing PMI 47.6",
+     "rubric": {
+      "score": -1,
+      "component": "G",
+      "why": "PMI below 50 for four months"
+     }
+    },
+    "E4": {
+     "text": "Analysts raised their consensus forecast for Economy A's listed-company earnings over the next 12 months by 4% during the past quarter.",
+     "short": "Earnings forecasts up 4%",
+     "rubric": {
+      "score": 1,
+      "component": "E",
+      "why": "earnings forecasts revised up 4%"
+     }
+    }
+   },
+   "dStar": "Positive",
+   "reference": "Positive",
+   "meanFullDist": [
+    0.4058624332054195,
+    0.3856580091437607,
+    0.20847955765081985
+   ],
+   "orderings": [
+    {
+     "index": 0,
+     "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "ids": {
+      "E1": "R7",
+      "E2": "R3",
+      "E3": "R9",
+      "E4": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00013038365722088503,
+        0.986959773188979,
+        0.012909843153800102
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.6329590526203086,
+        0.23001982444900318,
+        0.1370211229306882
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.7756552187004125,
+        0.2075499272265622,
+        0.01679485407302523
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.0005127290991686106,
+        0.025706282279281158,
+        0.9737809886215502
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.9656621153697363,
+        0.033178959050159204,
+        0.00115892558010447
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.9145473969947516,
+        0.0585170316702718,
+        0.02693557133497658
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.007975983530388754,
+        0.11256607930470412,
+        0.879457937164907
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.8383140612232406,
+        0.14443385590018212,
+        0.017252082876577337
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "6": {
+       "p": [
+        0.001987338487061843,
+        0.2138759639738711,
+        0.784136697539067
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "10": {
+       "p": [
+        0.9016427467043009,
+        0.09309172282966396,
+        0.005265530466035118
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "12": {
+       "p": [
+        0.09367658000401156,
+        0.6244154410720009,
+        0.2819079789239875
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.11119596171152119,
+        0.1849739660387596,
+        0.7038300722497192
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.9008777177584424,
+        0.08817463951055833,
+        0.01094764273099927
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.14329693276784775,
+        0.46374131556503007,
+        0.39296175166712216
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.1640764770235841,
+        0.6270017569333772,
+        0.20892176604303872
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "15": {
+       "p": [
+        0.23633215724083767,
+        0.41290458294132826,
+        0.35076325981783407
+       ],
+       "argmax": "Neutral",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 0.19102703109687708,
+      "E2": 0.255075607948446,
+      "E3": -0.541588413609609,
+      "E4": 0.3316875481479026
+     },
+     "loo": {
+      "E1": 0.07225568021725357,
+      "E2": 0.09303522447298992,
+      "E3": -0.6645455605176047,
+      "E4": 0.12513619552931649
+     },
+     "fullArgmax": "Neutral",
+     "designedAgreement": 8
+    },
+    {
+     "index": 1,
+     "order": [
+      "E3",
+      "E1",
+      "E4",
+      "E2"
+     ],
+     "ids": {
+      "E3": "R4",
+      "E1": "R2",
+      "E4": "R6",
+      "E2": "R8"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00013038365722088503,
+        0.986959773188979,
+        0.012909843153800102
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.6479576453998946,
+        0.22293056953961107,
+        0.12911178506049437
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.7634841450608941,
+        0.2187639305965186,
+        0.017751924342587263
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.0005091169458134292,
+        0.026220933074771045,
+        0.9732699499794155
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.9633544864235817,
+        0.03544552761117394,
+        0.0011999859652443833
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.9228556736298825,
+        0.054208953684094716,
+        0.022935372686022762
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.02725393992272768,
+        0.23043222936662416,
+        0.7423138307106482
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.8705774062677735,
+        0.11666521711807358,
+        0.012757376614153045
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "6": {
+       "p": [
+        0.02813465468499866,
+        0.4133249763845215,
+        0.5585403689304799
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "10": {
+       "p": [
+        0.9348345990890948,
+        0.06318600025002748,
+        0.0019794006608777124
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "12": {
+       "p": [
+        0.16822000304656343,
+        0.6149782321153665,
+        0.21680176483807004
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.3822440898330587,
+        0.25385840153476924,
+        0.363897508632172
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.9089434352776314,
+        0.07420691039872505,
+        0.016849654323643562
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.2956904720307707,
+        0.5177028451584964,
+        0.18660668281073292
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.2518243385174163,
+        0.6212641512603646,
+        0.12691151022221908
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "15": {
+       "p": [
+        0.5536477455798692,
+        0.33632096848747794,
+        0.11003128593265292
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 0.2831650015105232,
+      "E2": 0.3179081081570036,
+      "E3": -0.4178706105885912,
+      "E4": 0.37031486284371273
+     },
+     "loo": {
+      "E1": 0.30182340706245286,
+      "E2": 0.2579572735490985,
+      "E3": -0.35529568969776226,
+      "E4": 0.1714036557468105
+     },
+     "fullArgmax": "Positive",
+     "designedAgreement": 9
+    },
+    {
+     "index": 2,
+     "order": [
+      "E4",
+      "E3",
+      "E2",
+      "E1"
+     ],
+     "ids": {
+      "E4": "R3",
+      "E3": "R7",
+      "E2": "R1",
+      "E1": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00013038365722088503,
+        0.986959773188979,
+        0.012909843153800102
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.6235477130351332,
+        0.2443066005894219,
+        0.13214568637544477
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.7936823356726137,
+        0.19052956763982482,
+        0.015788096687561464
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.0004761886085386376,
+        0.025777751407197368,
+        0.973746059984264
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.9629886681245171,
+        0.035780101384532886,
+        0.0012312304909500409
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.7540816747275316,
+        0.18501175824614374,
+        0.06090656702632453
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "5": {
+       "p": [
+        0.03434556388185227,
+        0.24543628926795066,
+        0.720218146850197
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.9187490697158447,
+        0.07111799946628354,
+        0.010132930817871805
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "6": {
+       "p": [
+        0.01626974111028051,
+        0.3863232522007318,
+        0.5974070066889877
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "10": {
+       "p": [
+        0.934927926031064,
+        0.06277726948946513,
+        0.00229480447947088
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "12": {
+       "p": [
+        0.07149560086155263,
+        0.586871210106337,
+        0.3416331890321103
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.1860522644950251,
+        0.31105915299264053,
+        0.5028885825123344
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.9297421761105694,
+        0.061326469404413796,
+        0.008931354485016833
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      },
+      "13": {
+       "p": [
+        0.22742544705788162,
+        0.48455193172176747,
+        0.28802262122035094
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.2396033306958745,
+        0.5999989368120829,
+        0.1603977324920426
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "15": {
+       "p": [
+        0.42760739679555154,
+        0.4077484760024759,
+        0.1646441272019726
+       ],
+       "argmax": "Positive",
+       "rule": "Positive"
+      }
+     },
+     "shapley": {
+      "E1": 0.22540166016774218,
+      "E2": 0.2858563345168413,
+      "E3": -0.4765126968579448,
+      "E4": 0.39273171531169204
+     },
+     "loo": {
+      "E1": 0.18800406609967704,
+      "E2": 0.20018194973766992,
+      "E3": -0.5021347793150179,
+      "E4": 0.24155513230052644
+     },
+     "fullArgmax": "Positive",
+     "designedAgreement": 9
+    }
+   ],
+   "shapleySummary": {
+    "E1": {
+     "mean": 0.23319789759171408,
+     "min": 0.19102703109687696,
+     "max": 0.2831650015105231,
+     "per_ordering": [
+      0.19102703109687696,
+      0.2831650015105231,
+      0.22540166016774216
+     ]
+    },
+    "E2": {
+     "mean": 0.28628001687409693,
+     "min": 0.255075607948446,
+     "max": 0.3179081081570036,
+     "per_ordering": [
+      0.255075607948446,
+      0.3179081081570036,
+      0.28585633451684117
+     ]
+    },
+    "E3": {
+     "mean": -0.47865724035204843,
+     "min": -0.5415884136096091,
+     "max": -0.4178706105885913,
+     "per_ordering": [
+      -0.5415884136096091,
+      -0.4178706105885913,
+      -0.4765126968579449
+     ]
+    },
+    "E4": {
+     "mean": 0.36491137543443575,
+     "min": 0.33168754814790263,
+     "max": 0.392731715311692,
+     "per_ordering": [
+      0.33168754814790263,
+      0.37031486284371273,
+      0.392731715311692
+     ]
+    }
+   },
+   "looSummary": {
+    "E1": {
+     "mean": 0.18736105112646118,
+     "min": 0.07225568021725357,
+     "max": 0.30182340706245286,
+     "per_ordering": [
+      0.07225568021725357,
+      0.30182340706245286,
+      0.18800406609967704
+     ]
+    },
+    "E2": {
+     "mean": 0.18372481591991943,
+     "min": 0.09303522447298992,
+     "max": 0.2579572735490985,
+     "per_ordering": [
+      0.09303522447298992,
+      0.2579572735490985,
+      0.20018194973766992
+     ]
+    },
+    "E3": {
+     "mean": -0.5073253431767949,
+     "min": -0.6645455605176047,
+     "max": -0.35529568969776226,
+     "per_ordering": [
+      -0.6645455605176047,
+      -0.35529568969776226,
+      -0.5021347793150179
+     ]
+    },
+    "E4": {
+     "mean": 0.17936499452555113,
+     "min": 0.12513619552931649,
+     "max": 0.24155513230052644,
+     "per_ordering": [
+      0.12513619552931649,
+      0.1714036557468105,
+      0.24155513230052644
+     ]
+    }
+   },
+   "checks": {
+    "infraPass": true,
+    "recovery": [],
+    "flags": [
+     "ordering sensitivity: range of phi(E3) across orderings is 0.124 (> 0.1)",
+     "full-set argmax differs across orderings"
+    ]
+   },
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Neutral",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10300,
+     "status": "ok",
+     "raw": "[\"R3\", \"R5\"]",
+     "cited": [
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 0.9,
+     "beatSuf": 0.8,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Neutral",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10301,
+     "status": "ok",
+     "raw": "Evidence records relied upon for Positive signal: [\"R7\", \"R3\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Neutral",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10302,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Neutral",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10303,
+     "status": "ok",
+     "raw": "Signal: Positive\n\nReply: [\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Neutral",
+     "aligned": false
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10304,
+     "status": "ok",
+     "raw": "[\"R2\", \"R4\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10305,
+     "status": "ok",
+     "raw": "JSON list: [\"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10306,
+     "status": "ok",
+     "raw": "Answer: Positive\n\n[\"R4\", \"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R3\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 0.8,
+     "topk": 0.5,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10307,
+     "status": "ok",
+     "raw": "[\"R7\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 0.0,
+     "beatSuf": 0.2,
+     "topk": 0.0,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10308,
+     "status": "unparseable",
+     "raw": "Signal: Positive\nReasoning: Despite a falling purchasing managers' index and slowed inflation, the more positive factors such as raised consensus forecasts for earnings,",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10309,
+     "status": "unparseable",
+     "raw": "{}",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Positive",
+     "ownAnswer": "Positive",
+     "aligned": true
+    }
+   ],
+   "citationMetrics": {
+    "n_analyzable": 8,
+    "n_partial": 5,
+    "mean_beat_nec": 0.78,
+    "mean_beat_suf": 0.8,
+    "mean_topk": 0.8,
+    "share_beat_nec_gt_half": 0.8,
+    "share_beat_suf_gt_half": 0.8
+   },
+   "misalignedOrderings": [
+    0
+   ],
+   "contentOnly": {
+    "set": [
+     "E1",
+     "E2",
+     "E4"
+    ],
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 1.0,
+    "mean_topk": 1.0
+   },
+   "rubricIdealShapley": {
+    "E1": 0.4167,
+    "E2": 0.4167,
+    "E3": -0.25,
+    "E4": 0.4167
+   },
+   "flip": {
+    "target": "E1",
+    "text": "Economy A's central bank raised its policy rate by 50 basis points to 5.25% at its latest meeting and said further increases are possible if inflation does not keep easing.",
+    "why": "the policy record reversed from a cut to a hike",
+    "referenceAfter": "Neutral",
+    "perOrdering": [
+     {
+      "ordering": 0,
+      "pAfter": [
+       0.06905068635137417,
+       0.5413085375963763,
+       0.3896407760522495
+      ],
+      "argmaxAfter": "Neutral",
+      "pDStarBefore": 0.23633215724083767,
+      "pDStarAfter": 0.06905068635137417
+     },
+     {
+      "ordering": 1,
+      "pAfter": [
+       0.20525310807988156,
+       0.6168787008069492,
+       0.17786819111316923
+      ],
+      "argmaxAfter": "Neutral",
+      "pDStarBefore": 0.5536477455798692,
+      "pDStarAfter": 0.20525310807988156
+     },
+     {
+      "ordering": 2,
+      "pAfter": [
+       0.1265987777774718,
+       0.5198231827754651,
+       0.3535780394470631
+      ],
+      "argmaxAfter": "Neutral",
+      "pDStarBefore": 0.42760739679555154,
+      "pDStarAfter": 0.1265987777774718
+     }
+    ]
+   }
+  },
+  {
+   "id": "macro_b",
+   "name": "Macro B",
+   "blurb": "Three negative signals and one positive one.",
+   "kind": "realistic",
+   "structure": "rubric",
+   "question": "What is the 12-month signal for Economy B's broad equity market?",
+   "records": {
+    "E1": {
+     "text": "Economy B's central bank raised its policy rate by 75 basis points to 6.50% at its latest meeting, its third increase in a row.",
+     "short": "Rate hike, 75 bp",
+     "rubric": {
+      "score": -1,
+      "component": "P",
+      "why": "75 bp hike, third in a row"
+     }
+    },
+    "E2": {
+     "text": "Consumer-price inflation in Economy B rose to 6.8% a year from 5.1% three months earlier, well above the central bank's 3% target.",
+     "short": "Inflation rises to 6.8%",
+     "rubric": {
+      "score": -1,
+      "component": "I",
+      "why": "inflation rising, well above target"
+     }
+    },
+    "E3": {
+     "text": "Economy B's services purchasing managers' index rose to 55.2, its strongest reading in two years.",
+     "short": "Services PMI 55.2",
+     "rubric": {
+      "score": 1,
+      "component": "G",
+      "why": "services PMI 55.2 and rising"
+     }
+    },
+    "E4": {
+     "text": "Analysts cut their consensus forecast for Economy B's listed-company earnings over the next 12 months by 6% during the past quarter.",
+     "short": "Earnings forecasts down 6%",
+     "rubric": {
+      "score": -1,
+      "component": "E",
+      "why": "earnings forecasts revised down 6%"
+     }
+    }
+   },
+   "dStar": "Negative",
+   "reference": "Negative",
+   "meanFullDist": [
+    0.019036842961300766,
+    0.17080421311511085,
+    0.8101589439235884
+   ],
+   "orderings": [
+    {
+     "index": 0,
+     "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "ids": {
+      "E1": "R7",
+      "E2": "R3",
+      "E3": "R9",
+      "E4": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00013108479015416278,
+        0.9859488865881164,
+        0.013920028621729334
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.06434887058488312,
+        0.2994166543825178,
+        0.6362344750325991
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.005862022675667324,
+        0.045021218561748975,
+        0.9491167587625836
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.9863094736948268,
+        0.007872153684550196,
+        0.005818372620623067
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.0028274379685808916,
+        0.10440816568938407,
+        0.8927643963420351
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.023673712337791863,
+        0.0756680410665686,
+        0.9006582465956395
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "5": {
+       "p": [
+        0.7461248327042879,
+        0.16670984245431078,
+        0.08716532484140138
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.0024202904128495643,
+        0.15663947927662186,
+        0.8409402303105286
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "6": {
+       "p": [
+        0.2885813778806552,
+        0.2764007286217814,
+        0.43501789349756337
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "10": {
+       "p": [
+        0.0009780748385008744,
+        0.05833244314975475,
+        0.9406894820117444
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.20743041648674684,
+        0.49327347628793083,
+        0.2992961072253223
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.18259697311478099,
+        0.298914102772629,
+        0.5184889241125901
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.001821508344351299,
+        0.08566634655152429,
+        0.9125121451041245
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "13": {
+       "p": [
+        0.09033707129030283,
+        0.5630758681254102,
+        0.346587060584287
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.012887729946087764,
+        0.2713702148654479,
+        0.7157420551884643
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "15": {
+       "p": [
+        0.023639744058641728,
+        0.243031558483726,
+        0.7333286974576323
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": 0.16694601559406771,
+      "E2": 0.46889207843168457,
+      "E3": -0.2766634612123581,
+      "E4": 0.36023403602250875
+     },
+     "loo": {
+      "E1": 0.01758664226916795,
+      "E2": 0.3867416368733453,
+      "E3": -0.1791834476464922,
+      "E4": 0.21483977334504223
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 8
+    },
+    {
+     "index": 1,
+     "order": [
+      "E3",
+      "E1",
+      "E4",
+      "E2"
+     ],
+     "ids": {
+      "E3": "R4",
+      "E1": "R2",
+      "E4": "R6",
+      "E2": "R8"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00013108479015416278,
+        0.9859488865881164,
+        0.013920028621729334
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.06785311459976189,
+        0.2872103384537408,
+        0.6449365469464973
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.0055294470600648375,
+        0.047650918153077745,
+        0.9468196347868574
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.9853845761978234,
+        0.008142676555612106,
+        0.006472747246564478
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.0032747525504300107,
+        0.11080494230755528,
+        0.8859203051420148
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.021011067125690085,
+        0.07061678255262283,
+        0.908372150321687
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "5": {
+       "p": [
+        0.5943087172313688,
+        0.14167814811625826,
+        0.26401313465237286
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.002459457911463243,
+        0.14951781102062475,
+        0.848022731067912
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "6": {
+       "p": [
+        0.24402027121259856,
+        0.20676350660707776,
+        0.5492162221803236
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "10": {
+       "p": [
+        0.0009200307914310761,
+        0.053381026577142374,
+        0.9456989426314265
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.1325441845497125,
+        0.49022073234116065,
+        0.3772350831091269
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.12561105656054547,
+        0.13334166312383872,
+        0.7410472803156157
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.003351108758439519,
+        0.06728732586036985,
+        0.9293615653811906
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "13": {
+       "p": [
+        0.04175091198169091,
+        0.30772901264217606,
+        0.6505200753761331
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.040173577544192624,
+        0.3094811627378754,
+        0.650345259717932
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "15": {
+       "p": [
+        0.02176976747867087,
+        0.13469216331460107,
+        0.843538069206728
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": 0.2585501654549408,
+      "E2": 0.42293280603090466,
+      "E3": -0.18560046568281444,
+      "E4": 0.3337355347819677
+     },
+     "loo": {
+      "E1": 0.19319280948879602,
+      "E2": 0.19301799383059492,
+      "E3": -0.08582349617446261,
+      "E4": 0.1024907888911123
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 7
+    },
+    {
+     "index": 2,
+     "order": [
+      "E4",
+      "E3",
+      "E2",
+      "E1"
+     ],
+     "ids": {
+      "E4": "R3",
+      "E3": "R7",
+      "E2": "R1",
+      "E1": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00013108479015416278,
+        0.9859488865881164,
+        0.013920028621729334
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.06343236956026148,
+        0.29787276292876674,
+        0.6386948675109717
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.005971122305667405,
+        0.043525431645731555,
+        0.950503446048601
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.9863552604054837,
+        0.0076454004570456775,
+        0.005999339137470545
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.0026647222526640993,
+        0.10495632729979404,
+        0.8923789504475419
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.006888899484387482,
+        0.050051860863443695,
+        0.9430592396521688
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "5": {
+       "p": [
+        0.5943812650932172,
+        0.1403350023149325,
+        0.2652837325918503
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.002953912115316315,
+        0.10610614753775723,
+        0.8909399403469265
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "6": {
+       "p": [
+        0.3390161579606536,
+        0.2302340594904157,
+        0.4307497825489307
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "10": {
+       "p": [
+        0.000956911428541541,
+        0.05633996008623377,
+        0.9427031284852246
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.38994791215707053,
+        0.3273559617197759,
+        0.2826961261231536
+       ],
+       "argmax": "Positive",
+       "rule": "Neutral"
+      },
+      "7": {
+       "p": [
+        0.08513676380345855,
+        0.1727798444753412,
+        0.7420833917212003
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.0019454200810323904,
+        0.06152445659581127,
+        0.9365301233231563
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "13": {
+       "p": [
+        0.04791269784012374,
+        0.23804239555738604,
+        0.7140449066024902
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.02252229752150346,
+        0.2403216477352685,
+        0.7371560547432281
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "15": {
+       "p": [
+        0.011701017346589704,
+        0.1346889175470055,
+        0.8536100651064049
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": 0.26754975910034395,
+      "E2": 0.4153945410090295,
+      "E3": -0.19656565177196766,
+      "E4": 0.3533113881472698
+     },
+     "loo": {
+      "E1": 0.11645401036317682,
+      "E2": 0.1395651585039147,
+      "E3": -0.08292005821675141,
+      "E4": 0.11152667338520461
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 6
+    }
+   ],
+   "shapleySummary": {
+    "E1": {
+     "mean": 0.2310153133831175,
+     "min": 0.16694601559406766,
+     "max": 0.26754975910034395,
+     "per_ordering": [
+      0.16694601559406766,
+      0.25855016545494086,
+      0.26754975910034395
+     ]
+    },
+    "E2": {
+     "mean": 0.43573980849053967,
+     "min": 0.4153945410090296,
+     "max": 0.4688920784316847,
+     "per_ordering": [
+      0.4688920784316847,
+      0.4229328060309046,
+      0.4153945410090296
+     ]
+    },
+    "E3": {
+     "mean": -0.2196098595557134,
+     "min": -0.2766634612123581,
+     "max": -0.18560046568281446,
+     "per_ordering": [
+      -0.2766634612123581,
+      -0.18560046568281446,
+      -0.1965656517719677
+     ]
+    },
+    "E4": {
+     "mean": 0.3490936529839154,
+     "min": 0.3337355347819676,
+     "max": 0.3602340360225088,
+     "per_ordering": [
+      0.3602340360225088,
+      0.3337355347819676,
+      0.35331138814726976
+     ]
+    }
+   },
+   "looSummary": {
+    "E1": {
+     "mean": 0.10907782070704693,
+     "min": 0.01758664226916795,
+     "max": 0.19319280948879602,
+     "per_ordering": [
+      0.01758664226916795,
+      0.19319280948879602,
+      0.11645401036317682
+     ]
+    },
+    "E2": {
+     "mean": 0.23977492973595163,
+     "min": 0.1395651585039147,
+     "max": 0.3867416368733453,
+     "per_ordering": [
+      0.3867416368733453,
+      0.19301799383059492,
+      0.1395651585039147
+     ]
+    },
+    "E3": {
+     "mean": -0.11597566734590208,
+     "min": -0.1791834476464922,
+     "max": -0.08292005821675141,
+     "per_ordering": [
+      -0.1791834476464922,
+      -0.08582349617446261,
+      -0.08292005821675141
+     ]
+    },
+    "E4": {
+     "mean": 0.14295241187378638,
+     "min": 0.1024907888911123,
+     "max": 0.21483977334504223,
+     "per_ordering": [
+      0.21483977334504223,
+      0.1024907888911123,
+      0.11152667338520461
+     ]
+    }
+   },
+   "checks": {
+    "infraPass": true,
+    "recovery": [],
+    "flags": [
+     "ordering sensitivity: range of phi(E1) across orderings is 0.101 (> 0.1)"
+    ]
+   },
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10400,
+     "status": "empty",
+     "raw": "```json\n\n[]\n\n```\n\n",
+     "cited": [],
+     "category": "empty",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10401,
+     "status": "ok",
+     "raw": "Answer: \"Negative\"\nRecords utilized: [\"R7\", \"R3\", \"R9\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "category": "partial",
+     "beatNec": 0.3333333333333333,
+     "beatSuf": 0.3333333333333333,
+     "topk": 0.6666666666666666,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10402,
+     "status": "ok",
+     "raw": "Evidence records: [\"R3\", \"R5\"]",
+     "cited": [
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10403,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.8,
+     "topk": 0.5,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10404,
+     "status": "ok",
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10405,
+     "status": "ok",
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10406,
+     "status": "unparseable",
+     "raw": "Answer: Negative\n\nReason: The decline in earnings forecasts (R6) coupled with rising inflation above the target (R8) and tighter monetary",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R3\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 0.6,
+     "beatSuf": 0.6,
+     "topk": 0.5,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10407,
+     "status": "ok",
+     "raw": "[\"R1\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 0.8,
+     "beatSuf": 0.9,
+     "topk": 0.5,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10408,
+     "status": "ok",
+     "raw": "[\"R3\", \"R1\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10409,
+     "status": "ok",
+     "raw": "[\"R1\"]",
+     "cited": [
+      "E2"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    }
+   ],
+   "citationMetrics": {
+    "n_analyzable": 9,
+    "n_partial": 8,
+    "mean_beat_nec": 0.8666666666666667,
+    "mean_beat_suf": 0.8791666666666667,
+    "mean_topk": 0.8333333333333334,
+    "share_beat_nec_gt_half": 0.875,
+    "share_beat_suf_gt_half": 0.875
+   },
+   "misalignedOrderings": [],
+   "contentOnly": {
+    "set": [
+     "E1",
+     "E2",
+     "E4"
+    ],
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 1.0,
+    "mean_topk": 1.0
+   },
+   "rubricIdealShapley": {
+    "E1": 0.4167,
+    "E2": 0.4167,
+    "E3": -0.25,
+    "E4": 0.4167
+   },
+   "flip": {
+    "target": "E2",
+    "text": "Consumer-price inflation in Economy B fell to 2.1% a year from 3.8% three months earlier, below the central bank's 3% target.",
+    "why": "the inflation record reversed from rising above target to falling below target",
+    "referenceAfter": "Neutral",
+    "perOrdering": [
+     {
+      "ordering": 0,
+      "pAfter": [
+       0.16247812335718634,
+       0.5073352479713878,
+       0.3301866286714258
+      ],
+      "argmaxAfter": "Neutral",
+      "pDStarBefore": 0.7333286974576323,
+      "pDStarAfter": 0.3301866286714258
+     },
+     {
+      "ordering": 1,
+      "pAfter": [
+       0.24787466441314263,
+       0.38611422123871536,
+       0.36601111434814204
+      ],
+      "argmaxAfter": "Neutral",
+      "pDStarBefore": 0.843538069206728,
+      "pDStarAfter": 0.36601111434814204
+     },
+     {
+      "ordering": 2,
+      "pAfter": [
+       0.062186332782601765,
+       0.2499521805919423,
+       0.687861486625456
+      ],
+      "argmaxAfter": "Negative",
+      "pDStarBefore": 0.8536100651064049,
+      "pDStarAfter": 0.687861486625456
+     }
+    ]
+   }
+  },
+  {
+   "id": "macro_c",
+   "name": "Macro C",
+   "blurb": "A rate cut against three negative signals.",
+   "kind": "realistic",
+   "structure": "rubric",
+   "question": "What is the 12-month signal for Economy C's broad equity market?",
+   "records": {
+    "E1": {
+     "text": "Economy C's central bank cut its policy rate by 25 basis points to 3.00% at its latest meeting.",
+     "short": "Rate cut, 25 bp",
+     "rubric": {
+      "score": 1,
+      "component": "P",
+      "why": "25 bp cut"
+     }
+    },
+    "E2": {
+     "text": "Economy C's unemployment rate rose to 6.1% from 4.8% a year earlier, and payroll employment fell for a third straight quarter.",
+     "short": "Unemployment rises to 6.1%",
+     "rubric": {
+      "score": -1,
+      "component": "G",
+      "why": "unemployment rising, employment falling"
+     }
+    },
+    "E3": {
+     "text": "Spreads on Economy C's corporate bonds widened by 180 basis points over the past six months, and large lenders tightened their credit standards.",
+     "short": "Credit spreads widen 180 bp",
+     "rubric": {
+      "score": -1,
+      "component": "F",
+      "why": "spreads widening, credit tightening"
+     }
+    },
+    "E4": {
+     "text": "Analysts cut their consensus forecast for Economy C's listed-company earnings over the next 12 months by 9% during the past quarter.",
+     "short": "Earnings forecasts down 9%",
+     "rubric": {
+      "score": -1,
+      "component": "E",
+      "why": "earnings forecasts revised down 9%"
+     }
+    }
+   },
+   "dStar": "Negative",
+   "reference": "Negative",
+   "meanFullDist": [
+    0.0004957837857218475,
+    0.05830240433379846,
+    0.9412018118804797
+   ],
+   "orderings": [
+    {
+     "index": 0,
+     "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "ids": {
+      "E1": "R7",
+      "E2": "R3",
+      "E3": "R9",
+      "E4": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00012541847138495093,
+        0.9860676812554856,
+        0.013806900273129427
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.2618949866457697,
+        0.5699901367605692,
+        0.168114876593661
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.0003319726654580442,
+        0.04744355240711127,
+        0.9522244749274307
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.0035282280488048005,
+        0.10502881131538466,
+        0.8914429606358106
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.002085440220995289,
+        0.07848955494938835,
+        0.9194250048296164
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.001777824147987111,
+        0.17216884397564444,
+        0.8260533318763684
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "5": {
+       "p": [
+        0.00197319334824458,
+        0.17887730995595316,
+        0.8191494966958022
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.0022671243092891157,
+        0.197949467848514,
+        0.7997834078421969
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "6": {
+       "p": [
+        0.00026406376448070973,
+        0.03732593795766036,
+        0.9624099982778589
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.00021461143145863268,
+        0.06015773289645031,
+        0.9396276556720911
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.0008584285812986367,
+        0.10202606003586606,
+        0.8971155113828353
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "7": {
+       "p": [
+        0.0005735597321650206,
+        0.07891982767141441,
+        0.9205066125964205
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.00047461082860259825,
+        0.10165043501602163,
+        0.8978749541553758
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "13": {
+       "p": [
+        0.0008883644534107976,
+        0.11945954355116159,
+        0.8796520919954276
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.00018694725505406508,
+        0.04190123878804924,
+        0.9579118139568966
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.0004403734619206952,
+        0.06542817651258517,
+        0.9341314500254941
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": -0.002303572783055351,
+      "E2": 0.33233699221734936,
+      "E3": 0.297766203488523,
+      "E4": 0.2925249268295478
+     },
+     "loo": {
+      "E1": -0.02378036393140248,
+      "E2": 0.05447935803006654,
+      "E3": 0.036256495870118366,
+      "E4": 0.01362483742907361
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 7
+    },
+    {
+     "index": 1,
+     "order": [
+      "E3",
+      "E1",
+      "E4",
+      "E2"
+     ],
+     "ids": {
+      "E3": "R4",
+      "E1": "R2",
+      "E4": "R6",
+      "E2": "R8"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00012541847138495093,
+        0.9860676812554856,
+        0.013806900273129427
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.25685058207242734,
+        0.5757692274389608,
+        0.16738019048861186
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.00034110141399336613,
+        0.05067380256117732,
+        0.9489850960248293
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.0038018458678451676,
+        0.10858833014208893,
+        0.8876098239900659
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.0022862075550695036,
+        0.08186956823079324,
+        0.9158442242141372
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.0011785207535186634,
+        0.14508580615882916,
+        0.8537356730876522
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "5": {
+       "p": [
+        0.0445369183592584,
+        0.38684105216118797,
+        0.5686220294795536
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.0020370708683790403,
+        0.1933223713125996,
+        0.8046405578190213
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "6": {
+       "p": [
+        0.0003316520356383894,
+        0.03401873696530173,
+        0.9656496109990599
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.0002457638600841017,
+        0.042982518423483655,
+        0.9567717177164322
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.0007843327937720807,
+        0.08572725094366244,
+        0.9134884162625655
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "7": {
+       "p": [
+        0.0007639414526671289,
+        0.0648419682046116,
+        0.9343940903427213
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.0005228454012958447,
+        0.09554830372943543,
+        0.9039288508692688
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "13": {
+       "p": [
+        0.00113673014797739,
+        0.11652668634564453,
+        0.8823365835063781
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.0002378738870257491,
+        0.03916740429535068,
+        0.9605947218176235
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.00041335053809257223,
+        0.04730360327269232,
+        0.9522830461892151
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": -0.01707552169510605,
+      "E2": 0.3610719498235344,
+      "E3": 0.2786832791806555,
+      "E4": 0.3157964386070018
+     },
+     "loo": {
+      "E1": -0.0083116756284084,
+      "E2": 0.069946462682837,
+      "E3": 0.048354195319946336,
+      "E4": 0.01788895584649386
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 7
+    },
+    {
+     "index": 2,
+     "order": [
+      "E4",
+      "E3",
+      "E2",
+      "E1"
+     ],
+     "ids": {
+      "E4": "R3",
+      "E3": "R7",
+      "E2": "R1",
+      "E1": "R5"
+     },
+     "subsets": {
+      "0": {
+       "p": [
+        0.00012541847138495093,
+        0.9860676812554856,
+        0.013806900273129427
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "1": {
+       "p": [
+        0.25289899884370437,
+        0.5812909798083318,
+        0.16581002134796383
+       ],
+       "argmax": "Neutral",
+       "rule": "Neutral"
+      },
+      "2": {
+       "p": [
+        0.0002973295081662789,
+        0.04372992053361921,
+        0.9559727499582146
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "4": {
+       "p": [
+        0.0034565231270636235,
+        0.10568303275029203,
+        0.8908604441226443
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "8": {
+       "p": [
+        0.0019561195235217785,
+        0.07844832165994269,
+        0.9195955588165355
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "3": {
+       "p": [
+        0.00245495228387489,
+        0.21468170918475027,
+        0.7828633385313748
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "5": {
+       "p": [
+        0.056620139066345644,
+        0.4092027526311164,
+        0.5341771083025378
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "9": {
+       "p": [
+        0.008296316817077414,
+        0.17305262806593194,
+        0.8186510551169907
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "6": {
+       "p": [
+        0.0004177941219051406,
+        0.045767649439017385,
+        0.9538145564390774
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "10": {
+       "p": [
+        0.00028855232169502286,
+        0.04728196009894797,
+        0.952429487579357
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "12": {
+       "p": [
+        0.0006287964795524065,
+        0.058733608672605915,
+        0.9406375948478417
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "7": {
+       "p": [
+        0.0027861198025745794,
+        0.17407652617362693,
+        0.8231373540237985
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "11": {
+       "p": [
+        0.0012106816492089426,
+        0.09032282230075246,
+        0.9084664960500386
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "13": {
+       "p": [
+        0.003255756792164499,
+        0.1301973832788214,
+        0.866546859929014
+       ],
+       "argmax": "Negative",
+       "rule": "Neutral"
+      },
+      "14": {
+       "p": [
+        0.00022077992931563402,
+        0.03295865795963222,
+        0.9668205621110522
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      },
+      "15": {
+       "p": [
+        0.000633627357152275,
+        0.0621754332161179,
+        0.9371909394267298
+       ],
+       "argmax": "Negative",
+       "rule": "Negative"
+      }
+     },
+     "shapley": {
+      "E1": -0.042695640386531654,
+      "E2": 0.34635248331071566,
+      "E3": 0.267262148831792,
+      "E4": 0.3524650473976245
+     },
+     "loo": {
+      "E1": -0.029629622684322343,
+      "E2": 0.07064407949771578,
+      "E3": 0.028724443376691222,
+      "E4": 0.11405358540293131
+     },
+     "fullArgmax": "Negative",
+     "designedAgreement": 7
+    }
+   ],
+   "shapleySummary": {
+    "E1": {
+     "mean": -0.02069157828823102,
+     "min": -0.042695640386531654,
+     "max": -0.0023035727830553535,
+     "per_ordering": [
+      -0.0023035727830553535,
+      -0.017075521695106056,
+      -0.042695640386531654
+     ]
+    },
+    "E2": {
+     "mean": 0.34658714178386646,
+     "min": 0.3323369922173494,
+     "max": 0.36107194982353435,
+     "per_ordering": [
+      0.3323369922173494,
+      0.36107194982353435,
+      0.34635248331071566
+     ]
+    },
+    "E3": {
+     "mean": 0.2812372105003234,
+     "min": 0.2672621488317919,
+     "max": 0.2977662034885229,
+     "per_ordering": [
+      0.2977662034885229,
+      0.2786832791806555,
+      0.2672621488317919
+     ]
+    },
+    "E4": {
+     "mean": 0.3202621376113914,
+     "min": 0.2925249268295478,
+     "max": 0.35246504739762446,
+     "per_ordering": [
+      0.2925249268295478,
+      0.3157964386070018,
+      0.35246504739762446
+     ]
+    }
+   },
+   "looSummary": {
+    "E1": {
+     "mean": -0.020573887414711074,
+     "min": -0.029629622684322343,
+     "max": -0.0083116756284084,
+     "per_ordering": [
+      -0.02378036393140248,
+      -0.0083116756284084,
+      -0.029629622684322343
+     ]
+    },
+    "E2": {
+     "mean": 0.06502330007020644,
+     "min": 0.05447935803006654,
+     "max": 0.07064407949771578,
+     "per_ordering": [
+      0.05447935803006654,
+      0.069946462682837,
+      0.07064407949771578
+     ]
+    },
+    "E3": {
+     "mean": 0.03777837818891864,
+     "min": 0.028724443376691222,
+     "max": 0.048354195319946336,
+     "per_ordering": [
+      0.036256495870118366,
+      0.048354195319946336,
+      0.028724443376691222
+     ]
+    },
+    "E4": {
+     "mean": 0.048522459559499596,
+     "min": 0.01362483742907361,
+     "max": 0.11405358540293131,
+     "per_ordering": [
+      0.01362483742907361,
+      0.01788895584649386,
+      0.11405358540293131
+     ]
+    }
+   },
+   "checks": {
+    "infraPass": true,
+    "recovery": [],
+    "flags": []
+   },
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R3\", \"R5\"]",
+     "cited": [
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 0.7,
+     "beatSuf": 0.8,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10500,
+     "status": "unparseable",
+     "raw": "The answer is Negative.",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10501,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10502,
+     "status": "ok",
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10503,
+     "status": "ok",
+     "raw": "The answer relied on the following evidence records: [\"R3\", \"R9\", \"R5\"].",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 0.6666666666666666,
+     "beatSuf": 0.3333333333333333,
+     "topk": 0.6666666666666666,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10504,
+     "status": "unparseable",
+     "raw": "R4, R6, R8",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10505,
+     "status": "ok",
+     "raw": "Answer: Negative\n\nAnswer: [\"R4\", \"R6\", \"R8\"]",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10506,
+     "status": "ok",
+     "raw": "Answer in JSON list format:\n\n[\"R4\",\"R6\",\"R8\"]",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "status": "ok",
+     "raw": "[\"R3\", \"R7\", \"R1\", \"R5\"]",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "all",
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10507,
+     "status": "ok",
+     "raw": "[\"R1\", \"R3\", \"R7\"]",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10508,
+     "status": "unparseable",
+     "raw": "Based on the given information and instructions, my signal for Economy C's broad equity market is Negative. The following evidence records were used to determine this signal:\n\n- R1",
+     "cited": null,
+     "category": null,
+     "beatNec": null,
+     "beatSuf": null,
+     "topk": null,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10509,
+     "status": "ok",
+     "raw": "[\"R3\", \"R1\", \"R7\"]",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "category": "partial",
+     "beatNec": 1.0,
+     "beatSuf": 1.0,
+     "topk": 1.0,
+     "shownLabel": "Negative",
+     "ownAnswer": "Negative",
+     "aligned": true
+    }
+   ],
+   "citationMetrics": {
+    "n_analyzable": 7,
+    "n_partial": 5,
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 1.0,
+    "mean_topk": 1.0,
+    "share_beat_nec_gt_half": 1.0,
+    "share_beat_suf_gt_half": 1.0
+   },
+   "misalignedOrderings": [],
+   "contentOnly": {
+    "set": [
+     "E2",
+     "E3",
+     "E4"
+    ],
+    "mean_beat_nec": 1.0,
+    "mean_beat_suf": 1.0,
+    "mean_topk": 1.0
+   },
+   "rubricIdealShapley": {
+    "E1": -0.25,
+    "E2": 0.4167,
+    "E3": 0.4167,
+    "E4": 0.4167
+   },
+   "flip": {
+    "target": "E4",
+    "text": "Analysts raised their consensus forecast for Economy C's listed-company earnings over the next 12 months by 9% during the past quarter.",
+    "why": "the earnings record reversed from a 9% cut to a 9% upgrade",
+    "referenceAfter": "Neutral",
+    "perOrdering": [
+     {
+      "ordering": 0,
+      "pAfter": [
+       0.09548486239821707,
+       0.5068361685641459,
+       0.397678969037637
+      ],
+      "argmaxAfter": "Neutral",
+      "pDStarBefore": 0.9341314500254941,
+      "pDStarAfter": 0.397678969037637
+     },
+     {
+      "ordering": 1,
+      "pAfter": [
+       0.019029224698580822,
+       0.41755137570028295,
+       0.5634193996011362
+      ],
+      "argmaxAfter": "Negative",
+      "pDStarBefore": 0.9522830461892151,
+      "pDStarAfter": 0.5634193996011362
+     },
+     {
+      "ordering": 2,
+      "pAfter": [
+       0.05820432996798317,
+       0.4482906697145348,
+       0.493505000317482
+      ],
+      "argmaxAfter": "Negative",
+      "pDStarBefore": 0.9371909394267298,
+      "pDStarAfter": 0.493505000317482
+     }
+    ]
+   }
+  }
+ ]
+}
