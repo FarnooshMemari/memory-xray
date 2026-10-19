@@ -1,0 +1,37 @@
+{
+  "scenario_id": "macro_a",
+  "kind": "realistic",
+  "structure": "rubric",
+  "status": "frozen (amendment 2)",
+  "question": "What is the 12-month signal for Economy A's broad equity market?",
+  "records": {
+    "E1": "Economy A's central bank lowered its policy rate by 50 basis points to 4.25% at its latest meeting and said further cuts are possible if inflation keeps easing.",
+    "E2": "Core consumer-price inflation in Economy A slowed to 2.4% a year from 3.9% a year earlier, close to the central bank's 2% target.",
+    "E3": "Economy A's manufacturing purchasing managers' index fell to 47.6, its fourth straight month below the 50 level that separates expansion from contraction.",
+    "E4": "Analysts raised their consensus forecast for Economy A's listed-company earnings over the next 12 months by 4% during the past quarter."
+  },
+  "rubric": {
+    "rubric_id": "rubric_macro_v1",
+    "scores": {
+      "E1": {"component": "P", "score": 1, "why": "50 bp cut with an easing bias"},
+      "E2": {"component": "I", "score": 1, "why": "inflation falling to near target"},
+      "E3": {"component": "G", "score": -1, "why": "PMI below 50 for four months"},
+      "E4": {"component": "E", "score": 1, "why": "earnings forecasts revised up 4%"}
+    },
+    "total": 2,
+    "reference_answer": "Positive"
+  },
+  "flip": {
+    "target": "E1",
+    "record": "Economy A's central bank raised its policy rate by 50 basis points to 5.25% at its latest meeting and said further increases are possible if inflation does not keep easing.",
+    "score": -1,
+    "why": "the policy record reversed from a cut to a hike",
+    "total": 0,
+    "reference_answer": "Neutral",
+    "selection_rule": "Chosen at authoring time, before any model output: the most salient supportive record (the policy decision). Reversing it moves the rubric score from +2 to 0."
+  },
+  "designed": {
+    "answer_rule": {"type": "rubric", "thresholds": {"positive_min": 2, "negative_max": -2}},
+    "notes": "Mixed evidence: three supportive records and one contrary record (manufacturing contraction)."
+  }
+}

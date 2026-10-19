@@ -1,0 +1,76 @@
+{
+  "name": "GPT-6",
+  "date": "2026-10-17",
+  "instructions": "Fill every null. component: one of P, I, G, E, F. score: -1, 0 or 1 (a number, not text). flip_target_score: the score of the flipped record's new text. signal / flip_signal: Positive, Neutral or Negative, following the rubric.",
+  "labels": {
+    "macro_a": {
+      "records": {
+        "E1": {
+          "component": "P",
+          "score": 1
+        },
+        "E2": {
+          "component": "I",
+          "score": 1
+        },
+        "E3": {
+          "component": "G",
+          "score": -1
+        },
+        "E4": {
+          "component": "E",
+          "score": 1
+        }
+      },
+      "flip_target_score": -1,
+      "signal": "Positive",
+      "flip_signal": "Neutral"
+    },
+    "macro_b": {
+      "records": {
+        "E1": {
+          "component": "P",
+          "score": -1
+        },
+        "E2": {
+          "component": "I",
+          "score": -1
+        },
+        "E3": {
+          "component": "G",
+          "score": 1
+        },
+        "E4": {
+          "component": "E",
+          "score": -1
+        }
+      },
+      "flip_target_score": 1,
+      "signal": "Negative",
+      "flip_signal": "Neutral"
+    },
+    "macro_c": {
+      "records": {
+        "E1": {
+          "component": "P",
+          "score": 1
+        },
+        "E2": {
+          "component": "G",
+          "score": -1
+        },
+        "E3": {
+          "component": "F",
+          "score": -1
+        },
+        "E4": {
+          "component": "E",
+          "score": -1
+        }
+      },
+      "flip_target_score": 1,
+      "signal": "Negative",
+      "flip_signal": "Neutral"
+    }
+  }
+}

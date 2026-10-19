@@ -1,0 +1,10 @@
+# Full offline test suite on CPU, including the tiny Hugging Face model tests
+# (randomly initialized tiny models built in memory; nothing is downloaded).
+# Install PyTorch first for your platform if pip cannot pick a suitable wheel:
+#   https://pytorch.org/get-started/locally/
+-r requirements.txt
+torch>=2.1
+transformers>=4.41.2
+# Notebook tooling, used only to re-execute notebooks/explore_results.ipynb
+nbconvert>=7.0
+ipykernel>=6.0

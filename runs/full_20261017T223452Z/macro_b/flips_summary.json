@@ -1,0 +1,25 @@
+{
+  "target": "E2",
+  "argmax_per_ordering": [
+    "Neutral",
+    "Neutral",
+    "Negative"
+  ],
+  "moved_away_all_orderings": false,
+  "p_d_star_original": [
+    0.7333286974576323,
+    0.843538069206728,
+    0.8536100651064049
+  ],
+  "p_d_star_flipped": [
+    0.3301866286714258,
+    0.36601111434814204,
+    0.687861486625456
+  ],
+  "rubric_reference_flipped": "Neutral",
+  "diagnostics": {
+    "all_finite": true,
+    "min_label_mass": 0.985904535974536,
+    "greedy_matches": 3
+  }
+}

@@ -1,0 +1,12 @@
+Memory X-Ray — rubric label files (AI-assisted validation)
+
+labeler_1.json: GPT-6, 2026-10-17.
+labeler_2.json: Gemini, 2026-10-17.
+Both labels generated independently by AI models, NOT by human annotators.
+
+Validation against package v0.2.3 using mxr.labels.label_gate: PASS.
+Record-level agreement: 15/15 between the two models; each matches the frozen reference scores on 15/15 items.
+
+To use, copy the two JSON files into records/labels/ of the project and run python check_labels.py.
+
+Research protocol currently requires two HUMAN annotators. A documented amendment changing G2 to AI-assisted validation is required before the full experiment. The pass above is technical only, not evidence of two-human validation.

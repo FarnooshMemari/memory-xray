@@ -1,0 +1,17 @@
+[
+  {
+    "subset": "E1+E2+E3+E4",
+    "ordering": 0,
+    "max_abs_diff": 0.0
+  },
+  {
+    "subset": "none",
+    "ordering": 1,
+    "max_abs_diff": 0.0
+  },
+  {
+    "subset": "E2",
+    "ordering": 2,
+    "max_abs_diff": 0.0
+  }
+]

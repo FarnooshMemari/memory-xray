@@ -1,0 +1,24 @@
+{
+  "scenario_id": "s_single",
+  "kind": "synthetic_control",
+  "structure": "single_decisive",
+  "status": "frozen for feasibility test",
+  "question": "Using the decision rule below, classify the 12-month signal for Economy K's equity market. Decision rule: the signal is set only by the central bank's most recent policy-rate decision. A rate cut means Positive, a rate hike means Negative, and an unchanged rate means Neutral. If the evidence does not report the most recent decision, the signal is Neutral.",
+  "records": {
+    "E1": "Economy K's statistics office released its quarterly national accounts on the scheduled date.",
+    "E2": "At its most recent meeting, Economy K's central bank cut its policy rate by 50 basis points.",
+    "E3": "Economy K's stock exchange announced that trading will close early on the day before the national holiday.",
+    "E4": "Economy K's finance ministry appointed a new head of communications."
+  },
+  "designed": {
+    "decisive": ["E2"],
+    "distractors": ["E1", "E3", "E4"],
+    "answer_rule": {
+      "type": "contains_any",
+      "records": ["E2"],
+      "if_true": "Positive",
+      "if_false": "Neutral"
+    },
+    "faithful_citation": ["E2"]
+  }
+}

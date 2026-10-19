@@ -1,0 +1,3485 @@
+{
+ "run_id": "full_20261017T223452Z",
+ "scenarios": {
+  "s_single": {
+   "kind": "synthetic_control",
+   "structure": "single_decisive",
+   "d_star": "Positive",
+   "designed_full": "Positive",
+   "mean_full_dist": {
+    "Positive": 0.9993813528568322,
+    "Neutral": 0.0002651875870986704,
+    "Negative": 0.0003534595560691312
+   },
+   "per_ordering": [
+    {
+     "ordering": 0,
+     "v": {
+      "none": 4.829535909678433e-05,
+      "E1": 0.00031107266655716045,
+      "E2": 0.9994372685598014,
+      "E3": 0.00042248120627923577,
+      "E4": 0.00022901400622153017,
+      "E1+E2": 0.9982699423299874,
+      "E1+E3": 0.00023910787116073482,
+      "E1+E4": 0.00024334399989959442,
+      "E2+E3": 0.9990999948118413,
+      "E2+E4": 0.9994389127038265,
+      "E3+E4": 0.00026693757371754084,
+      "E1+E2+E3": 0.9985406725121715,
+      "E1+E2+E4": 0.9989036317335922,
+      "E1+E3+E4": 0.00018599065700066568,
+      "E2+E3+E4": 0.9995119080094166,
+      "E1+E2+E3+E4": 0.9991699105762981
+     },
+     "phi": {
+      "E1": -0.00022913167790413575,
+      "E2": 0.998930982011417,
+      "E3": 0.00015303760322331783,
+      "E4": 0.0002667272804649873
+     },
+     "loo": {
+      "E1": -0.0003419974331184683,
+      "E2": 0.9989839199192975,
+      "E3": 0.00026627884270591373,
+      "E4": 0.0006292380641266249
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Neutral",
+      "E2": "Positive",
+      "E3": "Neutral",
+      "E4": "Neutral",
+      "E1+E2": "Positive",
+      "E1+E3": "Neutral",
+      "E1+E4": "Neutral",
+      "E2+E3": "Positive",
+      "E2+E4": "Positive",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Positive",
+      "E1+E2+E4": "Positive",
+      "E1+E3+E4": "Neutral",
+      "E2+E3+E4": "Positive",
+      "E1+E2+E3+E4": "Positive"
+     },
+     "v_full": 0.9991699105762981,
+     "v_empty": 4.829535909678433e-05,
+     "total": 0.9991216152172013,
+     "full_dist": {
+      "Positive": 0.9991699105762981,
+      "Neutral": 0.00040064958997957815,
+      "Negative": 0.0004294398337222672
+     },
+     "full_argmax": "Positive",
+     "designed_agreement": 16
+    },
+    {
+     "ordering": 1,
+     "v": {
+      "none": 4.829535909678433e-05,
+      "E1": 0.00028624438064264734,
+      "E2": 0.9994474684444755,
+      "E3": 0.0003803720450248082,
+      "E4": 0.00026725661851166767,
+      "E1+E2": 0.9988474113455482,
+      "E1+E3": 0.00041043980232040506,
+      "E1+E4": 0.00022827684870349168,
+      "E2+E3": 0.9991768857718052,
+      "E2+E4": 0.9993241348834613,
+      "E3+E4": 0.00018727113454766452,
+      "E1+E2+E3": 0.9992221189737461,
+      "E1+E2+E4": 0.9994389815155574,
+      "E1+E3+E4": 0.0001532860299284546,
+      "E2+E3+E4": 0.9994736012244075,
+      "E1+E2+E3+E4": 0.9994543212446841
+     },
+     "phi": {
+      "E1": 1.4427728620450738e-05,
+      "E2": 0.9991519914820982,
+      "E3": 0.00010542163838139596,
+      "E4": 0.00013418503648731256
+     },
+     "loo": {
+      "E1": -1.927997972339668e-05,
+      "E2": 0.9993010352147557,
+      "E3": 1.5339729126706558e-05,
+      "E4": 0.00023220227093800894
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Neutral",
+      "E2": "Positive",
+      "E3": "Neutral",
+      "E4": "Neutral",
+      "E1+E2": "Positive",
+      "E1+E3": "Neutral",
+      "E1+E4": "Neutral",
+      "E2+E3": "Positive",
+      "E2+E4": "Positive",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Positive",
+      "E1+E2+E4": "Positive",
+      "E1+E3+E4": "Neutral",
+      "E2+E3+E4": "Positive",
+      "E1+E2+E3+E4": "Positive"
+     },
+     "v_full": 0.9994543212446841,
+     "v_empty": 4.829535909678433e-05,
+     "total": 0.9994060258855874,
+     "full_dist": {
+      "Positive": 0.9994543212446841,
+      "Neutral": 0.00020370661126738385,
+      "Negative": 0.0003419721440484823
+     },
+     "full_argmax": "Positive",
+     "designed_agreement": 16
+    },
+    {
+     "ordering": 2,
+     "v": {
+      "none": 4.829535909678433e-05,
+      "E1": 0.00033234997617567595,
+      "E2": 0.9994018791252196,
+      "E3": 0.0003707225033415328,
+      "E4": 0.00021973379997742076,
+      "E1+E2": 0.9992795107012111,
+      "E1+E3": 0.0004088041981500574,
+      "E1+E4": 0.00016459337072254803,
+      "E2+E3": 0.9987603955775766,
+      "E2+E4": 0.9990431038529876,
+      "E3+E4": 0.00015610964960625454,
+      "E1+E2+E3": 0.9990442867814106,
+      "E1+E2+E4": 0.9994909229309055,
+      "E1+E3+E4": 0.00019867349294699026,
+      "E2+E3+E4": 0.9994572297965938,
+      "E1+E2+E3+E4": 0.9995198267495142
+     },
+     "phi": {
+      "E1": 0.00013956680638631545,
+      "E2": 0.9991206122675651,
+      "E3": 5.319346321256716e-05,
+      "E4": 0.0001581588532534158
+     },
+     "loo": {
+      "E1": 6.25969529204351e-05,
+      "E2": 0.9993211532565672,
+      "E3": 2.89038186087609e-05,
+      "E4": 0.0004755399681036776
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Neutral",
+      "E2": "Positive",
+      "E3": "Neutral",
+      "E4": "Neutral",
+      "E1+E2": "Positive",
+      "E1+E3": "Neutral",
+      "E1+E4": "Neutral",
+      "E2+E3": "Positive",
+      "E2+E4": "Positive",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Positive",
+      "E1+E2+E4": "Positive",
+      "E1+E3+E4": "Neutral",
+      "E2+E3+E4": "Positive",
+      "E1+E2+E3+E4": "Positive"
+     },
+     "v_full": 0.9995198267495142,
+     "v_empty": 4.829535909678433e-05,
+     "total": 0.9994715313904174,
+     "full_dist": {
+      "Positive": 0.9995198267495142,
+      "Neutral": 0.00019120656004904924,
+      "Negative": 0.00028896669043664404
+     },
+     "full_argmax": "Positive",
+     "designed_agreement": 16
+    }
+   ],
+   "checks": {
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true
+   },
+   "infra": {
+    "I1": true,
+    "I2": true,
+    "I3": true,
+    "I4": true,
+    "I5": true,
+    "I6": true,
+    "I7": true,
+    "I8": true,
+    "I9": true,
+    "_max_recompute_diff": 8.344650268554688e-05,
+    "_min_label_mass": 0.970346356095598,
+    "_greedy_matches": 48,
+    "_max_repeat_diff": 0.0
+   },
+   "saved_flags": [],
+   "flips": null,
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R3\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9989839199192975,
+      "sufficiency": 0.0002673579835033024,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10000,
+     "raw": "To identify which evidence record IDs are relevant to the given question concerning Economy K's 12-month signal, we must evaluate the provided evidence against the decision rule. The decision rule clearly",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10001,
+     "raw": "```json\n\n[\"R3\"]\n\n```",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9989839199192975,
+      "sufficiency": 0.0002673579835033024,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10002,
+     "raw": "Referenced evidence: [\"R3\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9989839199192975,
+      "sufficiency": 0.0002673579835033024,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10003,
+     "raw": "```json\n\n[\"R3\"]\n\n```",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9989839199192975,
+      "sufficiency": 0.0002673579835033024,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9993010352147557,
+      "sufficiency": -6.852800208623222e-06,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10004,
+     "raw": "In order to construct a more challenging instruction, I will create a hypothetical scenario involving several different measures that could influence the security market in Duchy L. I will then posit a complex question",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10005,
+     "raw": "[\"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9993010352147557,
+      "sufficiency": -6.852800208623222e-06,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10006,
+     "raw": "```\n\n[\"R8\"]\n\n```",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9993010352147557,
+      "sufficiency": -6.852800208623222e-06,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R1\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9993211532565672,
+      "sufficiency": -0.00011794762429462313,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10007,
+     "raw": "Answer with evidence IDs: [\"R1\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9993211532565672,
+      "sufficiency": -0.00011794762429462313,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10008,
+     "raw": "Signal: Positive\n\nEvidence records relied on: [\"R1\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9993211532565672,
+      "sufficiency": -0.00011794762429462313,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10009,
+     "raw": "[\"R1\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.9993211532565672,
+      "sufficiency": -0.00011794762429462313,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    }
+   ],
+   "order_positions": {
+    "0": {
+     "E1": 0,
+     "E2": 1,
+     "E3": 2,
+     "E4": 3
+    },
+    "1": {
+     "E1": 1,
+     "E2": 3,
+     "E3": 0,
+     "E4": 2
+    },
+    "2": {
+     "E1": 3,
+     "E2": 2,
+     "E3": 1,
+     "E4": 0
+    }
+   }
+  },
+  "s_redundant": {
+   "kind": "synthetic_control",
+   "structure": "redundant",
+   "d_star": "Negative",
+   "designed_full": "Negative",
+   "mean_full_dist": {
+    "Positive": 0.00022008341549668462,
+    "Neutral": 0.027355578631964323,
+    "Negative": 0.972424337952539
+   },
+   "per_ordering": [
+    {
+     "ordering": 0,
+     "v": {
+      "none": 0.000391082093562062,
+      "E1": 0.9707525799478042,
+      "E2": 0.05110028336571209,
+      "E3": 0.9691067196765117,
+      "E4": 0.0013785175535589208,
+      "E1+E2": 0.9754070921913801,
+      "E1+E3": 0.9759681179597377,
+      "E1+E4": 0.9739371004037264,
+      "E2+E3": 0.9741754270829954,
+      "E2+E4": 0.020681598126651726,
+      "E3+E4": 0.9778143154885987,
+      "E1+E2+E3": 0.973671646951584,
+      "E1+E2+E4": 0.9794111263516331,
+      "E1+E3+E4": 0.9704051315643648,
+      "E2+E3+E4": 0.976290198082513,
+      "E1+E2+E3+E4": 0.9727601206841376
+     },
+     "phi": {
+      "E1": 0.479586467958,
+      "E2": 0.015822692411049038,
+      "E3": 0.47843846344061014,
+      "E4": -0.0014785852190835134
+     },
+     "loo": {
+      "E1": -0.0035300773983754086,
+      "E2": 0.0023549891197728323,
+      "E3": -0.006651005667495435,
+      "E4": -0.0009115262674463942
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Negative",
+      "E2": "Neutral",
+      "E3": "Negative",
+      "E4": "Neutral",
+      "E1+E2": "Negative",
+      "E1+E3": "Negative",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Neutral",
+      "E3+E4": "Negative",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.9727601206841376,
+     "v_empty": 0.000391082093562062,
+     "total": 0.9723690385905756,
+     "full_dist": {
+      "Positive": 0.0001376673165068376,
+      "Neutral": 0.02710221199935557,
+      "Negative": 0.9727601206841376
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 16
+    },
+    {
+     "ordering": 1,
+     "v": {
+      "none": 0.000391082093562062,
+      "E1": 0.9699878035803322,
+      "E2": 0.05179957882820898,
+      "E3": 0.9693503016596351,
+      "E4": 0.0013942139031337885,
+      "E1+E2": 0.9768193701187681,
+      "E1+E3": 0.972873625166355,
+      "E1+E4": 0.9754790037243929,
+      "E2+E3": 0.97476448360126,
+      "E2+E4": 0.022094623133992575,
+      "E3+E4": 0.9787000686489612,
+      "E1+E2+E3": 0.96492743612041,
+      "E1+E2+E4": 0.9807696643418935,
+      "E1+E3+E4": 0.971612388991601,
+      "E2+E3+E4": 0.97838700416176,
+      "E1+E2+E3+E4": 0.9669112825775218
+     },
+     "phi": {
+      "E1": 0.4765617681996519,
+      "E2": 0.014174977979748104,
+      "E3": 0.47574941056721853,
+      "E4": 3.404373734103394e-05
+     },
+     "loo": {
+      "E1": -0.011475721584238263,
+      "E2": -0.00470110641407917,
+      "E3": -0.013858381764371708,
+      "E4": 0.001983846457111804
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Negative",
+      "E2": "Neutral",
+      "E3": "Negative",
+      "E4": "Neutral",
+      "E1+E2": "Negative",
+      "E1+E3": "Negative",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Neutral",
+      "E3+E4": "Negative",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.9669112825775218,
+     "v_empty": 0.000391082093562062,
+     "total": 0.9665202004839597,
+     "full_dist": {
+      "Positive": 0.00032324539079853844,
+      "Neutral": 0.03276547203167968,
+      "Negative": 0.9669112825775218
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 16
+    },
+    {
+     "ordering": 2,
+     "v": {
+      "none": 0.000391082093562062,
+      "E1": 0.9710943624992089,
+      "E2": 0.055159336165205866,
+      "E3": 0.9695184080875865,
+      "E4": 0.0014239700289277852,
+      "E1+E2": 0.9427626530523969,
+      "E1+E3": 0.973804124798527,
+      "E1+E4": 0.976167326543208,
+      "E2+E3": 0.9719469859370027,
+      "E2+E4": 0.0370069510314946,
+      "E3+E4": 0.9817351777250367,
+      "E1+E2+E3": 0.9663619428448967,
+      "E1+E2+E4": 0.9707766975867461,
+      "E1+E3+E4": 0.9825992443700942,
+      "E2+E3+E4": 0.9843423799542085,
+      "E1+E2+E3+E4": 0.9776016105959576
+     },
+     "phi": {
+      "E1": 0.4739640577802336,
+      "E2": 0.012397175134731039,
+      "E3": 0.4837526644432525,
+      "E4": 0.007096631144178346
+     },
+     "loo": {
+      "E1": -0.006740769358250853,
+      "E2": -0.004997633774136534,
+      "E3": 0.0068249130092115085,
+      "E4": 0.011239667751060889
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Negative",
+      "E2": "Neutral",
+      "E3": "Negative",
+      "E4": "Neutral",
+      "E1+E2": "Negative",
+      "E1+E3": "Negative",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Neutral",
+      "E3+E4": "Negative",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.9776016105959576,
+     "v_empty": 0.000391082093562062,
+     "total": 0.9772105285023955,
+     "full_dist": {
+      "Positive": 0.0001993375391846778,
+      "Neutral": 0.02219905186485772,
+      "Negative": 0.9776016105959576
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 16
+    }
+   ],
+   "checks": {
+    "BR1": true,
+    "BR2": true,
+    "BR3": true,
+    "BR4": true,
+    "BR5": true,
+    "BR6": true
+   },
+   "infra": {
+    "I1": true,
+    "I2": true,
+    "I3": true,
+    "I4": true,
+    "I5": true,
+    "I6": true,
+    "I7": true,
+    "I8": true,
+    "I9": true,
+    "_max_recompute_diff": 3.0040740966796875e-05,
+    "_min_label_mass": 0.9734689804278157,
+    "_greedy_matches": 48,
+    "_max_repeat_diff": 0.0
+   },
+   "saved_flags": [],
+   "flips": null,
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R7\", \"R9\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.9520785225574859,
+      "sufficiency": 0.0032079972756000608,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.6,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10100,
+     "raw": "Based on the decision rule provided in the instruction, an official report of the central bank's policy-rate decision at its most recent meeting dictates the 12-month signal for Economy",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10101,
+     "raw": "[\"R7\", \"R9\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.9520785225574859,
+      "sufficiency": 0.0032079972756000608,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.6,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10102,
+     "raw": "[\"R7\", \"R9\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.9520785225574859,
+      "sufficiency": 0.0032079972756000608,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.6,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10103,
+     "raw": "[\"R7\", \"R9\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.9520785225574859,
+      "sufficiency": 0.0032079972756000608,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.6,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R4\", \"R2\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.9448166594435292,
+      "sufficiency": 0.005962342588833214,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.6,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10104,
+     "raw": "[\"R4\", \"R2\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.9448166594435292,
+      "sufficiency": 0.005962342588833214,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.6,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10105,
+     "raw": "[\"R4\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": -0.013858381764371708,
+      "sufficiency": 0.002439019082113303,
+      "category": "partial",
+      "beat_nec": 0.3333333333333333,
+      "beat_suf": 0.8333333333333334,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10106,
+     "raw": "Answer: Negative\n\n[R4], [R2]",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R7\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.940594659564463,
+      "sufficiency": -0.0037974857974306664,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.7,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10107,
+     "raw": "Signal: Negative\n\nThe decision regarding the policy impact on the equity market of Economy L is based strictly on the central bank's policy-rate decisions. According to the",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10108,
+     "raw": "Signal: Negative\n\nReasoning: According to the provided decision rule, the classification of the signal for Economy L's equity market should be based solely on the central",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10109,
+     "raw": "```json\n\n[\"R7\", \"R5\"]\n\n```",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.940594659564463,
+      "sufficiency": -0.0037974857974306664,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.7,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    }
+   ],
+   "order_positions": {
+    "0": {
+     "E1": 0,
+     "E2": 1,
+     "E3": 2,
+     "E4": 3
+    },
+    "1": {
+     "E1": 1,
+     "E2": 3,
+     "E3": 0,
+     "E4": 2
+    },
+    "2": {
+     "E1": 3,
+     "E2": 2,
+     "E3": 1,
+     "E4": 0
+    }
+   }
+  },
+  "s_conflict": {
+   "kind": "synthetic_control",
+   "structure": "conflict",
+   "d_star": "Positive",
+   "designed_full": "Positive",
+   "mean_full_dist": {
+    "Positive": 0.47422374780092486,
+    "Neutral": 0.08992316856480488,
+    "Negative": 0.43585308363427017
+   },
+   "per_ordering": [
+    {
+     "ordering": 0,
+     "v": {
+      "none": 0.00039111886477864104,
+      "E1": 0.9975384898991769,
+      "E2": 0.002606338460245013,
+      "E3": 0.0030324883839763523,
+      "E4": 0.005111173222151474,
+      "E1+E2": 0.21576636303045804,
+      "E1+E3": 0.9928406708283031,
+      "E1+E4": 0.9951061495813148,
+      "E2+E3": 0.004491977936289267,
+      "E2+E4": 0.004360863767818915,
+      "E3+E4": 0.0035182975974453806,
+      "E1+E2+E3": 0.30177538034528917,
+      "E1+E2+E4": 0.2876962188661231,
+      "E1+E3+E4": 0.9948814036278523,
+      "E2+E3+E4": 0.005275129082858144,
+      "E1+E2+E3+E4": 0.3648624051637376
+     },
+     "phi": {
+      "E1": 0.6529290823547705,
+      "E2": -0.3384327227574564,
+      "E3": 0.026809679075609043,
+      "E4": 0.023165247626035633
+     },
+     "loo": {
+      "E1": 0.3595872760808794,
+      "E2": -0.6300189984641147,
+      "E3": 0.07716618629761446,
+      "E4": 0.06308702481844841
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Positive",
+      "E2": "Negative",
+      "E3": "Neutral",
+      "E4": "Neutral",
+      "E1+E2": "Negative",
+      "E1+E3": "Positive",
+      "E1+E4": "Positive",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Positive",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.3648624051637376,
+     "v_empty": 0.00039111886477864104,
+     "total": 0.3644712862989589,
+     "full_dist": {
+      "Positive": 0.3648624051637376,
+      "Neutral": 0.1454323933897112,
+      "Negative": 0.48970520144655116
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 12
+    },
+    {
+     "ordering": 1,
+     "v": {
+      "none": 0.00039111886477864104,
+      "E1": 0.9976250619337911,
+      "E2": 0.003021798696016761,
+      "E3": 0.00233313223061204,
+      "E4": 0.006832509682260769,
+      "E1+E2": 0.20633132220014339,
+      "E1+E3": 0.9970306068647851,
+      "E1+E4": 0.995934200483499,
+      "E2+E3": 0.002833210956422503,
+      "E2+E4": 0.0035250807720428523,
+      "E3+E4": 0.00204501370911331,
+      "E1+E2+E3": 0.25528299634555535,
+      "E1+E2+E4": 0.3574341490017486,
+      "E1+E3+E4": 0.9975723077815754,
+      "E2+E3+E4": 0.007564290062830471,
+      "E1+E2+E3+E4": 0.4271952259965218
+     },
+     "phi": {
+      "E1": 0.6699657894699125,
+      "E2": -0.32267239011889715,
+      "E3": 0.02201397691952902,
+      "E4": 0.05749673086119869
+     },
+     "loo": {
+      "E1": 0.41963093593369133,
+      "E2": -0.5703770817850535,
+      "E3": 0.06976107699477324,
+      "E4": 0.17191222965096647
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Positive",
+      "E2": "Negative",
+      "E3": "Neutral",
+      "E4": "Neutral",
+      "E1+E2": "Negative",
+      "E1+E3": "Positive",
+      "E1+E4": "Positive",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Positive",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.4271952259965218,
+     "v_empty": 0.00039111886477864104,
+     "total": 0.42680410713174316,
+     "full_dist": {
+      "Positive": 0.4271952259965218,
+      "Neutral": 0.07545821864587536,
+      "Negative": 0.4973465553576028
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 12
+    },
+    {
+     "ordering": 2,
+     "v": {
+      "none": 0.00039111886477864104,
+      "E1": 0.9976445228063687,
+      "E2": 0.0018477426883134883,
+      "E3": 0.002249573026615453,
+      "E4": 0.0049188178919325745,
+      "E1+E2": 0.5532535965004706,
+      "E1+E3": 0.9966995650598006,
+      "E1+E4": 0.9974239767833815,
+      "E2+E3": 0.0029708175997975672,
+      "E2+E4": 0.002600184983109083,
+      "E3+E4": 0.004164434093245114,
+      "E1+E2+E3": 0.6680895597556239,
+      "E1+E2+E4": 0.6784177750962592,
+      "E1+E3+E4": 0.9983618366918185,
+      "E2+E3+E4": 0.003166039940576168,
+      "E1+E2+E3+E4": 0.6306136122425152
+     },
+     "phi": {
+      "E1": 0.8122998056945774,
+      "E2": -0.1827898098052344,
+      "E3": -0.0018394762157029625,
+      "E4": 0.0025519737040965774
+     },
+     "loo": {
+      "E1": 0.627447572301939,
+      "E2": -0.36774822444930333,
+      "E3": -0.047804162853744,
+      "E4": -0.037475947513108676
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Positive",
+      "E2": "Negative",
+      "E3": "Neutral",
+      "E4": "Neutral",
+      "E1+E2": "Positive",
+      "E1+E3": "Positive",
+      "E1+E4": "Positive",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Positive",
+      "E1+E2+E4": "Positive",
+      "E1+E3+E4": "Positive",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Positive"
+     },
+     "v_full": 0.6306136122425152,
+     "v_empty": 0.00039111886477864104,
+     "total": 0.6302224933777366,
+     "full_dist": {
+      "Positive": 0.6306136122425152,
+      "Neutral": 0.04887889365882812,
+      "Negative": 0.3205074940986566
+     },
+     "full_argmax": "Positive",
+     "designed_agreement": 16
+    }
+   ],
+   "checks": {
+    "BC1": false,
+    "BC2": true,
+    "BC3": false,
+    "BC4": false,
+    "BC5": false
+   },
+   "infra": {
+    "I1": true,
+    "I2": true,
+    "I3": true,
+    "I4": true,
+    "I5": true,
+    "I6": true,
+    "I7": true,
+    "I8": true,
+    "I9": true,
+    "_max_recompute_diff": 0.0,
+    "_min_label_mass": 0.9697262206021754,
+    "_greedy_matches": 48,
+    "_max_repeat_diff": 0.0
+   },
+   "saved_flags": [
+    "ordering sensitivity: range of phi(E1) across orderings is 0.159 (> 0.1)",
+    "ordering sensitivity: range of phi(E2) across orderings is 0.156 (> 0.1)",
+    "full-set argmax differs across orderings"
+   ],
+   "flips": null,
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R7\", \"R3\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.3613441075662922,
+      "sufficiency": -0.14909604213327954,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10200,
+     "raw": "{\"R7\", \"R3\"}",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10201,
+     "raw": "[R7]",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10202,
+     "raw": "Signal: Positive\nEvidence Records Rely On: [\"R7\", \"R3\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.3613441075662922,
+      "sufficiency": -0.14909604213327954,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10203,
+     "raw": "[\"R7\", \"R3\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.3613441075662922,
+      "sufficiency": -0.14909604213327954,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R2\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.4251502122874085,
+      "sufficiency": -0.22086390379637844,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10204,
+     "raw": "Signal: Positive\n\nEvidence Records Relied On: [\"R2\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.4251502122874085,
+      "sufficiency": -0.22086390379637844,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10205,
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.4248620937659098,
+      "sufficiency": -0.06976107699477324,
+      "category": "partial",
+      "beat_nec": 0.6666666666666666,
+      "beat_suf": 0.6666666666666666,
+      "topk": 0.6666666666666666
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10206,
+     "raw": "Solution: The provided answer is Positive.\n\nEvidence records relied upon: [\"R2\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.4251502122874085,
+      "sufficiency": -0.22086390379637844,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R5\", \"R1\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.6264491781492701,
+      "sufficiency": -0.07736001574204465,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10207,
+     "raw": "[\"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.627447572301939,
+      "sufficiency": 0.3670309105638535,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10208,
+     "raw": "[\"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.627447572301939,
+      "sufficiency": 0.3670309105638535,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10209,
+     "raw": "Signal: Positive\nRecords used: [\"R7\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.6280134272594061,
+      "sufficiency": 0.3660859528172854,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.9,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    }
+   ],
+   "order_positions": {
+    "0": {
+     "E1": 0,
+     "E2": 1,
+     "E3": 2,
+     "E4": 3
+    },
+    "1": {
+     "E1": 1,
+     "E2": 3,
+     "E3": 0,
+     "E4": 2
+    },
+    "2": {
+     "E1": 3,
+     "E2": 2,
+     "E3": 1,
+     "E4": 0
+    }
+   }
+  },
+  "macro_a": {
+   "kind": "realistic",
+   "structure": "rubric",
+   "d_star": "Positive",
+   "designed_full": "Positive",
+   "mean_full_dist": {
+    "Positive": 0.4058624332054195,
+    "Neutral": 0.3856580091437607,
+    "Negative": 0.20847955765081985
+   },
+   "per_ordering": [
+    {
+     "ordering": 0,
+     "v": {
+      "none": 0.00013038365722088503,
+      "E1": 0.6329590526203086,
+      "E2": 0.7756552187004125,
+      "E3": 0.0005127290991686106,
+      "E4": 0.9656621153697363,
+      "E1+E2": 0.9145473969947516,
+      "E1+E3": 0.007975983530388754,
+      "E1+E4": 0.8383140612232406,
+      "E2+E3": 0.001987338487061843,
+      "E2+E4": 0.9016427467043009,
+      "E3+E4": 0.09367658000401156,
+      "E1+E2+E3": 0.11119596171152119,
+      "E1+E2+E4": 0.9008777177584424,
+      "E1+E3+E4": 0.14329693276784775,
+      "E2+E3+E4": 0.1640764770235841,
+      "E1+E2+E3+E4": 0.23633215724083767
+     },
+     "phi": {
+      "E1": 0.19102703109687696,
+      "E2": 0.255075607948446,
+      "E3": -0.5415884136096091,
+      "E4": 0.33168754814790263
+     },
+     "loo": {
+      "E1": 0.07225568021725357,
+      "E2": 0.09303522447298992,
+      "E3": -0.6645455605176047,
+      "E4": 0.12513619552931649
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Positive",
+      "E2": "Positive",
+      "E3": "Negative",
+      "E4": "Positive",
+      "E1+E2": "Positive",
+      "E1+E3": "Negative",
+      "E1+E4": "Positive",
+      "E2+E3": "Negative",
+      "E2+E4": "Positive",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Positive",
+      "E1+E3+E4": "Neutral",
+      "E2+E3+E4": "Neutral",
+      "E1+E2+E3+E4": "Neutral"
+     },
+     "v_full": 0.23633215724083767,
+     "v_empty": 0.00013038365722088503,
+     "total": 0.2362017735836168,
+     "full_dist": {
+      "Positive": 0.23633215724083767,
+      "Neutral": 0.41290458294132826,
+      "Negative": 0.35076325981783407
+     },
+     "full_argmax": "Neutral",
+     "designed_agreement": 8
+    },
+    {
+     "ordering": 1,
+     "v": {
+      "none": 0.00013038365722088503,
+      "E1": 0.6479576453998946,
+      "E2": 0.7634841450608941,
+      "E3": 0.0005091169458134292,
+      "E4": 0.9633544864235817,
+      "E1+E2": 0.9228556736298825,
+      "E1+E3": 0.02725393992272768,
+      "E1+E4": 0.8705774062677735,
+      "E2+E3": 0.02813465468499866,
+      "E2+E4": 0.9348345990890948,
+      "E3+E4": 0.16822000304656343,
+      "E1+E2+E3": 0.3822440898330587,
+      "E1+E2+E4": 0.9089434352776314,
+      "E1+E3+E4": 0.2956904720307707,
+      "E2+E3+E4": 0.2518243385174163,
+      "E1+E2+E3+E4": 0.5536477455798692
+     },
+     "phi": {
+      "E1": 0.2831650015105231,
+      "E2": 0.3179081081570036,
+      "E3": -0.4178706105885913,
+      "E4": 0.37031486284371273
+     },
+     "loo": {
+      "E1": 0.30182340706245286,
+      "E2": 0.2579572735490985,
+      "E3": -0.35529568969776226,
+      "E4": 0.1714036557468105
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Positive",
+      "E2": "Positive",
+      "E3": "Negative",
+      "E4": "Positive",
+      "E1+E2": "Positive",
+      "E1+E3": "Negative",
+      "E1+E4": "Positive",
+      "E2+E3": "Negative",
+      "E2+E4": "Positive",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Positive",
+      "E1+E2+E4": "Positive",
+      "E1+E3+E4": "Neutral",
+      "E2+E3+E4": "Neutral",
+      "E1+E2+E3+E4": "Positive"
+     },
+     "v_full": 0.5536477455798692,
+     "v_empty": 0.00013038365722088503,
+     "total": 0.5535173619226483,
+     "full_dist": {
+      "Positive": 0.5536477455798692,
+      "Neutral": 0.33632096848747794,
+      "Negative": 0.11003128593265292
+     },
+     "full_argmax": "Positive",
+     "designed_agreement": 9
+    },
+    {
+     "ordering": 2,
+     "v": {
+      "none": 0.00013038365722088503,
+      "E1": 0.6235477130351332,
+      "E2": 0.7936823356726137,
+      "E3": 0.0004761886085386376,
+      "E4": 0.9629886681245171,
+      "E1+E2": 0.7540816747275316,
+      "E1+E3": 0.03434556388185227,
+      "E1+E4": 0.9187490697158447,
+      "E2+E3": 0.01626974111028051,
+      "E2+E4": 0.934927926031064,
+      "E3+E4": 0.07149560086155263,
+      "E1+E2+E3": 0.1860522644950251,
+      "E1+E2+E4": 0.9297421761105694,
+      "E1+E3+E4": 0.22742544705788162,
+      "E2+E3+E4": 0.2396033306958745,
+      "E1+E2+E3+E4": 0.42760739679555154
+     },
+     "phi": {
+      "E1": 0.22540166016774216,
+      "E2": 0.28585633451684117,
+      "E3": -0.4765126968579449,
+      "E4": 0.392731715311692
+     },
+     "loo": {
+      "E1": 0.18800406609967704,
+      "E2": 0.20018194973766992,
+      "E3": -0.5021347793150179,
+      "E4": 0.24155513230052644
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Positive",
+      "E2": "Positive",
+      "E3": "Negative",
+      "E4": "Positive",
+      "E1+E2": "Positive",
+      "E1+E3": "Negative",
+      "E1+E4": "Positive",
+      "E2+E3": "Negative",
+      "E2+E4": "Positive",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Positive",
+      "E1+E3+E4": "Neutral",
+      "E2+E3+E4": "Neutral",
+      "E1+E2+E3+E4": "Positive"
+     },
+     "v_full": 0.42760739679555154,
+     "v_empty": 0.00013038365722088503,
+     "total": 0.42747701313833064,
+     "full_dist": {
+      "Positive": 0.42760739679555154,
+      "Neutral": 0.4077484760024759,
+      "Negative": 0.1646441272019726
+     },
+     "full_argmax": "Positive",
+     "designed_agreement": 9
+    }
+   ],
+   "checks": {},
+   "infra": {
+    "I1": true,
+    "I2": true,
+    "I3": true,
+    "I4": true,
+    "I5": true,
+    "I6": true,
+    "I7": true,
+    "I8": true,
+    "I9": true,
+    "_max_recompute_diff": 1.4007091522216797e-05,
+    "_min_label_mass": 0.9789525742760045,
+    "_greedy_matches": 48,
+    "_max_repeat_diff": 0.0
+   },
+   "saved_flags": [
+    "ordering sensitivity: range of phi(E3) across orderings is 0.124 (> 0.1)",
+    "full-set argmax differs across orderings"
+   ],
+   "flips": [
+    {
+     "ordering": 0,
+     "argmax": "Neutral",
+     "dist": {
+      "Positive": 0.06905068635137417,
+      "Neutral": 0.5413085375963763,
+      "Negative": 0.3896407760522495
+     },
+     "orig_dist": {
+      "Positive": 0.23633215724083767,
+      "Neutral": 0.41290458294132826,
+      "Negative": 0.35076325981783407
+     },
+     "orig_argmax": "Neutral",
+     "p_dstar_orig": 0.23633215724083767,
+     "p_dstar_flip": 0.06905068635137417,
+     "delta_p_dstar": -0.1672814708894635,
+     "moved_away": true,
+     "mass": 0.9859137293180624,
+     "tv_distance": 0.1672814708894635
+    },
+    {
+     "ordering": 1,
+     "argmax": "Neutral",
+     "dist": {
+      "Positive": 0.20525310807988156,
+      "Neutral": 0.6168787008069492,
+      "Negative": 0.17786819111316923
+     },
+     "orig_dist": {
+      "Positive": 0.5536477455798692,
+      "Neutral": 0.33632096848747794,
+      "Negative": 0.11003128593265292
+     },
+     "orig_argmax": "Positive",
+     "p_dstar_orig": 0.5536477455798692,
+     "p_dstar_flip": 0.20525310807988156,
+     "delta_p_dstar": -0.3483946374999876,
+     "moved_away": true,
+     "mass": 0.9851991328637724,
+     "tv_distance": 0.34839463749998756
+    },
+    {
+     "ordering": 2,
+     "argmax": "Neutral",
+     "dist": {
+      "Positive": 0.1265987777774718,
+      "Neutral": 0.5198231827754651,
+      "Negative": 0.3535780394470631
+     },
+     "orig_dist": {
+      "Positive": 0.42760739679555154,
+      "Neutral": 0.4077484760024759,
+      "Negative": 0.1646441272019726
+     },
+     "orig_argmax": "Positive",
+     "p_dstar_orig": 0.42760739679555154,
+     "p_dstar_flip": 0.1265987777774718,
+     "delta_p_dstar": -0.30100861901807974,
+     "moved_away": true,
+     "mass": 0.9841460815175939,
+     "tv_distance": 0.30100861901807974
+    }
+   ],
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Neutral",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.2362017735836168,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10300,
+     "raw": "[\"R3\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Neutral",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.22835617371044892,
+      "sufficiency": 0.6653105894634632,
+      "category": "partial",
+      "beat_nec": 0.9,
+      "beat_suf": 0.8,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10301,
+     "raw": "Evidence records relied upon for Positive signal: [\"R7\", \"R3\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Neutral",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.23581942814166906,
+      "sufficiency": 0.6645455605176047,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10302,
+     "raw": "[\"R7\", \"R3\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Neutral",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.23581942814166906,
+      "sufficiency": 0.6645455605176047,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10303,
+     "raw": "Signal: Positive\n\nReply: [\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Neutral",
+     "decision_in_context": "Positive",
+     "aligned": false,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.2362017735836168,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.5531386286340557,
+      "sufficiency": 0.35529568969776226,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10304,
+     "raw": "[\"R2\", \"R4\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.5535173619226483,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10305,
+     "raw": "JSON list: [\"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.5531386286340557,
+      "sufficiency": 0.35529568969776226,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10306,
+     "raw": "Answer: Positive\n\n[\"R4\", \"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.5535173619226483,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R3\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E4"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.41133765568527103,
+      "sufficiency": 0.49114167292029315,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 0.8,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10307,
+     "raw": "[\"R7\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E3"
+     ],
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": -0.5073205292355125,
+      "sufficiency": -0.39326183291369926,
+      "category": "partial",
+      "beat_nec": 0.0,
+      "beat_suf": 0.2,
+      "topk": 0.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10308,
+     "raw": "Signal: Positive\nReasoning: Despite a falling purchasing managers' index and slowed inflation, the more positive factors such as raised consensus forecasts for earnings,",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10309,
+     "raw": "{}",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Positive",
+     "decision_in_context": "Positive",
+     "aligned": true
+    }
+   ],
+   "order_positions": {
+    "0": {
+     "E1": 0,
+     "E2": 1,
+     "E3": 2,
+     "E4": 3
+    },
+    "1": {
+     "E1": 1,
+     "E2": 3,
+     "E3": 0,
+     "E4": 2
+    },
+    "2": {
+     "E1": 3,
+     "E2": 2,
+     "E3": 1,
+     "E4": 0
+    }
+   }
+  },
+  "macro_b": {
+   "kind": "realistic",
+   "structure": "rubric",
+   "d_star": "Negative",
+   "designed_full": "Negative",
+   "mean_full_dist": {
+    "Positive": 0.019036842961300766,
+    "Neutral": 0.17080421311511085,
+    "Negative": 0.8101589439235884
+   },
+   "per_ordering": [
+    {
+     "ordering": 0,
+     "v": {
+      "none": 0.013920028621729334,
+      "E1": 0.6362344750325991,
+      "E2": 0.9491167587625836,
+      "E3": 0.005818372620623067,
+      "E4": 0.8927643963420351,
+      "E1+E2": 0.9006582465956395,
+      "E1+E3": 0.08716532484140138,
+      "E1+E4": 0.8409402303105286,
+      "E2+E3": 0.43501789349756337,
+      "E2+E4": 0.9406894820117444,
+      "E3+E4": 0.2992961072253223,
+      "E1+E2+E3": 0.5184889241125901,
+      "E1+E2+E4": 0.9125121451041245,
+      "E1+E3+E4": 0.346587060584287,
+      "E2+E3+E4": 0.7157420551884643,
+      "E1+E2+E3+E4": 0.7333286974576323
+     },
+     "phi": {
+      "E1": 0.16694601559406766,
+      "E2": 0.4688920784316847,
+      "E3": -0.2766634612123581,
+      "E4": 0.3602340360225088
+     },
+     "loo": {
+      "E1": 0.01758664226916795,
+      "E2": 0.3867416368733453,
+      "E3": -0.1791834476464922,
+      "E4": 0.21483977334504223
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Negative",
+      "E2": "Negative",
+      "E3": "Positive",
+      "E4": "Negative",
+      "E1+E2": "Negative",
+      "E1+E3": "Positive",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Neutral",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.7333286974576323,
+     "v_empty": 0.013920028621729334,
+     "total": 0.7194086688359029,
+     "full_dist": {
+      "Positive": 0.023639744058641728,
+      "Neutral": 0.243031558483726,
+      "Negative": 0.7333286974576323
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 8
+    },
+    {
+     "ordering": 1,
+     "v": {
+      "none": 0.013920028621729334,
+      "E1": 0.6449365469464973,
+      "E2": 0.9468196347868574,
+      "E3": 0.006472747246564478,
+      "E4": 0.8859203051420148,
+      "E1+E2": 0.908372150321687,
+      "E1+E3": 0.26401313465237286,
+      "E1+E4": 0.848022731067912,
+      "E2+E3": 0.5492162221803236,
+      "E2+E4": 0.9456989426314265,
+      "E3+E4": 0.3772350831091269,
+      "E1+E2+E3": 0.7410472803156157,
+      "E1+E2+E4": 0.9293615653811906,
+      "E1+E3+E4": 0.6505200753761331,
+      "E2+E3+E4": 0.650345259717932,
+      "E1+E2+E3+E4": 0.843538069206728
+     },
+     "phi": {
+      "E1": 0.25855016545494086,
+      "E2": 0.4229328060309046,
+      "E3": -0.18560046568281446,
+      "E4": 0.3337355347819676
+     },
+     "loo": {
+      "E1": 0.19319280948879602,
+      "E2": 0.19301799383059492,
+      "E3": -0.08582349617446261,
+      "E4": 0.1024907888911123
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Negative",
+      "E2": "Negative",
+      "E3": "Positive",
+      "E4": "Negative",
+      "E1+E2": "Negative",
+      "E1+E3": "Positive",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Neutral",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.843538069206728,
+     "v_empty": 0.013920028621729334,
+     "total": 0.8296180405849987,
+     "full_dist": {
+      "Positive": 0.02176976747867087,
+      "Neutral": 0.13469216331460107,
+      "Negative": 0.843538069206728
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 7
+    },
+    {
+     "ordering": 2,
+     "v": {
+      "none": 0.013920028621729334,
+      "E1": 0.6386948675109717,
+      "E2": 0.950503446048601,
+      "E3": 0.005999339137470545,
+      "E4": 0.8923789504475419,
+      "E1+E2": 0.9430592396521688,
+      "E1+E3": 0.2652837325918503,
+      "E1+E4": 0.8909399403469265,
+      "E2+E3": 0.4307497825489307,
+      "E2+E4": 0.9427031284852246,
+      "E3+E4": 0.2826961261231536,
+      "E1+E2+E3": 0.7420833917212003,
+      "E1+E2+E4": 0.9365301233231563,
+      "E1+E3+E4": 0.7140449066024902,
+      "E2+E3+E4": 0.7371560547432281,
+      "E1+E2+E3+E4": 0.8536100651064049
+     },
+     "phi": {
+      "E1": 0.26754975910034395,
+      "E2": 0.4153945410090296,
+      "E3": -0.1965656517719677,
+      "E4": 0.35331138814726976
+     },
+     "loo": {
+      "E1": 0.11645401036317682,
+      "E2": 0.1395651585039147,
+      "E3": -0.08292005821675141,
+      "E4": 0.11152667338520461
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Negative",
+      "E2": "Negative",
+      "E3": "Positive",
+      "E4": "Negative",
+      "E1+E2": "Negative",
+      "E1+E3": "Positive",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Positive",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.8536100651064049,
+     "v_empty": 0.013920028621729334,
+     "total": 0.8396900364846756,
+     "full_dist": {
+      "Positive": 0.011701017346589704,
+      "Neutral": 0.1346889175470055,
+      "Negative": 0.8536100651064049
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 6
+    }
+   ],
+   "checks": {},
+   "infra": {
+    "I1": true,
+    "I2": true,
+    "I3": true,
+    "I4": true,
+    "I5": true,
+    "I6": true,
+    "I7": true,
+    "I8": true,
+    "I9": true,
+    "_max_recompute_diff": 0.0,
+    "_min_label_mass": 0.9791669143306664,
+    "_greedy_matches": 48,
+    "_max_repeat_diff": 0.0
+   },
+   "saved_flags": [
+    "ordering sensitivity: range of phi(E1) across orderings is 0.101 (> 0.1)"
+   ],
+   "flips": [
+    {
+     "ordering": 0,
+     "argmax": "Neutral",
+     "dist": {
+      "Positive": 0.16247812335718634,
+      "Neutral": 0.5073352479713878,
+      "Negative": 0.3301866286714258
+     },
+     "orig_dist": {
+      "Positive": 0.023639744058641728,
+      "Neutral": 0.243031558483726,
+      "Negative": 0.7333286974576323
+     },
+     "orig_argmax": "Negative",
+     "p_dstar_orig": 0.7333286974576323,
+     "p_dstar_flip": 0.3301866286714258,
+     "delta_p_dstar": -0.4031420687862065,
+     "moved_away": true,
+     "mass": 0.985904535974536,
+     "tv_distance": 0.40314206878620645
+    },
+    {
+     "ordering": 1,
+     "argmax": "Neutral",
+     "dist": {
+      "Positive": 0.24787466441314263,
+      "Neutral": 0.38611422123871536,
+      "Negative": 0.36601111434814204
+     },
+     "orig_dist": {
+      "Positive": 0.02176976747867087,
+      "Neutral": 0.13469216331460107,
+      "Negative": 0.843538069206728
+     },
+     "orig_argmax": "Negative",
+     "p_dstar_orig": 0.843538069206728,
+     "p_dstar_flip": 0.36601111434814204,
+     "delta_p_dstar": -0.477526954858586,
+     "moved_away": true,
+     "mass": 0.9883182238111324,
+     "tv_distance": 0.47752695485858604
+    },
+    {
+     "ordering": 2,
+     "argmax": "Negative",
+     "dist": {
+      "Positive": 0.062186332782601765,
+      "Neutral": 0.2499521805919423,
+      "Negative": 0.687861486625456
+     },
+     "orig_dist": {
+      "Positive": 0.011701017346589704,
+      "Neutral": 0.1346889175470055,
+      "Negative": 0.8536100651064049
+     },
+     "orig_argmax": "Negative",
+     "p_dstar_orig": 0.8536100651064049,
+     "p_dstar_flip": 0.687861486625456,
+     "delta_p_dstar": -0.16574857848094893,
+     "moved_away": false,
+     "mass": 0.9905762109391447,
+     "tv_distance": 0.1657485784809489
+    }
+   ],
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.7194086688359029,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10400,
+     "raw": "```json\n\n[]\n\n```\n\n",
+     "status": "empty",
+     "saved_status": "empty",
+     "cited": [],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 0,
+      "necessity": 0.0,
+      "sufficiency": -0.7194086688359029,
+      "category": "empty",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10401,
+     "raw": "Answer: \"Negative\"\nRecords utilized: [\"R7\", \"R3\", \"R9\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": -0.1594356988844028,
+      "sufficiency": -0.21483977334504223,
+      "category": "partial",
+      "beat_nec": 0.3333333333333333,
+      "beat_suf": 0.3333333333333333,
+      "topk": 0.6666666666666666
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10402,
+     "raw": "Evidence records: [\"R3\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.6461633726162309,
+      "sufficiency": 0.2073607845541121,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10403,
+     "raw": "[\"R7\", \"R3\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.43403259023231,
+      "sufficiency": 0.16732954913800724,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.8,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.8370653219601636,
+      "sufficiency": 0.08582349617446261,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10404,
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.8370653219601636,
+      "sufficiency": 0.08582349617446261,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10405,
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.8370653219601636,
+      "sufficiency": 0.08582349617446261,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10406,
+     "raw": "Answer: Negative\n\nReason: The decline in earnings forecasts (R6) coupled with rising inflation above the target (R8) and tighter monetary",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R3\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.4228602825574742,
+      "sufficiency": 0.03732987524052156,
+      "category": "partial",
+      "beat_nec": 0.6,
+      "beat_suf": 0.6,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10407,
+     "raw": "[\"R1\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.5709139389832514,
+      "sufficiency": 0.08944917454576384,
+      "category": "partial",
+      "beat_nec": 0.8,
+      "beat_suf": 0.9,
+      "topk": 0.5
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10408,
+     "raw": "[\"R3\", \"R1\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.8476107259689344,
+      "sufficiency": 0.08292005821675141,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10409,
+     "raw": "[\"R1\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 1,
+      "necessity": 0.1395651585039147,
+      "sufficiency": 0.09689338094219613,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    }
+   ],
+   "order_positions": {
+    "0": {
+     "E1": 0,
+     "E2": 1,
+     "E3": 2,
+     "E4": 3
+    },
+    "1": {
+     "E1": 1,
+     "E2": 3,
+     "E3": 0,
+     "E4": 2
+    },
+    "2": {
+     "E1": 3,
+     "E2": 2,
+     "E3": 1,
+     "E4": 0
+    }
+   }
+  },
+  "macro_c": {
+   "kind": "realistic",
+   "structure": "rubric",
+   "d_star": "Negative",
+   "designed_full": "Negative",
+   "mean_full_dist": {
+    "Positive": 0.0004957837857218475,
+    "Neutral": 0.05830240433379846,
+    "Negative": 0.9412018118804797
+   },
+   "per_ordering": [
+    {
+     "ordering": 0,
+     "v": {
+      "none": 0.013806900273129427,
+      "E1": 0.168114876593661,
+      "E2": 0.9522244749274307,
+      "E3": 0.8914429606358106,
+      "E4": 0.9194250048296164,
+      "E1+E2": 0.8260533318763684,
+      "E1+E3": 0.8191494966958022,
+      "E1+E4": 0.7997834078421969,
+      "E2+E3": 0.9624099982778589,
+      "E2+E4": 0.9396276556720911,
+      "E3+E4": 0.8971155113828353,
+      "E1+E2+E3": 0.9205066125964205,
+      "E1+E2+E4": 0.8978749541553758,
+      "E1+E3+E4": 0.8796520919954276,
+      "E2+E3+E4": 0.9579118139568966,
+      "E1+E2+E3+E4": 0.9341314500254941
+     },
+     "phi": {
+      "E1": -0.0023035727830553535,
+      "E2": 0.3323369922173494,
+      "E3": 0.2977662034885229,
+      "E4": 0.2925249268295478
+     },
+     "loo": {
+      "E1": -0.02378036393140248,
+      "E2": 0.05447935803006654,
+      "E3": 0.036256495870118366,
+      "E4": 0.01362483742907361
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Neutral",
+      "E2": "Negative",
+      "E3": "Negative",
+      "E4": "Negative",
+      "E1+E2": "Negative",
+      "E1+E3": "Negative",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Negative",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.9341314500254941,
+     "v_empty": 0.013806900273129427,
+     "total": 0.9203245497523647,
+     "full_dist": {
+      "Positive": 0.0004403734619206952,
+      "Neutral": 0.06542817651258517,
+      "Negative": 0.9341314500254941
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 7
+    },
+    {
+     "ordering": 1,
+     "v": {
+      "none": 0.013806900273129427,
+      "E1": 0.16738019048861186,
+      "E2": 0.9489850960248293,
+      "E3": 0.8876098239900659,
+      "E4": 0.9158442242141372,
+      "E1+E2": 0.8537356730876522,
+      "E1+E3": 0.5686220294795536,
+      "E1+E4": 0.8046405578190213,
+      "E2+E3": 0.9656496109990599,
+      "E2+E4": 0.9567717177164322,
+      "E3+E4": 0.9134884162625655,
+      "E1+E2+E3": 0.9343940903427213,
+      "E1+E2+E4": 0.9039288508692688,
+      "E1+E3+E4": 0.8823365835063781,
+      "E2+E3+E4": 0.9605947218176235,
+      "E1+E2+E3+E4": 0.9522830461892151
+     },
+     "phi": {
+      "E1": -0.017075521695106056,
+      "E2": 0.36107194982353435,
+      "E3": 0.2786832791806555,
+      "E4": 0.3157964386070018
+     },
+     "loo": {
+      "E1": -0.0083116756284084,
+      "E2": 0.069946462682837,
+      "E3": 0.048354195319946336,
+      "E4": 0.01788895584649386
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Neutral",
+      "E2": "Negative",
+      "E3": "Negative",
+      "E4": "Negative",
+      "E1+E2": "Negative",
+      "E1+E3": "Negative",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Negative",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.9522830461892151,
+     "v_empty": 0.013806900273129427,
+     "total": 0.9384761459160856,
+     "full_dist": {
+      "Positive": 0.00041335053809257223,
+      "Neutral": 0.04730360327269232,
+      "Negative": 0.9522830461892151
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 7
+    },
+    {
+     "ordering": 2,
+     "v": {
+      "none": 0.013806900273129427,
+      "E1": 0.16581002134796383,
+      "E2": 0.9559727499582146,
+      "E3": 0.8908604441226443,
+      "E4": 0.9195955588165355,
+      "E1+E2": 0.7828633385313748,
+      "E1+E3": 0.5341771083025378,
+      "E1+E4": 0.8186510551169907,
+      "E2+E3": 0.9538145564390774,
+      "E2+E4": 0.952429487579357,
+      "E3+E4": 0.9406375948478417,
+      "E1+E2+E3": 0.8231373540237985,
+      "E1+E2+E4": 0.9084664960500386,
+      "E1+E3+E4": 0.866546859929014,
+      "E2+E3+E4": 0.9668205621110522,
+      "E1+E2+E3+E4": 0.9371909394267298
+     },
+     "phi": {
+      "E1": -0.042695640386531654,
+      "E2": 0.34635248331071566,
+      "E3": 0.2672621488317919,
+      "E4": 0.35246504739762446
+     },
+     "loo": {
+      "E1": -0.029629622684322343,
+      "E2": 0.07064407949771578,
+      "E3": 0.028724443376691222,
+      "E4": 0.11405358540293131
+     },
+     "argmax": {
+      "none": "Neutral",
+      "E1": "Neutral",
+      "E2": "Negative",
+      "E3": "Negative",
+      "E4": "Negative",
+      "E1+E2": "Negative",
+      "E1+E3": "Negative",
+      "E1+E4": "Negative",
+      "E2+E3": "Negative",
+      "E2+E4": "Negative",
+      "E3+E4": "Negative",
+      "E1+E2+E3": "Negative",
+      "E1+E2+E4": "Negative",
+      "E1+E3+E4": "Negative",
+      "E2+E3+E4": "Negative",
+      "E1+E2+E3+E4": "Negative"
+     },
+     "v_full": 0.9371909394267298,
+     "v_empty": 0.013806900273129427,
+     "total": 0.9233840391536003,
+     "full_dist": {
+      "Positive": 0.000633627357152275,
+      "Neutral": 0.0621754332161179,
+      "Negative": 0.9371909394267298
+     },
+     "full_argmax": "Negative",
+     "designed_agreement": 7
+    }
+   ],
+   "checks": {},
+   "infra": {
+    "I1": true,
+    "I2": true,
+    "I3": true,
+    "I4": true,
+    "I5": true,
+    "I6": true,
+    "I7": true,
+    "I8": true,
+    "I9": true,
+    "_max_recompute_diff": 0.00010776519775390625,
+    "_min_label_mass": 0.9792478881114879,
+    "_greedy_matches": 48,
+    "_max_repeat_diff": 0.0
+   },
+   "saved_flags": [],
+   "flips": [
+    {
+     "ordering": 0,
+     "argmax": "Neutral",
+     "dist": {
+      "Positive": 0.09548486239821707,
+      "Neutral": 0.5068361685641459,
+      "Negative": 0.397678969037637
+     },
+     "orig_dist": {
+      "Positive": 0.0004403734619206952,
+      "Neutral": 0.06542817651258517,
+      "Negative": 0.9341314500254941
+     },
+     "orig_argmax": "Negative",
+     "p_dstar_orig": 0.9341314500254941,
+     "p_dstar_flip": 0.397678969037637,
+     "delta_p_dstar": -0.5364524809878571,
+     "moved_away": true,
+     "mass": 0.9854257993851127,
+     "tv_distance": 0.5364524809878571
+    },
+    {
+     "ordering": 1,
+     "argmax": "Negative",
+     "dist": {
+      "Positive": 0.019029224698580822,
+      "Neutral": 0.41755137570028295,
+      "Negative": 0.5634193996011362
+     },
+     "orig_dist": {
+      "Positive": 0.00041335053809257223,
+      "Neutral": 0.04730360327269232,
+      "Negative": 0.9522830461892151
+     },
+     "orig_argmax": "Negative",
+     "p_dstar_orig": 0.9522830461892151,
+     "p_dstar_flip": 0.5634193996011362,
+     "delta_p_dstar": -0.3888636465880789,
+     "moved_away": false,
+     "mass": 0.9893439500562959,
+     "tv_distance": 0.38886364658807887
+    },
+    {
+     "ordering": 2,
+     "argmax": "Negative",
+     "dist": {
+      "Positive": 0.05820432996798317,
+      "Neutral": 0.4482906697145348,
+      "Negative": 0.493505000317482
+     },
+     "orig_dist": {
+      "Positive": 0.000633627357152275,
+      "Neutral": 0.0621754332161179,
+      "Negative": 0.9371909394267298
+     },
+     "orig_argmax": "Negative",
+     "p_dstar_orig": 0.9371909394267298,
+     "p_dstar_flip": 0.493505000317482,
+     "delta_p_dstar": -0.4436859391092478,
+     "moved_away": false,
+     "mass": 0.9879331157719667,
+     "tv_distance": 0.4436859391092478
+    }
+   ],
+   "citations": [
+    {
+     "ordering": 0,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R3\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 2,
+      "necessity": 0.11498195332969197,
+      "sufficiency": 0.005496205646596919,
+      "category": "partial",
+      "beat_nec": 0.7,
+      "beat_suf": 0.8,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10500,
+     "raw": "The answer is Negative.",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10501,
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.9203245497523647,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10502,
+     "raw": "[\"R7\", \"R3\", \"R9\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.9203245497523647,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 0,
+     "kind": "sampled",
+     "seed": 10503,
+     "raw": "The answer relied on the following evidence records: [\"R3\", \"R9\", \"R5\"].",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.7660165734318332,
+      "sufficiency": 0.02378036393140248,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R2\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.06467322219914917,
+      "sufficiency": -0.048354195319946336,
+      "category": "partial",
+      "beat_nec": 0.6666666666666666,
+      "beat_suf": 0.3333333333333333,
+      "topk": 0.6666666666666666
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10504,
+     "raw": "R4, R6, R8",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10505,
+     "raw": "Answer: Negative\n\nAnswer: [\"R4\", \"R6\", \"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.7849028557006033,
+      "sufficiency": 0.0083116756284084,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 1,
+     "kind": "sampled",
+     "seed": 10506,
+     "raw": "Answer in JSON list format:\n\n[\"R4\",\"R6\",\"R8\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.7849028557006033,
+      "sufficiency": 0.0083116756284084,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "greedy",
+     "seed": null,
+     "raw": "[\"R3\", \"R7\", \"R1\", \"R5\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 4,
+      "necessity": 0.9233840391536003,
+      "sufficiency": 0.0,
+      "category": "all",
+      "beat_nec": null,
+      "beat_suf": null,
+      "topk": null
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10507,
+     "raw": "[\"R1\", \"R3\", \"R7\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.771380918078766,
+      "sufficiency": 0.029629622684322343,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10508,
+     "raw": "Based on the given information and instructions, my signal for Economy C's broad equity market is Negative. The following evidence records were used to determine this signal:\n\n- R1",
+     "status": "unparseable",
+     "saved_status": "unparseable",
+     "cited": null,
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true
+    },
+    {
+     "ordering": 2,
+     "kind": "sampled",
+     "seed": 10509,
+     "raw": "[\"R3\", \"R1\", \"R7\"]",
+     "status": "ok",
+     "saved_status": "ok",
+     "cited": [
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "own_full_argmax": "Negative",
+     "decision_in_context": "Negative",
+     "aligned": true,
+     "consistency": {
+      "size": 3,
+      "necessity": 0.771380918078766,
+      "sufficiency": 0.029629622684322343,
+      "category": "partial",
+      "beat_nec": 1.0,
+      "beat_suf": 1.0,
+      "topk": 1.0
+     },
+     "matches_saved": true
+    }
+   ],
+   "order_positions": {
+    "0": {
+     "E1": 0,
+     "E2": 1,
+     "E3": 2,
+     "E4": 3
+    },
+    "1": {
+     "E1": 1,
+     "E2": 3,
+     "E3": 0,
+     "E4": 2
+    },
+    "2": {
+     "E1": 3,
+     "E2": 2,
+     "E3": 1,
+     "E4": 0
+    }
+   }
+  }
+ },
+ "comparison_with_pipeline": {
+  "s_single": {
+   "d_star_equal": true,
+   "max_abs_diff_p_norm_from_logprobs": 0.0,
+   "max_abs_diff_v": 0.0,
+   "max_abs_diff_shapley": 1.1102230246251565e-16,
+   "max_abs_diff_loo": 0.0,
+   "checks_equal": true,
+   "citation_status_equal": true,
+   "citation_consistency_equal": true
+  },
+  "s_redundant": {
+   "d_star_equal": true,
+   "max_abs_diff_p_norm_from_logprobs": 0.0,
+   "max_abs_diff_v": 0.0,
+   "max_abs_diff_shapley": 2.220446049250313e-16,
+   "max_abs_diff_loo": 0.0,
+   "checks_equal": true,
+   "citation_status_equal": true,
+   "citation_consistency_equal": true
+  },
+  "s_conflict": {
+   "d_star_equal": true,
+   "max_abs_diff_p_norm_from_logprobs": 0.0,
+   "max_abs_diff_v": 0.0,
+   "max_abs_diff_shapley": 1.1102230246251565e-16,
+   "max_abs_diff_loo": 0.0,
+   "checks_equal": true,
+   "citation_status_equal": true,
+   "citation_consistency_equal": true
+  },
+  "macro_a": {
+   "d_star_equal": true,
+   "max_abs_diff_p_norm_from_logprobs": 0.0,
+   "max_abs_diff_v": 0.0,
+   "max_abs_diff_shapley": 1.1102230246251565e-16,
+   "max_abs_diff_loo": 0.0,
+   "checks_equal": true,
+   "citation_status_equal": true,
+   "citation_consistency_equal": true
+  },
+  "macro_b": {
+   "d_star_equal": true,
+   "max_abs_diff_p_norm_from_logprobs": 0.0,
+   "max_abs_diff_v": 0.0,
+   "max_abs_diff_shapley": 1.1102230246251565e-16,
+   "max_abs_diff_loo": 0.0,
+   "checks_equal": true,
+   "citation_status_equal": true,
+   "citation_consistency_equal": true
+  },
+  "macro_c": {
+   "d_star_equal": true,
+   "max_abs_diff_p_norm_from_logprobs": 0.0,
+   "max_abs_diff_v": 0.0,
+   "max_abs_diff_shapley": 1.1102230246251565e-16,
+   "max_abs_diff_loo": 0.0,
+   "checks_equal": true,
+   "citation_status_equal": true,
+   "citation_consistency_equal": true
+  }
+ }
+}

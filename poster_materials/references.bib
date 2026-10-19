@@ -1,0 +1,379 @@
+% references.bib -- Memory X-Ray
+% Every entry below was checked against a publisher, proceedings, ACL Anthology,
+% PMLR, NeurIPS proceedings, JMLR, or arXiv page (October 2026).
+% Page ranges and DOIs are included only where an authoritative page showed them.
+
+% ---------------------------------------------------------------------------
+% Method foundations (Shapley values and removal-based attribution)
+% ---------------------------------------------------------------------------
+
+@incollection{shapley1953value,
+  author    = {Shapley, Lloyd S.},
+  title     = {A Value for n-Person Games},
+  booktitle = {Contributions to the Theory of Games, Volume {II}},
+  editor    = {Kuhn, Harold W. and Tucker, Albert W.},
+  series    = {Annals of Mathematics Studies},
+  number    = {28},
+  pages     = {307--317},
+  publisher = {Princeton University Press},
+  address   = {Princeton, NJ},
+  year      = {1953},
+  note      = {Reprinted in A. E. Roth (Ed.), \emph{The Shapley Value: Essays in Honor of Lloyd S. Shapley}, Cambridge University Press, 1988, pp. 31--40, doi:10.1017/CBO9780511528446.003},
+  url       = {https://doi.org/10.1017/CBO9780511528446.003}
+}
+
+@inproceedings{lundberg2017unified,
+  author    = {Lundberg, Scott M. and Lee, Su-In},
+  title     = {A Unified Approach to Interpreting Model Predictions},
+  booktitle = {Advances in Neural Information Processing Systems 30 (NIPS 2017)},
+  volume    = {30},
+  year      = {2017},
+  url       = {https://papers.nips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html}
+}
+
+@article{strumbelj2014explaining,
+  author    = {{\v{S}}trumbelj, Erik and Kononenko, Igor},
+  title     = {Explaining Prediction Models and Individual Predictions with Feature Contributions},
+  journal   = {Knowledge and Information Systems},
+  volume    = {41},
+  number    = {3},
+  pages     = {647--665},
+  year      = {2014},
+  doi       = {10.1007/s10115-013-0679-x}
+}
+
+@article{covert2021explaining,
+  author    = {Covert, Ian and Lundberg, Scott and Lee, Su-In},
+  title     = {Explaining by Removing: A Unified Framework for Model Explanation},
+  journal   = {Journal of Machine Learning Research},
+  volume    = {22},
+  number    = {209},
+  pages     = {1--90},
+  year      = {2021},
+  url       = {https://jmlr.org/papers/v22/20-1316.html}
+}
+
+@inproceedings{kumar2020problems,
+  author    = {Kumar, I. Elizabeth and Venkatasubramanian, Suresh and Scheidegger, Carlos and Friedler, Sorelle},
+  title     = {Problems with {Shapley}-value-based explanations as feature importance measures},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  editor    = {Daum{\'e} III, Hal and Singh, Aarti},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  pages     = {5491--5500},
+  publisher = {PMLR},
+  year      = {2020},
+  url       = {https://proceedings.mlr.press/v119/kumar20e.html}
+}
+
+@inproceedings{sundararajan2020many,
+  author    = {Sundararajan, Mukund and Najmi, Amir},
+  title     = {The Many {Shapley} Values for Model Explanation},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  editor    = {Daum{\'e} III, Hal and Singh, Aarti},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  pages     = {9269--9278},
+  publisher = {PMLR},
+  year      = {2020},
+  url       = {https://proceedings.mlr.press/v119/sundararajan20b.html}
+}
+
+% ---------------------------------------------------------------------------
+% Faithfulness of explanations and self-reports
+% ---------------------------------------------------------------------------
+
+@inproceedings{jacovi2020towards,
+  author    = {Jacovi, Alon and Goldberg, Yoav},
+  title     = {Towards Faithfully Interpretable {NLP} Systems: How Should We Define and Evaluate Faithfulness?},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  editor    = {Jurafsky, Dan and Chai, Joyce and Schluter, Natalie and Tetreault, Joel},
+  pages     = {4198--4205},
+  publisher = {Association for Computational Linguistics},
+  address   = {Online},
+  month     = jul,
+  year      = {2020},
+  doi       = {10.18653/v1/2020.acl-main.386},
+  url       = {https://aclanthology.org/2020.acl-main.386/}
+}
+
+@inproceedings{deyoung2020eraser,
+  author    = {DeYoung, Jay and Jain, Sarthak and Rajani, Nazneen Fatema and Lehman, Eric and Xiong, Caiming and Socher, Richard and Wallace, Byron C.},
+  title     = {{ERASER}: A Benchmark to Evaluate Rationalized {NLP} Models},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  editor    = {Jurafsky, Dan and Chai, Joyce and Schluter, Natalie and Tetreault, Joel},
+  pages     = {4443--4458},
+  publisher = {Association for Computational Linguistics},
+  address   = {Online},
+  month     = jul,
+  year      = {2020},
+  doi       = {10.18653/v1/2020.acl-main.408},
+  url       = {https://aclanthology.org/2020.acl-main.408/}
+}
+
+@inproceedings{turpin2023language,
+  author    = {Turpin, Miles and Michael, Julian and Perez, Ethan and Bowman, Samuel R.},
+  title     = {Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting},
+  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023)},
+  volume    = {36},
+  pages     = {74952--74965},
+  year      = {2023},
+  doi       = {10.52202/075280-3275},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/ed3fea9033a80fea1376299fa7863f4a-Abstract-Conference.html}
+}
+
+@misc{lanham2023measuring,
+  author        = {Lanham, Tamera and Chen, Anna and Radhakrishnan, Ansh and Steiner, Benoit and Denison, Carson and Hernandez, Danny and Li, Dustin and Durmus, Esin and Hubinger, Evan and Kernion, Jackson and Luko{\v{s}}i{\={u}}t{\.{e}}, Kamil{\.{e}} and Nguyen, Karina and Cheng, Newton and Joseph, Nicholas and Schiefer, Nicholas and Rausch, Oliver and Larson, Robin and McCandlish, Sam and Kundu, Sandipan and Kadavath, Saurav and Yang, Shannon and Henighan, Thomas and Maxwell, Timothy and Telleen-Lawton, Timothy and Hume, Tristan and Hatfield-Dodds, Zac and Kaplan, Jared and Brauner, Jan and Bowman, Samuel R. and Perez, Ethan},
+  title         = {Measuring Faithfulness in Chain-of-Thought Reasoning},
+  year          = {2023},
+  eprint        = {2307.13702},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2307.13702}
+}
+
+@inproceedings{madsen2024self,
+  author    = {Madsen, Andreas and Chandar, Sarath and Reddy, Siva},
+  title     = {Are self-explanations from Large Language Models faithful?},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2024},
+  editor    = {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
+  pages     = {295--337},
+  publisher = {Association for Computational Linguistics},
+  address   = {Bangkok, Thailand},
+  month     = aug,
+  year      = {2024},
+  doi       = {10.18653/v1/2024.findings-acl.19},
+  url       = {https://aclanthology.org/2024.findings-acl.19/}
+}
+
+@inproceedings{parcalabescu2024measuring,
+  author    = {Parcalabescu, Letitia and Frank, Anette},
+  title     = {On Measuring Faithfulness or Self-consistency of Natural Language Explanations},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  editor    = {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
+  pages     = {6048--6089},
+  publisher = {Association for Computational Linguistics},
+  address   = {Bangkok, Thailand},
+  month     = aug,
+  year      = {2024},
+  doi       = {10.18653/v1/2024.acl-long.329},
+  url       = {https://aclanthology.org/2024.acl-long.329/}
+}
+
+@misc{agarwal2024faithfulness,
+  author        = {Agarwal, Chirag and Tanneru, Sree Harsha and Lakkaraju, Himabindu},
+  title         = {Faithfulness vs. Plausibility: On the (Un)Reliability of Explanations from Large Language Models},
+  year          = {2024},
+  eprint        = {2402.04614},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2402.04614}
+}
+
+% ADDED (not on the original candidate list)
+@inproceedings{atanasova2023faithfulness,
+  author    = {Atanasova, Pepa and Camburu, Oana-Maria and Lioma, Christina and Lukasiewicz, Thomas and Simonsen, Jakob Grue and Augenstein, Isabelle},
+  title     = {Faithfulness Tests for Natural Language Explanations},
+  booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  editor    = {Rogers, Anna and Boyd-Graber, Jordan and Okazaki, Naoaki},
+  pages     = {283--294},
+  publisher = {Association for Computational Linguistics},
+  address   = {Toronto, Canada},
+  month     = jul,
+  year      = {2023},
+  doi       = {10.18653/v1/2023.acl-short.25},
+  url       = {https://aclanthology.org/2023.acl-short.25/}
+}
+
+% ADDED (not on the original candidate list)
+@article{lyu2024towards,
+  author    = {Lyu, Qing and Apidianaki, Marianna and Callison-Burch, Chris},
+  title     = {Towards Faithful Model Explanation in {NLP}: A Survey},
+  journal   = {Computational Linguistics},
+  volume    = {50},
+  number    = {2},
+  pages     = {657--723},
+  publisher = {MIT Press},
+  year      = {2024},
+  doi       = {10.1162/coli_a_00511},
+  url       = {https://aclanthology.org/2024.cl-2.6/}
+}
+
+@misc{doshivelez2017towards,
+  author        = {Doshi-Velez, Finale and Kim, Been},
+  title         = {Towards A Rigorous Science of Interpretable Machine Learning},
+  year          = {2017},
+  eprint        = {1702.08608},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1702.08608}
+}
+
+% ---------------------------------------------------------------------------
+% Context attribution and citations in LLMs
+% ---------------------------------------------------------------------------
+
+@inproceedings{cohenwang2024contextcite,
+  author    = {Cohen-Wang, Benjamin and Shah, Harshay and Georgiev, Kristian and M{\k{a}}dry, Aleksander},
+  title     = {{ContextCite}: Attributing Model Generation to Context},
+  booktitle = {Advances in Neural Information Processing Systems 37 (NeurIPS 2024)},
+  volume    = {37},
+  pages     = {95764--95807},
+  year      = {2024},
+  doi       = {10.52202/079017-3035},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/adbea136219b64db96a9941e4249a857-Abstract-Conference.html}
+}
+
+@inproceedings{chuang2025selfcite,
+  author    = {Chuang, Yung-Sung and Cohen-Wang, Benjamin and Shen, Zejiang and Wu, Zhaofeng and Xu, Hu and Lin, Xi Victoria and Glass, James R. and Li, Shang-Wen and Yih, Wen-Tau},
+  title     = {{SelfCite}: Self-Supervised Alignment for Context Attribution in Large Language Models},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning},
+  editor    = {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {267},
+  pages     = {10839--10858},
+  publisher = {PMLR},
+  year      = {2025},
+  url       = {https://proceedings.mlr.press/v267/chuang25a.html}
+}
+
+@inproceedings{wallat2025correctness,
+  author    = {Wallat, Jonas and Heuss, Maria and de Rijke, Maarten and Anand, Avishek},
+  title     = {Correctness is not Faithfulness in Retrieval Augmented Generation Attributions},
+  booktitle = {Proceedings of the 2025 International ACM SIGIR Conference on Innovative Concepts and Theories in Information Retrieval (ICTIR '25)},
+  pages     = {22--32},
+  publisher = {Association for Computing Machinery},
+  address   = {Padua, Italy},
+  year      = {2025},
+  doi       = {10.1145/3731120.3744592},
+  note      = {Preprint: arXiv:2412.18004, titled ``Correctness is not Faithfulness in RAG Attributions''}
+}
+
+@inproceedings{qi2024model,
+  author    = {Qi, Jirui and Sarti, Gabriele and Fern{\'a}ndez, Raquel and Bisazza, Arianna},
+  title     = {Model Internals-based Answer Attribution for Trustworthy Retrieval-Augmented Generation},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  editor    = {Al-Onaizan, Yaser and Bansal, Mohit and Chen, Yun-Nung},
+  pages     = {6037--6053},
+  publisher = {Association for Computational Linguistics},
+  address   = {Miami, Florida, USA},
+  month     = nov,
+  year      = {2024},
+  doi       = {10.18653/v1/2024.emnlp-main.347},
+  url       = {https://aclanthology.org/2024.emnlp-main.347/}
+}
+
+@inproceedings{gao2023enabling,
+  author    = {Gao, Tianyu and Yen, Howard and Yu, Jiatong and Chen, Danqi},
+  title     = {Enabling Large Language Models to Generate Text with Citations},
+  booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  editor    = {Bouamor, Houda and Pino, Juan and Bali, Kalika},
+  pages     = {6465--6488},
+  publisher = {Association for Computational Linguistics},
+  address   = {Singapore},
+  month     = dec,
+  year      = {2023},
+  doi       = {10.18653/v1/2023.emnlp-main.398},
+  url       = {https://aclanthology.org/2023.emnlp-main.398/}
+}
+
+@article{rashkin2023measuring,
+  author    = {Rashkin, Hannah and Nikolaev, Vitaly and Lamm, Matthew and Aroyo, Lora and Collins, Michael and Das, Dipanjan and Petrov, Slav and Tomar, Gaurav Singh and Turc, Iulia and Reitter, David},
+  title     = {Measuring Attribution in Natural Language Generation Models},
+  journal   = {Computational Linguistics},
+  volume    = {49},
+  number    = {4},
+  pages     = {777--840},
+  publisher = {MIT Press},
+  month     = dec,
+  year      = {2023},
+  doi       = {10.1162/coli_a_00486},
+  url       = {https://aclanthology.org/2023.cl-4.2/}
+}
+
+@inproceedings{lewis2020retrieval,
+  author    = {Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\"a}schel, Tim and Riedel, Sebastian and Kiela, Douwe},
+  title     = {Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks},
+  booktitle = {Advances in Neural Information Processing Systems 33 (NeurIPS 2020)},
+  volume    = {33},
+  pages     = {9459--9474},
+  year      = {2020},
+  url       = {https://papers.nips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html}
+}
+
+% ---------------------------------------------------------------------------
+% Position and order sensitivity
+% ---------------------------------------------------------------------------
+
+@article{liu2024lost,
+  author    = {Liu, Nelson F. and Lin, Kevin and Hewitt, John and Paranjape, Ashwin and Bevilacqua, Michele and Petroni, Fabio and Liang, Percy},
+  title     = {Lost in the Middle: How Language Models Use Long Contexts},
+  journal   = {Transactions of the Association for Computational Linguistics},
+  volume    = {12},
+  pages     = {157--173},
+  publisher = {MIT Press},
+  year      = {2024},
+  doi       = {10.1162/tacl_a_00638},
+  url       = {https://aclanthology.org/2024.tacl-1.9/}
+}
+
+@inproceedings{zhao2021calibrate,
+  author    = {Zhao, Zihao and Wallace, Eric and Feng, Shi and Klein, Dan and Singh, Sameer},
+  title     = {Calibrate Before Use: Improving Few-shot Performance of Language Models},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  editor    = {Meila, Marina and Zhang, Tong},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  pages     = {12697--12706},
+  publisher = {PMLR},
+  year      = {2021},
+  url       = {https://proceedings.mlr.press/v139/zhao21c.html}
+}
+
+@inproceedings{lu2022fantastically,
+  author    = {Lu, Yao and Bartolo, Max and Moore, Alastair and Riedel, Sebastian and Stenetorp, Pontus},
+  title     = {Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity},
+  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  editor    = {Muresan, Smaranda and Nakov, Preslav and Villavicencio, Aline},
+  pages     = {8086--8098},
+  publisher = {Association for Computational Linguistics},
+  address   = {Dublin, Ireland},
+  month     = may,
+  year      = {2022},
+  doi       = {10.18653/v1/2022.acl-long.556},
+  url       = {https://aclanthology.org/2022.acl-long.556/}
+}
+
+% ---------------------------------------------------------------------------
+% Model and software
+% ---------------------------------------------------------------------------
+
+@misc{abdin2024phi3,
+  author        = {Marah Abdin and Jyoti Aneja and Hany Awadalla and Ahmed Awadallah and Ammar Ahmad Awan and Nguyen Bach and Amit Bahree and Arash Bakhtiari and Jianmin Bao and Harkirat Behl and Alon Benhaim and Misha Bilenko and Johan Bjorck and S{\'e}bastien Bubeck and Martin Cai and Qin Cai and Vishrav Chaudhary and Dong Chen and Dongdong Chen and Weizhu Chen and Yen-Chun Chen and Yi-Ling Chen and Hao Cheng and Parul Chopra and Xiyang Dai and Matthew Dixon and Ronen Eldan and Victor Fragoso and Jianfeng Gao and Mei Gao and Min Gao and Amit Garg and Del Giorno, Allie and Abhishek Goswami and Suriya Gunasekar and Emman Haider and Junheng Hao and Russell J. Hewett and Wenxiang Hu and Jamie Huynh and Dan Iter and Sam Ade Jacobs and Mojan Javaheripi and Xin Jin and Nikos Karampatziakis and Piero Kauffmann and Mahoud Khademi and Dongwoo Kim and Young Jin Kim and Lev Kurilenko and James R. Lee and Yin Tat Lee and Yuanzhi Li and Yunsheng Li and Chen Liang and Lars Liden and Xihui Lin and Zeqi Lin and Ce Liu and Liyuan Liu and Mengchen Liu and Weishung Liu and Xiaodong Liu and Chong Luo and Piyush Madan and Ali Mahmoudzadeh and David Majercak and Matt Mazzola and Teodoro Mendes, Caio C{\'e}sar and Arindam Mitra and Hardik Modi and Anh Nguyen and Brandon Norick and Barun Patra and Daniel Perez-Becker and Thomas Portet and Reid Pryzant and Heyang Qin and Marko Radmilac and Liliang Ren and Gustavo de Rosa and Corby Rosset and Sambudha Roy and Olatunji Ruwase and Olli Saarikivi and Amin Saied and Adil Salim and Michael Santacroce and Shital Shah and Ning Shang and Hiteshi Sharma and Yelong Shen and Swadheen Shukla and Xia Song and Masahiro Tanaka and Andrea Tupini and Praneetha Vaddamanu and Chunyu Wang and Guanhua Wang and Lijuan Wang and Shuohang Wang and Xin Wang and Yu Wang and Rachel Ward and Wen Wen and Philipp Witte and Haiping Wu and Xiaoxia Wu and Michael Wyatt and Bin Xiao and Can Xu and Jiahang Xu and Weijian Xu and Jilong Xue and Sonali Yadav and Fan Yang and Jianwei Yang and Yifan Yang and Ziyi Yang and Donghan Yu and Lu Yuan and Chenruidong Zhang and Cyril Zhang and Jianwen Zhang and Li Lyna Zhang and Yi Zhang and Yue Zhang and Yunan Zhang and Xiren Zhou},
+  title         = {Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone},
+  year          = {2024},
+  eprint        = {2404.14219},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2404.14219}
+}
+
+@inproceedings{wolf2020transformers,
+  author    = {Wolf, Thomas and Debut, Lysandre and Sanh, Victor and Chaumond, Julien and Delangue, Clement and Moi, Anthony and Cistac, Pierric and Rault, Tim and Louf, Remi and Funtowicz, Morgan and Davison, Joe and Shleifer, Sam and von Platen, Patrick and Ma, Clara and Jernite, Yacine and Plu, Julien and Xu, Canwen and Le Scao, Teven and Gugger, Sylvain and Drame, Mariama and Lhoest, Quentin and Rush, Alexander},
+  title     = {Transformers: State-of-the-Art Natural Language Processing},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  editor    = {Liu, Qun and Schlangen, David},
+  pages     = {38--45},
+  publisher = {Association for Computational Linguistics},
+  address   = {Online},
+  month     = oct,
+  year      = {2020},
+  doi       = {10.18653/v1/2020.emnlp-demos.6},
+  url       = {https://aclanthology.org/2020.emnlp-demos.6/}
+}
+
+@inproceedings{paszke2019pytorch,
+  author    = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  title     = {{PyTorch}: An Imperative Style, High-Performance Deep Learning Library},
+  booktitle = {Advances in Neural Information Processing Systems 32 (NeurIPS 2019)},
+  volume    = {32},
+  year      = {2019},
+  url       = {https://papers.nips.cc/paper_files/paper/2019/hash/bdbca288fee7f92f2bfa9f7012727740-Abstract.html}
+}

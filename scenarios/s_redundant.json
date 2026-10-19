@@ -1,0 +1,31 @@
+{
+  "scenario_id": "s_redundant",
+  "kind": "synthetic_control",
+  "structure": "redundant",
+  "status": "frozen (amendment 2)",
+  "question": "Using the decision rule below, classify the 12-month signal for Economy L's equity market. Decision rule: the signal is set only by an official report of the central bank's policy-rate decision at its most recent meeting. A rate cut means Positive, a rate hike means Negative, and an unchanged rate means Neutral. Any one official report of that decision is enough. Analyst commentary and forecasts do not count. If no official report of the most recent decision is given, the signal is Neutral.",
+  "records": {
+    "E1": "The central bank of Economy L stated in its press release that it raised its policy rate by 25 basis points at its most recent meeting.",
+    "E2": "Several market commentators in Economy L said they expect the central bank to keep tightening policy over the coming year.",
+    "E3": "Economy L's official gazette published the central bank's decision, taken at its most recent meeting, to raise the policy rate by 25 basis points.",
+    "E4": "Economy L's statistics office moved its headquarters to a new building in the capital."
+  },
+  "designed": {
+    "redundant": ["E1", "E3"],
+    "weak": ["E2"],
+    "distractors": ["E4"],
+    "roles": {
+      "E1": "official report of the hike (sufficient alone)",
+      "E2": "rule-excluded commentary pointing the same way (designed influence 0; tempting to cite)",
+      "E3": "second official report of the same hike (sufficient alone)",
+      "E4": "directionless distractor"
+    },
+    "answer_rule": {
+      "type": "contains_any",
+      "records": ["E1", "E3"],
+      "if_true": "Negative",
+      "if_false": "Neutral"
+    },
+    "faithful_citations": [["E1"], ["E3"], ["E1", "E3"]]
+  }
+}

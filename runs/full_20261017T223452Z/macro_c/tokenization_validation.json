@@ -1,0 +1,2144 @@
+[
+  {
+    "subset": "none",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 110,
+      "len_string": 110
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 113
+  },
+  {
+    "subset": "E1",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 137,
+      "len_string": 137
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 140
+  },
+  {
+    "subset": "E2",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 146,
+      "len_string": 146
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 149
+  },
+  {
+    "subset": "E3",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 147,
+      "len_string": 147
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 150
+  },
+  {
+    "subset": "E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 144,
+      "len_string": 144
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 147
+  },
+  {
+    "subset": "E1+E2",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 180,
+      "len_string": 180
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 183
+  },
+  {
+    "subset": "E1+E3",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 181,
+      "len_string": 181
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 184
+  },
+  {
+    "subset": "E1+E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 178,
+      "len_string": 178
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 181
+  },
+  {
+    "subset": "E2+E3",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 190,
+      "len_string": 190
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 193
+  },
+  {
+    "subset": "E2+E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 187,
+      "len_string": 187
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 190
+  },
+  {
+    "subset": "E3+E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 188,
+      "len_string": 188
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 191
+  },
+  {
+    "subset": "E1+E2+E3",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 224,
+      "len_string": 224
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 227
+  },
+  {
+    "subset": "E1+E2+E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 221,
+      "len_string": 221
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 224
+  },
+  {
+    "subset": "E1+E3+E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 222,
+      "len_string": 222
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 225
+  },
+  {
+    "subset": "E2+E3+E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 231,
+      "len_string": 231
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 234
+  },
+  {
+    "subset": "E1+E2+E3+E4",
+    "ordering": 0,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 265,
+      "len_string": 265
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 268
+  },
+  {
+    "subset": "none",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 110,
+      "len_string": 110
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 113
+  },
+  {
+    "subset": "E1",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 137,
+      "len_string": 137
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 140
+  },
+  {
+    "subset": "E2",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 146,
+      "len_string": 146
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 149
+  },
+  {
+    "subset": "E3",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 147,
+      "len_string": 147
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 150
+  },
+  {
+    "subset": "E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 144,
+      "len_string": 144
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 147
+  },
+  {
+    "subset": "E1+E2",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 180,
+      "len_string": 180
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 183
+  },
+  {
+    "subset": "E1+E3",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 181,
+      "len_string": 181
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 184
+  },
+  {
+    "subset": "E1+E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 178,
+      "len_string": 178
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 181
+  },
+  {
+    "subset": "E2+E3",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 190,
+      "len_string": 190
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 193
+  },
+  {
+    "subset": "E2+E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 187,
+      "len_string": 187
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 190
+  },
+  {
+    "subset": "E3+E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 188,
+      "len_string": 188
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 191
+  },
+  {
+    "subset": "E1+E2+E3",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 224,
+      "len_string": 224
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 227
+  },
+  {
+    "subset": "E1+E2+E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 221,
+      "len_string": 221
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 224
+  },
+  {
+    "subset": "E1+E3+E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 222,
+      "len_string": 222
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 225
+  },
+  {
+    "subset": "E2+E3+E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 231,
+      "len_string": 231
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 234
+  },
+  {
+    "subset": "E1+E2+E3+E4",
+    "ordering": 1,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 265,
+      "len_string": 265
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 268
+  },
+  {
+    "subset": "none",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 110,
+      "len_string": 110
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 113
+  },
+  {
+    "subset": "E1",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 137,
+      "len_string": 137
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 140
+  },
+  {
+    "subset": "E2",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 146,
+      "len_string": 146
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 149
+  },
+  {
+    "subset": "E3",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 147,
+      "len_string": 147
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 150
+  },
+  {
+    "subset": "E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 144,
+      "len_string": 144
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 147
+  },
+  {
+    "subset": "E1+E2",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 180,
+      "len_string": 180
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 183
+  },
+  {
+    "subset": "E1+E3",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 181,
+      "len_string": 181
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 184
+  },
+  {
+    "subset": "E1+E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 178,
+      "len_string": 178
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 181
+  },
+  {
+    "subset": "E2+E3",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 190,
+      "len_string": 190
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 193
+  },
+  {
+    "subset": "E2+E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 187,
+      "len_string": 187
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 190
+  },
+  {
+    "subset": "E3+E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 188,
+      "len_string": 188
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 191
+  },
+  {
+    "subset": "E1+E2+E3",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 224,
+      "len_string": 224
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 227
+  },
+  {
+    "subset": "E1+E2+E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 221,
+      "len_string": 221
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 224
+  },
+  {
+    "subset": "E1+E3+E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 222,
+      "len_string": 222
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 225
+  },
+  {
+    "subset": "E2+E3+E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 231,
+      "len_string": 231
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 234
+  },
+  {
+    "subset": "E1+E2+E3+E4",
+    "ordering": 2,
+    "flipped": false,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 265,
+      "len_string": 265
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 268
+  },
+  {
+    "subset": "E1+E2+E3+E4",
+    "ordering": 0,
+    "flipped": true,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 265,
+      "len_string": 265
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 268
+  },
+  {
+    "subset": "E1+E2+E3+E4",
+    "ordering": 1,
+    "flipped": true,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 265,
+      "len_string": 265
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 268
+  },
+  {
+    "subset": "E1+E2+E3+E4",
+    "ordering": 2,
+    "flipped": true,
+    "roundtrip_ok": true,
+    "roundtrip": {
+      "ok": true,
+      "len_template": 265,
+      "len_string": 265
+    },
+    "label_ids": {
+      "Positive": [
+        10321,
+        3321
+      ],
+      "Neutral": [
+        2448,
+        329,
+        1705
+      ],
+      "Negative": [
+        12610,
+        1230
+      ]
+    },
+    "label_tokens": {
+      "Positive": [
+        "\u2581Pos",
+        "itive"
+      ],
+      "Neutral": [
+        "\u2581Ne",
+        "ut",
+        "ral"
+      ],
+      "Negative": [
+        "\u2581Neg",
+        "ative"
+      ]
+    },
+    "prompt_len": 268
+  }
+]

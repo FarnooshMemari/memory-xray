@@ -1,0 +1,10 @@
+# Re-running the GPU experiment (optional; ~40 min on a Colab T4 plus model download).
+# Versions recorded in the original run's manifest (runs/full_20261017T223452Z/manifest.json):
+#   Python 3.13.15, torch 2.11.0+cu130, transformers 5.18.0, CUDA device "Tesla T4".
+# transformers is pinned to the recorded version; torch should match your CUDA setup
+# (Colab ships its own torch build: keep it rather than reinstalling).
+# accelerate was installed unpinned (>=0.31) and its version was not recorded.
+-r requirements.txt
+torch>=2.1
+transformers==5.18.0
+accelerate>=0.31

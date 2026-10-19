@@ -1,0 +1,117 @@
+{
+  "infrastructure": [
+    {
+      "id": "I1",
+      "name": "chat-template round trip",
+      "passed": true,
+      "detail": "48/48 cells match"
+    },
+    {
+      "id": "I2",
+      "name": "label token boundaries, prefix-free labels, identical label ids across cells",
+      "passed": true,
+      "detail": "0 tokenization errors; 1 distinct label-id sets"
+    },
+    {
+      "id": "I3",
+      "name": "finite log-probs; consistent multi-token recomputation",
+      "passed": false,
+      "detail": "0 non-finite cells; max first-token recompute diff 6.17e-02"
+    },
+    {
+      "id": "I4",
+      "name": "label mass >= 0.95 in every cell",
+      "passed": true,
+      "detail": "min 0.9703, median 0.9803"
+    },
+    {
+      "id": "I5",
+      "name": "greedy decoding reproduces the scored argmax (cells with margin >= 0.1)",
+      "passed": true,
+      "detail": "48/48 eligible cells match; 48/48 of all cells"
+    },
+    {
+      "id": "I6",
+      "name": "re-scoring repeatability (max |delta log p| <= 0.001)",
+      "passed": true,
+      "detail": "3 cells re-scored; max diff 0.00e+00"
+    },
+    {
+      "id": "I7",
+      "name": "completeness: 16 subsets x 3 orderings",
+      "passed": true,
+      "detail": "48 cells, 48 unique"
+    }
+  ],
+  "behavioral": [
+    {
+      "id": "B1",
+      "name": "full evidence: argmax equals the designed answer in every ordering",
+      "passed": true,
+      "detail": [
+        "Positive",
+        "Positive",
+        "Positive"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "decisive record alone: argmax equals the designed answer (sufficiency)",
+      "passed": true,
+      "detail": [
+        "Positive",
+        "Positive",
+        "Positive"
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "decisive record removed: argmax changes (necessity)",
+      "passed": true,
+      "detail": [
+        "Neutral",
+        "Neutral",
+        "Neutral"
+      ]
+    },
+    {
+      "id": "B4",
+      "name": "argmax equals the designed answer in >= 15/16 subsets per ordering",
+      "passed": true,
+      "detail": [
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "B5",
+      "name": "Shapley recovers the design (decisive largest, share >= 0.8, |distractor| <= 0.05)",
+      "passed": true,
+      "detail": [
+        {
+          "ordering": 0,
+          "decisive_is_max": true,
+          "decisive_share": 0.9998,
+          "max_abs_distractor_phi": 0.0003,
+          "total_effect": 0.9991
+        },
+        {
+          "ordering": 1,
+          "decisive_is_max": true,
+          "decisive_share": 0.9997,
+          "max_abs_distractor_phi": 0.0001,
+          "total_effect": 0.9994
+        },
+        {
+          "ordering": 2,
+          "decisive_is_max": true,
+          "decisive_share": 0.9997,
+          "max_abs_distractor_phi": 0.0002,
+          "total_effect": 0.9995
+        }
+      ]
+    }
+  ],
+  "flags": []
+}

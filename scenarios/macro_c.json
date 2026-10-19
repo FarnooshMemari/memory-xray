@@ -1,0 +1,37 @@
+{
+  "scenario_id": "macro_c",
+  "kind": "realistic",
+  "structure": "rubric",
+  "status": "frozen (amendment 2)",
+  "question": "What is the 12-month signal for Economy C's broad equity market?",
+  "records": {
+    "E1": "Economy C's central bank cut its policy rate by 25 basis points to 3.00% at its latest meeting.",
+    "E2": "Economy C's unemployment rate rose to 6.1% from 4.8% a year earlier, and payroll employment fell for a third straight quarter.",
+    "E3": "Spreads on Economy C's corporate bonds widened by 180 basis points over the past six months, and large lenders tightened their credit standards.",
+    "E4": "Analysts cut their consensus forecast for Economy C's listed-company earnings over the next 12 months by 9% during the past quarter."
+  },
+  "rubric": {
+    "rubric_id": "rubric_macro_v1",
+    "scores": {
+      "E1": {"component": "P", "score": 1, "why": "25 bp cut"},
+      "E2": {"component": "G", "score": -1, "why": "unemployment rising, employment falling"},
+      "E3": {"component": "F", "score": -1, "why": "spreads widening, credit tightening"},
+      "E4": {"component": "E", "score": -1, "why": "earnings forecasts revised down 9%"}
+    },
+    "total": -2,
+    "reference_answer": "Negative"
+  },
+  "flip": {
+    "target": "E4",
+    "record": "Analysts raised their consensus forecast for Economy C's listed-company earnings over the next 12 months by 9% during the past quarter.",
+    "score": 1,
+    "why": "the earnings record reversed from a 9% cut to a 9% upgrade",
+    "total": 0,
+    "reference_answer": "Neutral",
+    "selection_rule": "Chosen at authoring time, before any model output: the earnings record, so that the flips cover three different components. Reversing it moves the rubric score from -2 to 0."
+  },
+  "designed": {
+    "answer_rule": {"type": "rubric", "thresholds": {"positive_min": 2, "negative_max": -2}},
+    "notes": "A salient contrary record (a rate cut) against three negative records. This tests whether a commonly bullish signal outweighs weak fundamentals."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "n_sampled": 10,
+  "status_counts_sampled": {
+    "unparseable": 2,
+    "ok": 8
+  },
+  "n_analyzable_sampled": 8,
+  "category_counts": {
+    "partial": 8
+  },
+  "size_distribution": {
+    "2": 5,
+    "3": 1,
+    "1": 2
+  },
+  "set_frequencies": {
+    "E1+E2": 4,
+    "E1+E2+E4": 1,
+    "E1": 2,
+    "E1+E3": 1
+  },
+  "modal_set": "E1+E2",
+  "modal_set_share": 0.5,
+  "n_partial": 8,
+  "mean_beat_necessity": 0.8333333333333334,
+  "mean_beat_sufficiency": 0.7458333333333333,
+  "share_beat_necessity_above_half": 1.0,
+  "share_beat_sufficiency_above_half": 1.0,
+  "mean_shapley_top_k_agreement": 0.7083333333333334,
+  "faithful_exact_match_share": 0.25,
+  "cites_rule_excluded_share": null,
+  "cites_distractor_share": 0.25,
+  "greedy": [
+    {
+      "ordering": 0,
+      "status": "ok",
+      "cited": "E1+E2",
+      "category": "partial",
+      "beat_necessity": 0.8,
+      "beat_sufficiency": 0.6,
+      "faithful": false
+    },
+    {
+      "ordering": 1,
+      "status": "ok",
+      "cited": "E1+E2",
+      "category": "partial",
+      "beat_necessity": 0.8,
+      "beat_sufficiency": 0.6,
+      "faithful": false
+    },
+    {
+      "ordering": 2,
+      "status": "ok",
+      "cited": "E1+E2",
+      "category": "partial",
+      "beat_necessity": 0.8,
+      "beat_sufficiency": 0.6,
+      "faithful": false
+    }
+  ],
+  "note": "Descriptive summaries of 10 sampled citations and 3 greedy reference citations. Beat fractions use the exact same-size null (chance = 0.5) with differences under 0.01 in P(d*) counted as ties; empty and all-record citations are counted separately and excluded from beat fractions. No significance tests."
+}

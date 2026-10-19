@@ -1,0 +1,30 @@
+{
+  "frozen_at_utc": "2026-10-17T21:05:42Z",
+  "protocol": "v0.2 + amendments 1-2",
+  "before_any_model_test_of": [
+    "s_redundant",
+    "s_conflict",
+    "macro_a",
+    "macro_b",
+    "macro_c"
+  ],
+  "files": {
+    "scenarios/s_single.json": "43a81fc20b0a831b4a6738d154f5757ca3ad459b62d0845a0698cd98e802db8a",
+    "scenarios/s_redundant.json": "bc98e8d98fea811a964eec8c77ad4e74ae0e2c70cb2b43dc4a6b7a908866e588",
+    "scenarios/s_conflict.json": "a9f23166b3b4752370089dc283dfc31919a0c7a2cbcb2b9f7be7ae1e71243587",
+    "scenarios/macro_a.json": "7bbbd01465efef1bb36bca962e6a04bce29378ce740a65956b6bde3797e23fc8",
+    "scenarios/macro_b.json": "800fc302e55afe37a92d8e58a535cac836de9d0d9f029d55e049ea9c58927cb1",
+    "scenarios/macro_c.json": "963cfa90bec02ee5fcd2828e2f337c821a658c7c5d13c11f3fef07461719b777",
+    "scenarios/rubric_macro_v1.json": "6a0c287f04c76f5de3d4d05f02e4093ea8c0bbc80b23445e678fb91b7e1309d3",
+    "scenarios/validation_criteria.json": "8327c97061f31da191dcf8d8ff3bc464ebd64b814db6f683b3f89ebca2aa9134"
+  },
+  "design_fingerprints": {
+    "s_single": "151b929fe0a7350acec310a225596e84172106b145bb27ce2071931efe7ce69d",
+    "s_redundant": "fad257f6b46a1de0e92c9cc607fc8c691f880b11cd294c0feb6cab53b8de62d8",
+    "s_conflict": "a2f6869dbdce62b7e2acc08b6cb97b1008636e4d066a48fdd4fd3741bd8f6309",
+    "macro_a": "64dd7b4f92b36ea890c0a0338b7aada8e86b29a2dc196cd4a304335ce03445b6",
+    "macro_b": "2d8007c462baebfe68a071e040019d3d7e53e1f9ee913467627e5cdc0c48f270",
+    "macro_c": "8533ac1724e5bcb4b6de46fb4794f557ea91a0348b556d0d08fde9a29dda59a8"
+  },
+  "validation_report_sha256": "a1ba6882f7ed3af18e500b448901887a69fb6ca814e7244802d7e4e70fff34f3"
+}

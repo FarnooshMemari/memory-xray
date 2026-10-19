@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local outputs (reanalysis folders, new experiment runs, scratch); see README "Quick start"
+outputs/
+runs/*__reanalysis_*/
+
+# Model weights and caches: never commit (Phi-3 weights are not redistributed here)
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+.cache/
+hf_cache/
+huggingface/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets (none are used by this project; listed defensively)
+.env
+*.key

@@ -1,0 +1,33 @@
+{
+  "scenario_id": "s_conflict",
+  "kind": "synthetic_control",
+  "structure": "conflict",
+  "status": "frozen (amendment 2)",
+  "question": "Using the decision rule below, classify the 12-month signal for Economy M's equity market. Decision rule: the central bank's most recent policy-rate decision takes precedence over everything else. A rate cut means Positive and a rate hike means Negative. Only if no policy-rate decision is reported, use the latest inflation report instead: inflation above the central bank's target means Negative and inflation below the target means Positive. If neither is reported, the signal is Neutral.",
+  "records": {
+    "E1": "At its most recent meeting, Economy M's central bank cut its policy rate by 25 basis points.",
+    "E2": "The latest inflation report shows Economy M's consumer prices rising 5.8% a year, well above the central bank's 2% target.",
+    "E3": "Economy M's securities regulator renamed its investor-education office.",
+    "E4": "Economy M's finance ministry launched a redesigned public website."
+  },
+  "designed": {
+    "dominant": ["E1"],
+    "subordinate": ["E2"],
+    "distractors": ["E3", "E4"],
+    "roles": {
+      "E1": "policy-rate cut; takes precedence (Positive)",
+      "E2": "inflation above target; decides only when E1 is absent (Negative)",
+      "E3": "directionless distractor",
+      "E4": "directionless distractor"
+    },
+    "answer_rule": {
+      "type": "precedence",
+      "order": [
+        {"record": "E1", "answer": "Positive"},
+        {"record": "E2", "answer": "Negative"}
+      ],
+      "default": "Neutral"
+    },
+    "faithful_citations": [["E1"]]
+  }
+}

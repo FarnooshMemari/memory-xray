@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""Recompute analysis, checks and report from a saved run directory (no model needed).
+
+Usage: python reanalyze.py runs/<run_id>
+Writes to a sibling folder runs/<run_id>__reanalysis_<UTC time>/ and never adds
+or changes anything inside the run folder.
+"""
+from __future__ import annotations
+
+import datetime as dt
+import json
+import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+
+from mxr import checks, design  # noqa: E402
+from mxr.analysis import analyze  # noqa: E402
+from mxr.report import render_report  # noqa: E402
+
+
+def _jsonl(path):
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+
+
+def main(run_dir):
+    d = Path(run_dir)
+    manifest = json.loads((d / "manifest.json").read_text())
+    scenario = json.loads((HERE / "scenarios" / f"{manifest['scenario_id']}.json").read_text())
+    fp = design.design_fingerprint(scenario)
+    if fp != manifest["design_fingerprint"]:
+        print("WARNING: design fingerprint differs from the run's; the scenario or a prompt "
+              "constant changed since this run.")
+    cells = _jsonl(d / "cells.jsonl")
+    tokval = json.loads((d / "tokenization_validation.json").read_text())
+    greedy = _jsonl(d / "greedy_check.jsonl")
+    repeat = json.loads((d / "repeatability.json").read_text())
+
+    analysis = analyze(cells, scenario)
+    infra = checks.infrastructure_checks(cells, tokval, greedy, repeat, manifest.get("scorer"))
+    behavioral = checks.behavioral_checks_single(analysis, scenario)
+    flags = checks.descriptive_flags(analysis, scenario)
+
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    out = d.parent / f"{d.name}__reanalysis_{stamp}"
+    out.mkdir(exist_ok=False)
+    (out / "analysis.json").write_text(json.dumps(analysis, indent=2, default=str))
+    (out / "checks.json").write_text(json.dumps(
+        {"infrastructure": infra, "behavioral": behavioral, "flags": flags}, indent=2, default=str))
+    (out / "REPORT.md").write_text(render_report(manifest, infra, behavioral, flags, analysis))
+    ok = all(c["passed"] for c in infra + behavioral)
+    print(f"{'PASS' if ok else 'FAIL'}: wrote {out}")
+    return (0 if ok else 1), out
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        sys.exit(__doc__)
+    sys.exit(main(sys.argv[1])[0])

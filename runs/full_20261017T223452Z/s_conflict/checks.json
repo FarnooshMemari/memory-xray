@@ -1,0 +1,133 @@
+{
+  "infrastructure": [
+    {
+      "id": "I1",
+      "name": "chat-template round trip",
+      "passed": true,
+      "detail": "48/48 cells match"
+    },
+    {
+      "id": "I2",
+      "name": "label token boundaries, prefix-free labels, identical label ids across cells",
+      "passed": true,
+      "detail": "0 tokenization errors; 1 distinct label-id sets"
+    },
+    {
+      "id": "I3",
+      "name": "finite log-probs; consistent multi-token recomputation",
+      "passed": true,
+      "detail": "0 non-finite cells; max first-token recompute diff 0.00e+00"
+    },
+    {
+      "id": "I4",
+      "name": "label mass >= 0.95 in every cell",
+      "passed": true,
+      "detail": "min 0.9697, median 0.9894"
+    },
+    {
+      "id": "I5",
+      "name": "greedy decoding reproduces the scored argmax (cells with margin >= 0.1)",
+      "passed": true,
+      "detail": "47/47 eligible cells match; 48/48 of all cells"
+    },
+    {
+      "id": "I6",
+      "name": "re-scoring repeatability (max |delta log p| <= 0.001)",
+      "passed": true,
+      "detail": "3 cells re-scored; max diff 0.00e+00"
+    },
+    {
+      "id": "I7",
+      "name": "completeness: 16 subsets x 3 orderings",
+      "passed": true,
+      "detail": "48 cells, 48 unique"
+    },
+    {
+      "id": "I8",
+      "name": "model commit pinned and verified",
+      "passed": true,
+      "detail": "commit f39ac1d28e925b323eae81227eaba4464caced4e (pinned_sha); verified in cache: True"
+    },
+    {
+      "id": "I9",
+      "name": "float32 logits; stored weights unchanged",
+      "passed": true,
+      "detail": "logits torch.float32; storage float16, compute float32; layer weight dtypes after forward ['torch.float16']"
+    }
+  ],
+  "behavioral": [
+    {
+      "id": "BC1",
+      "name": "full evidence: argmax equals the designed answer (precedence) in every ordering",
+      "passed": false,
+      "detail": [
+        "Negative",
+        "Negative",
+        "Positive"
+      ]
+    },
+    {
+      "id": "BC2",
+      "name": "subordinate record alone gives its own answer (Negative)",
+      "passed": true,
+      "detail": [
+        "Negative",
+        "Negative",
+        "Negative"
+      ]
+    },
+    {
+      "id": "BC3",
+      "name": "dominant and subordinate together: precedence holds (Positive)",
+      "passed": false,
+      "detail": [
+        "Negative",
+        "Negative",
+        "Positive"
+      ]
+    },
+    {
+      "id": "BC4",
+      "name": "argmax equals the designed answer in >= 15/16 subsets per ordering",
+      "passed": false,
+      "detail": [
+        12,
+        12,
+        16
+      ]
+    },
+    {
+      "id": "BC5",
+      "name": "Shapley recovers precedence (dominant largest, share >= 0.8, |distractor| <= 0.05)",
+      "passed": false,
+      "detail": [
+        {
+          "ordering": 0,
+          "dominant_is_max": true,
+          "dominant_share": 1.7914,
+          "max_abs_distractor_phi": 0.0268,
+          "total_effect": 0.3645
+        },
+        {
+          "ordering": 1,
+          "dominant_is_max": true,
+          "dominant_share": 1.5697,
+          "max_abs_distractor_phi": 0.0575,
+          "total_effect": 0.4268
+        },
+        {
+          "ordering": 2,
+          "dominant_is_max": true,
+          "dominant_share": 1.2889,
+          "max_abs_distractor_phi": 0.0026,
+          "total_effect": 0.6302
+        }
+      ]
+    }
+  ],
+  "flags": [
+    "ordering sensitivity: range of phi(E1) across orderings is 0.159 (> 0.1)",
+    "ordering sensitivity: range of phi(E2) across orderings is 0.156 (> 0.1)",
+    "full-set argmax differs across orderings"
+  ]
+}

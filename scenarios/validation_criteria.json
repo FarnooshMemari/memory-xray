@@ -1,0 +1,55 @@
+{
+  "criteria_version": "amendment-2",
+  "note": "Pass/fail thresholds are fixed before any model test of these scenarios. Behavioral checks are validation checks of the measurement on designed controls, not statistical hypothesis tests. Every check is evaluated in each of the 3 fixed orderings. Shares are fractions of the total effect v(full) - v(empty), with v = P_norm(d* | S).",
+  "infrastructure": {
+    "ids": ["I1", "I2", "I3", "I4", "I5", "I6", "I7", "I8", "I9"],
+    "LABEL_MASS_MIN": 0.95,
+    "GREEDY_MARGIN_MIN": 0.10,
+    "REPEAT_TOL": 0.001,
+    "FIRST_TOKEN_RECOMPUTE_TOL": 0.001
+  },
+  "single_decisive": {
+    "ids": ["B1", "B2", "B3", "B4", "B5"],
+    "DESIGNED_AGREEMENT_MIN": 15,
+    "DECISIVE_SHARE_MIN": 0.80,
+    "DISTRACTOR_ABS_MAX": 0.05
+  },
+  "redundant": {
+    "ids": ["BR1", "BR2", "BR3", "BR4", "BR5", "BR6"],
+    "DESIGNED_AGREEMENT_MIN": 15,
+    "EACH_REDUNDANT_SHARE_MIN": 0.35,
+    "JOINT_REDUNDANT_SHARE_MIN": 0.80,
+    "REDUNDANT_ASYMMETRY_MAX": 0.15,
+    "LOO_SHARE_MAX": 0.10,
+    "DISTRACTOR_ABS_MAX": 0.05,
+    "WEAK_ABS_FLAG": 0.05,
+    "weak_record_is_descriptive_only": true
+  },
+  "conflict": {
+    "ids": ["BC1", "BC2", "BC3", "BC4", "BC5"],
+    "DESIGNED_AGREEMENT_MIN": 15,
+    "DOMINANT_SHARE_MIN": 0.80,
+    "DISTRACTOR_ABS_MAX": 0.05,
+    "subordinate_phi_is_descriptive_only": true
+  },
+  "realistic": {
+    "pass_fail": false,
+    "PRIOR_DOMINANCE_MAX": 0.70,
+    "flip_expectation": "full-set argmax moves away from d* in all 3 orderings (pre-registered comparison C4; descriptive)"
+  },
+  "descriptive": {
+    "SHAPLEY_RANGE_FLAG": 0.10
+  },
+  "citations": {
+    "samples_per_scenario": 10,
+    "samples_per_ordering": [4, 3, 3],
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 40,
+    "seed_rule": "seed = 10000 + 100 * scenario_index + sample_index (scenario_index from the experiment's scenario order; sample_index 0-9)",
+    "greedy_reference_per_ordering": 1,
+    "decision_in_context": "d* of the scenario, from the scoring stage of the same run",
+    "analysis_statuses": ["ok", "empty"]
+  }
+}

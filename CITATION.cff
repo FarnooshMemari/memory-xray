@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+title: "Memory X-Ray: Do an LLM's self-reported evidence citations match the evidence that drives its decisions?"
+abstract: >-
+  A controlled evidence-ablation study of Phi-3-mini-4k-instruct. In six scenarios (three designed
+  controls and three synthetic macro-finance cases), every subset of four evidence records is shown in
+  three fixed orderings (48 deterministic prompts per scenario), label probabilities are scored, and exact
+  Shapley values, leave-one-out, necessity and sufficiency are computed. The model's self-reported
+  citations are then tested against these behavioral attributions. Attributions are behavioral, not
+  mechanistic; results are case studies of six scenarios with one model.
+type: software
+authors:
+  - family-names: Memari
+    given-names: Farnoosh
+    affiliation: "Duke University"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/FarnooshMemari/memory-xray"
+keywords:
+  - explainable AI
+  - faithfulness
+  - self-explanation
+  - context attribution
+  - Shapley values
+  - large language models
+references:
+  - type: software
+    title: "Phi-3-mini-4k-instruct"
+    authors:
+      - name: Microsoft
+    url: "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct"
+    commit: "f39ac1d28e925b323eae81227eaba4464caced4e"

@@ -1,0 +1,14 @@
+# Memory X-Ray — core requirements (CPU only; no GPU, no model download)
+#
+# Enough to: explore the saved results, rerun the independent reanalysis and every report number,
+# redraw the figures, run reanalyze.py on the saved runs, verify the release, and run the test suite.
+# Tests that need PyTorch + transformers (tiny randomly initialized models) are skipped without them;
+# install requirements-dev.txt to run those too.
+#
+# The analysis scripts themselves use only the Python standard library; matplotlib is needed only for
+# figures. Python >= 3.10 works; Python >= 3.12 (the run used 3.13) on x86-64 regenerates the committed
+# result files byte-for-byte (older versions, and Apple Silicon, differ in the last floating-point digit;
+# see README).
+matplotlib>=3.7
+pytest>=7.0
+huggingface_hub>=0.23   # model-revision checks (mxr/scoring.py) and their offline tests; no download

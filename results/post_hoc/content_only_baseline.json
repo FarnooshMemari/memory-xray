@@ -1,0 +1,265 @@
+{
+  "POST_HOC": "Exploratory analysis defined after the results were seen. It qualifies the pre-registered citation results and does not replace them.",
+  "rule": "synthetic: designed faithful citation (largest designed set); realistic: records whose rubric score has the sign of the rubric reference answer. Never observes model behavior.",
+  "scenarios": {
+    "s_single": {
+      "content_only_set": [
+        "E2"
+      ],
+      "content_only": {
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 1.0,
+        "mean_topk": 1.0,
+        "per_ordering": [
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          }
+        ]
+      },
+      "model_pre_registered": {
+        "n_partial": 8,
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 1.0,
+        "mean_topk": 1.0
+      },
+      "model_citations_equal_to_content_set": {
+        "n": 11,
+        "of_analyzable_sampled_plus_greedy": 11
+      }
+    },
+    "s_redundant": {
+      "content_only_set": [
+        "E1",
+        "E3"
+      ],
+      "content_only": {
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 0.6333333333333333,
+        "mean_topk": 1.0,
+        "per_ordering": [
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 0.6,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 0.6,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 0.7,
+            "topk": 1.0
+          }
+        ]
+      },
+      "model_pre_registered": {
+        "n_partial": 6,
+        "mean_beat_nec": 0.8888888888888888,
+        "mean_beat_suf": 0.6555555555555556,
+        "mean_topk": 1.0
+      },
+      "model_citations_equal_to_content_set": {
+        "n": 8,
+        "of_analyzable_sampled_plus_greedy": 9
+      }
+    },
+    "s_conflict": {
+      "content_only_set": [
+        "E1"
+      ],
+      "content_only": {
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 1.0,
+        "mean_topk": 1.0,
+        "per_ordering": [
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          }
+        ]
+      },
+      "model_pre_registered": {
+        "n_partial": 8,
+        "mean_beat_nec": 0.8333333333333334,
+        "mean_beat_suf": 0.7458333333333333,
+        "mean_topk": 0.7083333333333334
+      },
+      "model_citations_equal_to_content_set": {
+        "n": 2,
+        "of_analyzable_sampled_plus_greedy": 11
+      }
+    },
+    "macro_a": {
+      "content_only_set": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "content_only": {
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 1.0,
+        "mean_topk": 1.0,
+        "per_ordering": [
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          }
+        ]
+      },
+      "model_pre_registered": {
+        "n_partial": 5,
+        "mean_beat_nec": 0.78,
+        "mean_beat_suf": 0.8,
+        "mean_topk": 0.8
+      },
+      "model_citations_equal_to_content_set": {
+        "n": 4,
+        "of_analyzable_sampled_plus_greedy": 11
+      }
+    },
+    "macro_b": {
+      "content_only_set": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "content_only": {
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 1.0,
+        "mean_topk": 1.0,
+        "per_ordering": [
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          }
+        ]
+      },
+      "model_pre_registered": {
+        "n_partial": 8,
+        "mean_beat_nec": 0.8666666666666667,
+        "mean_beat_suf": 0.8791666666666667,
+        "mean_topk": 0.8333333333333334
+      },
+      "model_citations_equal_to_content_set": {
+        "n": 4,
+        "of_analyzable_sampled_plus_greedy": 12
+      }
+    },
+    "macro_c": {
+      "content_only_set": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "content_only": {
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 1.0,
+        "mean_topk": 1.0,
+        "per_ordering": [
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          },
+          {
+            "beat_nec": 1.0,
+            "beat_suf": 1.0,
+            "topk": 1.0
+          }
+        ]
+      },
+      "model_pre_registered": {
+        "n_partial": 5,
+        "mean_beat_nec": 1.0,
+        "mean_beat_suf": 1.0,
+        "mean_topk": 1.0
+      },
+      "model_citations_equal_to_content_set": {
+        "n": 5,
+        "of_analyzable_sampled_plus_greedy": 10
+      }
+    }
+  },
+  "pooled": {
+    "content_only_18_ordering_citations": {
+      "mean_beat_nec": 1.0,
+      "mean_beat_suf": 0.9388888888888888,
+      "mean_topk": 1.0
+    },
+    "model_pre_registered_40_partial_sampled": {
+      "n_partial": 40,
+      "mean_beat_nec": 0.8958333333333334,
+      "mean_beat_suf": 0.8483333333333333,
+      "mean_topk": 0.8833333333333334
+    },
+    "scenario_metric_comparisons": {
+      "content_only_ge_model": 17,
+      "of": 18,
+      "exceptions": [
+        {
+          "scenario": "s_redundant",
+          "metric": "mean_beat_suf",
+          "content_only": 0.6333333333333333,
+          "model": 0.6555555555555556
+        }
+      ],
+      "note": "Model values are means over that scenario's sampled partial citations (n = 5-8); content-only values are means over the 3 orderings for one fixed set. Descriptive comparison only; no test."
+    },
+    "model_citations_equal_to_content_set": {
+      "n": 34,
+      "of": 64
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "about": "How every file of the original results package (160 files) appears in this release. SHA256SUMS_original_package.txt lists the original SHA-256 of the 158 files that are unchanged in content; files not listed under 'moved' or 'replaced' are at the same path, byte-identical. The 2 files under 'edited_for_public_release' received a wording edit for the public release (see CHANGES.md); their released SHA-256 is recorded here. Checked by scripts/verify_release.py.",
+  "original_package": {
+    "upload_name": "memory_xray_v02_results.zip",
+    "sha256": "a17bc1859d501ed3877413955cfa393107240eedfbed30a1df882ce3c5edf6ea",
+    "top_folder": "memory_xray_v02/",
+    "files": 160
+  },
+  "moved": {
+    "PROTOCOL_v0.2.md": "docs/PROTOCOL_v0.2.md",
+    "APPROVAL_PACKET_full_experiment.md": "docs/APPROVAL_PACKET_full_experiment.md",
+    "README.md": "docs/history/README_pre_run_infrastructure.md"
+  },
+  "replaced": {
+    "reanalyze.py": "records/original_package/replaced_files/reanalyze.py.orig",
+    "tests/test_precision.py": "records/original_package/replaced_files/test_precision.py.orig",
+    "requirements.txt": "records/original_package/replaced_files/requirements.txt.orig"
+  },
+  "edited_for_public_release": {
+    "results/RESULTS_AND_DISCUSSION.md": {
+      "sha256": "ae7b4833ded4b29ea1bbd3b1b43ce58efa4b20b15c0fa995f9510bd518754629",
+      "change": "one parenthetical cross-reference to a separate, non-public project removed from the heading of the 'Practical implications' bullet in section 6; no number, result, method or conclusion changed"
+    },
+    "results/RESULTS_AND_DISCUSSION.html": {
+      "sha256": "30f626ca0eb200768dd1f815daa34fd16e8fdcd296ac2f1801bfd53da25cddd2",
+      "change": "one parenthetical cross-reference to a separate, non-public project removed from the heading of the 'Practical implications' bullet in section 6; no number, result, method or conclusion changed"
+    }
+  }
+}

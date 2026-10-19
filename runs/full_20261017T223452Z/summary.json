@@ -1,0 +1,588 @@
+[
+  {
+    "scenario_id": "s_single",
+    "kind": "synthetic_control",
+    "structure": "single_decisive",
+    "d_star": "Positive",
+    "designed_or_reference": "Positive",
+    "infrastructure_pass": true,
+    "behavioral_pass": true,
+    "failed_checks": [],
+    "v_full_mean": 0.9993813528568322,
+    "v_empty_mean": 4.829535909678433e-05,
+    "shapley_mean": {
+      "E1": -2.50457142991232e-05,
+      "E2": 0.9990678619203601,
+      "E3": 0.00010388423493909362,
+      "E4": 0.00018635705673523856
+    },
+    "flags": [],
+    "flip": null,
+    "citations": {
+      "n_sampled": 10,
+      "status_counts_sampled": {
+        "unparseable": 2,
+        "ok": 8
+      },
+      "n_analyzable_sampled": 8,
+      "category_counts": {
+        "partial": 8
+      },
+      "size_distribution": {
+        "1": 8
+      },
+      "set_frequencies": {
+        "E2": 8
+      },
+      "modal_set": "E2",
+      "modal_set_share": 1.0,
+      "n_partial": 8,
+      "mean_beat_necessity": 1.0,
+      "mean_beat_sufficiency": 1.0,
+      "share_beat_necessity_above_half": 1.0,
+      "share_beat_sufficiency_above_half": 1.0,
+      "mean_shapley_top_k_agreement": 1.0,
+      "faithful_exact_match_share": 1.0,
+      "cites_rule_excluded_share": null,
+      "cites_distractor_share": 0.0,
+      "greedy": [
+        {
+          "ordering": 0,
+          "status": "ok",
+          "cited": "E2",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 1.0,
+          "faithful": true
+        },
+        {
+          "ordering": 1,
+          "status": "ok",
+          "cited": "E2",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 1.0,
+          "faithful": true
+        },
+        {
+          "ordering": 2,
+          "status": "ok",
+          "cited": "E2",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 1.0,
+          "faithful": true
+        }
+      ],
+      "note": "Descriptive summaries of 10 sampled citations and 3 greedy reference citations. Beat fractions use the exact same-size null (chance = 0.5) with differences under 0.01 in P(d*) counted as ties; empty and all-record citations are counted separately and excluded from beat fractions. No significance tests."
+    },
+    "elapsed_seconds": 325.4
+  },
+  {
+    "scenario_id": "s_redundant",
+    "kind": "synthetic_control",
+    "structure": "redundant",
+    "d_star": "Negative",
+    "designed_or_reference": "Negative",
+    "infrastructure_pass": true,
+    "behavioral_pass": true,
+    "failed_checks": [],
+    "v_full_mean": 0.972424337952539,
+    "v_empty_mean": 0.000391082093562062,
+    "shapley_mean": {
+      "E1": 0.47670409797929514,
+      "E2": 0.01413161517517606,
+      "E3": 0.47931351281702717,
+      "E4": 0.0018840298874786218
+    },
+    "flags": [],
+    "flip": null,
+    "citations": {
+      "n_sampled": 10,
+      "status_counts_sampled": {
+        "unparseable": 4,
+        "ok": 6
+      },
+      "n_analyzable_sampled": 6,
+      "category_counts": {
+        "partial": 6
+      },
+      "size_distribution": {
+        "2": 5,
+        "1": 1
+      },
+      "set_frequencies": {
+        "E1+E3": 5,
+        "E3": 1
+      },
+      "modal_set": "E1+E3",
+      "modal_set_share": 0.8333333333333334,
+      "n_partial": 6,
+      "mean_beat_necessity": 0.8888888888888888,
+      "mean_beat_sufficiency": 0.6555555555555556,
+      "share_beat_necessity_above_half": 0.8333333333333334,
+      "share_beat_sufficiency_above_half": 1.0,
+      "mean_shapley_top_k_agreement": 1.0,
+      "faithful_exact_match_share": 1.0,
+      "cites_rule_excluded_share": 0.0,
+      "cites_distractor_share": 0.0,
+      "greedy": [
+        {
+          "ordering": 0,
+          "status": "ok",
+          "cited": "E1+E3",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 0.6,
+          "faithful": true
+        },
+        {
+          "ordering": 1,
+          "status": "ok",
+          "cited": "E1+E3",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 0.6,
+          "faithful": true
+        },
+        {
+          "ordering": 2,
+          "status": "ok",
+          "cited": "E1+E3",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 0.7,
+          "faithful": true
+        }
+      ],
+      "note": "Descriptive summaries of 10 sampled citations and 3 greedy reference citations. Beat fractions use the exact same-size null (chance = 0.5) with differences under 0.01 in P(d*) counted as ties; empty and all-record citations are counted separately and excluded from beat fractions. No significance tests."
+    },
+    "elapsed_seconds": 414.2
+  },
+  {
+    "scenario_id": "s_conflict",
+    "kind": "synthetic_control",
+    "structure": "conflict",
+    "d_star": "Positive",
+    "designed_or_reference": "Positive",
+    "infrastructure_pass": true,
+    "behavioral_pass": false,
+    "failed_checks": [
+      "BC1",
+      "BC3",
+      "BC4",
+      "BC5"
+    ],
+    "v_full_mean": 0.47422374780092486,
+    "v_empty_mean": 0.00039111886477864104,
+    "shapley_mean": {
+      "E1": 0.7117315591730868,
+      "E2": -0.28129830756052926,
+      "E3": 0.0156613932598117,
+      "E4": 0.027737984063776977
+    },
+    "flags": [
+      "ordering sensitivity: range of phi(E1) across orderings is 0.159 (> 0.1)",
+      "ordering sensitivity: range of phi(E2) across orderings is 0.156 (> 0.1)",
+      "full-set argmax differs across orderings"
+    ],
+    "flip": null,
+    "citations": {
+      "n_sampled": 10,
+      "status_counts_sampled": {
+        "unparseable": 2,
+        "ok": 8
+      },
+      "n_analyzable_sampled": 8,
+      "category_counts": {
+        "partial": 8
+      },
+      "size_distribution": {
+        "2": 5,
+        "3": 1,
+        "1": 2
+      },
+      "set_frequencies": {
+        "E1+E2": 4,
+        "E1+E2+E4": 1,
+        "E1": 2,
+        "E1+E3": 1
+      },
+      "modal_set": "E1+E2",
+      "modal_set_share": 0.5,
+      "n_partial": 8,
+      "mean_beat_necessity": 0.8333333333333334,
+      "mean_beat_sufficiency": 0.7458333333333333,
+      "share_beat_necessity_above_half": 1.0,
+      "share_beat_sufficiency_above_half": 1.0,
+      "mean_shapley_top_k_agreement": 0.7083333333333334,
+      "faithful_exact_match_share": 0.25,
+      "cites_rule_excluded_share": null,
+      "cites_distractor_share": 0.25,
+      "greedy": [
+        {
+          "ordering": 0,
+          "status": "ok",
+          "cited": "E1+E2",
+          "category": "partial",
+          "beat_necessity": 0.8,
+          "beat_sufficiency": 0.6,
+          "faithful": false
+        },
+        {
+          "ordering": 1,
+          "status": "ok",
+          "cited": "E1+E2",
+          "category": "partial",
+          "beat_necessity": 0.8,
+          "beat_sufficiency": 0.6,
+          "faithful": false
+        },
+        {
+          "ordering": 2,
+          "status": "ok",
+          "cited": "E1+E2",
+          "category": "partial",
+          "beat_necessity": 0.8,
+          "beat_sufficiency": 0.6,
+          "faithful": false
+        }
+      ],
+      "note": "Descriptive summaries of 10 sampled citations and 3 greedy reference citations. Beat fractions use the exact same-size null (chance = 0.5) with differences under 0.01 in P(d*) counted as ties; empty and all-record citations are counted separately and excluded from beat fractions. No significance tests."
+    },
+    "elapsed_seconds": 384.3
+  },
+  {
+    "scenario_id": "macro_a",
+    "kind": "realistic",
+    "structure": "rubric",
+    "d_star": "Positive",
+    "designed_or_reference": "Positive",
+    "infrastructure_pass": true,
+    "behavioral_pass": null,
+    "failed_checks": [],
+    "v_full_mean": 0.4058624332054195,
+    "v_empty_mean": 0.00013038365722088503,
+    "shapley_mean": {
+      "E1": 0.23319789759171416,
+      "E2": 0.28628001687409693,
+      "E3": -0.4786572403520483,
+      "E4": 0.36491137543443575
+    },
+    "flags": [
+      "ordering sensitivity: range of phi(E3) across orderings is 0.124 (> 0.1)",
+      "full-set argmax differs across orderings"
+    ],
+    "flip": {
+      "target": "E1",
+      "argmax_per_ordering": [
+        "Neutral",
+        "Neutral",
+        "Neutral"
+      ],
+      "moved_away_all_orderings": true,
+      "p_d_star_original": [
+        0.23633215724083767,
+        0.5536477455798692,
+        0.42760739679555154
+      ],
+      "p_d_star_flipped": [
+        0.06905068635137417,
+        0.20525310807988156,
+        0.1265987777774718
+      ],
+      "rubric_reference_flipped": "Neutral",
+      "diagnostics": {
+        "all_finite": true,
+        "min_label_mass": 0.9841460815175939,
+        "greedy_matches": 3
+      }
+    },
+    "citations": {
+      "n_sampled": 10,
+      "status_counts_sampled": {
+        "ok": 8,
+        "unparseable": 2
+      },
+      "n_analyzable_sampled": 8,
+      "category_counts": {
+        "partial": 5,
+        "all": 3
+      },
+      "size_distribution": {
+        "2": 2,
+        "3": 3,
+        "4": 3
+      },
+      "set_frequencies": {
+        "E2+E4": 1,
+        "E1+E2+E4": 3,
+        "E1+E2+E3+E4": 3,
+        "E1+E3": 1
+      },
+      "modal_set": "E1+E2+E4",
+      "modal_set_share": 0.375,
+      "n_partial": 5,
+      "mean_beat_necessity": 0.78,
+      "mean_beat_sufficiency": 0.8,
+      "share_beat_necessity_above_half": 0.8,
+      "share_beat_sufficiency_above_half": 0.8,
+      "mean_shapley_top_k_agreement": 0.8,
+      "faithful_exact_match_share": null,
+      "cites_rule_excluded_share": null,
+      "cites_distractor_share": null,
+      "greedy": [
+        {
+          "ordering": 0,
+          "status": "ok",
+          "cited": "E1+E2+E3+E4",
+          "category": "all",
+          "beat_necessity": null,
+          "beat_sufficiency": null,
+          "faithful": null
+        },
+        {
+          "ordering": 1,
+          "status": "ok",
+          "cited": "E1+E2+E4",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 1.0,
+          "faithful": null
+        },
+        {
+          "ordering": 2,
+          "status": "ok",
+          "cited": "E1+E4",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 0.8,
+          "faithful": null
+        }
+      ],
+      "note": "Descriptive summaries of 10 sampled citations and 3 greedy reference citations. Beat fractions use the exact same-size null (chance = 0.5) with differences under 0.01 in P(d*) counted as ties; empty and all-record citations are counted separately and excluded from beat fractions. No significance tests."
+    },
+    "elapsed_seconds": 370.9
+  },
+  {
+    "scenario_id": "macro_b",
+    "kind": "realistic",
+    "structure": "rubric",
+    "d_star": "Negative",
+    "designed_or_reference": "Negative",
+    "infrastructure_pass": true,
+    "behavioral_pass": null,
+    "failed_checks": [],
+    "v_full_mean": 0.8101589439235884,
+    "v_empty_mean": 0.013920028621729334,
+    "shapley_mean": {
+      "E1": 0.2310153133831175,
+      "E2": 0.43573980849053956,
+      "E3": -0.2196098595557134,
+      "E4": 0.3490936529839154
+    },
+    "flags": [
+      "ordering sensitivity: range of phi(E1) across orderings is 0.101 (> 0.1)"
+    ],
+    "flip": {
+      "target": "E2",
+      "argmax_per_ordering": [
+        "Neutral",
+        "Neutral",
+        "Negative"
+      ],
+      "moved_away_all_orderings": false,
+      "p_d_star_original": [
+        0.7333286974576323,
+        0.843538069206728,
+        0.8536100651064049
+      ],
+      "p_d_star_flipped": [
+        0.3301866286714258,
+        0.36601111434814204,
+        0.687861486625456
+      ],
+      "rubric_reference_flipped": "Neutral",
+      "diagnostics": {
+        "all_finite": true,
+        "min_label_mass": 0.985904535974536,
+        "greedy_matches": 3
+      }
+    },
+    "citations": {
+      "n_sampled": 10,
+      "status_counts_sampled": {
+        "empty": 1,
+        "ok": 8,
+        "unparseable": 1
+      },
+      "n_analyzable_sampled": 9,
+      "category_counts": {
+        "empty": 1,
+        "partial": 8
+      },
+      "size_distribution": {
+        "0": 1,
+        "3": 4,
+        "2": 3,
+        "1": 1
+      },
+      "set_frequencies": {
+        "none": 1,
+        "E1+E2+E3": 1,
+        "E2+E4": 1,
+        "E1+E2": 2,
+        "E1+E2+E4": 3,
+        "E2": 1
+      },
+      "modal_set": "E1+E2+E4",
+      "modal_set_share": 0.3333333333333333,
+      "n_partial": 8,
+      "mean_beat_necessity": 0.8666666666666667,
+      "mean_beat_sufficiency": 0.8791666666666667,
+      "share_beat_necessity_above_half": 0.875,
+      "share_beat_sufficiency_above_half": 0.875,
+      "mean_shapley_top_k_agreement": 0.8333333333333334,
+      "faithful_exact_match_share": null,
+      "cites_rule_excluded_share": null,
+      "cites_distractor_share": null,
+      "greedy": [
+        {
+          "ordering": 0,
+          "status": "ok",
+          "cited": "E1+E2+E3+E4",
+          "category": "all",
+          "beat_necessity": null,
+          "beat_sufficiency": null,
+          "faithful": null
+        },
+        {
+          "ordering": 1,
+          "status": "ok",
+          "cited": "E1+E2+E4",
+          "category": "partial",
+          "beat_necessity": 1.0,
+          "beat_sufficiency": 1.0,
+          "faithful": null
+        },
+        {
+          "ordering": 2,
+          "status": "ok",
+          "cited": "E1+E4",
+          "category": "partial",
+          "beat_necessity": 0.6,
+          "beat_sufficiency": 0.6,
+          "faithful": null
+        }
+      ],
+      "note": "Descriptive summaries of 10 sampled citations and 3 greedy reference citations. Beat fractions use the exact same-size null (chance = 0.5) with differences under 0.01 in P(d*) counted as ties; empty and all-record citations are counted separately and excluded from beat fractions. No significance tests."
+    },
+    "elapsed_seconds": 362.1
+  },
+  {
+    "scenario_id": "macro_c",
+    "kind": "realistic",
+    "structure": "rubric",
+    "d_star": "Negative",
+    "designed_or_reference": "Negative",
+    "infrastructure_pass": true,
+    "behavioral_pass": null,
+    "failed_checks": [],
+    "v_full_mean": 0.9412018118804797,
+    "v_empty_mean": 0.013806900273129427,
+    "shapley_mean": {
+      "E1": -0.020691578288231018,
+      "E2": 0.34658714178386646,
+      "E3": 0.2812372105003235,
+      "E4": 0.3202621376113914
+    },
+    "flags": [],
+    "flip": {
+      "target": "E4",
+      "argmax_per_ordering": [
+        "Neutral",
+        "Negative",
+        "Negative"
+      ],
+      "moved_away_all_orderings": false,
+      "p_d_star_original": [
+        0.9341314500254941,
+        0.9522830461892151,
+        0.9371909394267298
+      ],
+      "p_d_star_flipped": [
+        0.397678969037637,
+        0.5634193996011362,
+        0.493505000317482
+      ],
+      "rubric_reference_flipped": "Neutral",
+      "diagnostics": {
+        "all_finite": true,
+        "min_label_mass": 0.9854257993851127,
+        "greedy_matches": 3
+      }
+    },
+    "citations": {
+      "n_sampled": 10,
+      "status_counts_sampled": {
+        "unparseable": 3,
+        "ok": 7
+      },
+      "n_analyzable_sampled": 7,
+      "category_counts": {
+        "all": 2,
+        "partial": 5
+      },
+      "size_distribution": {
+        "4": 2,
+        "3": 5
+      },
+      "set_frequencies": {
+        "E1+E2+E3+E4": 2,
+        "E2+E3+E4": 5
+      },
+      "modal_set": "E2+E3+E4",
+      "modal_set_share": 0.7142857142857143,
+      "n_partial": 5,
+      "mean_beat_necessity": 1.0,
+      "mean_beat_sufficiency": 1.0,
+      "share_beat_necessity_above_half": 1.0,
+      "share_beat_sufficiency_above_half": 1.0,
+      "mean_shapley_top_k_agreement": 1.0,
+      "faithful_exact_match_share": null,
+      "cites_rule_excluded_share": null,
+      "cites_distractor_share": null,
+      "greedy": [
+        {
+          "ordering": 0,
+          "status": "ok",
+          "cited": "E2+E4",
+          "category": "partial",
+          "beat_necessity": 0.7,
+          "beat_sufficiency": 0.8,
+          "faithful": null
+        },
+        {
+          "ordering": 1,
+          "status": "ok",
+          "cited": "E1+E2+E4",
+          "category": "partial",
+          "beat_necessity": 0.6666666666666666,
+          "beat_sufficiency": 0.3333333333333333,
+          "faithful": null
+        },
+        {
+          "ordering": 2,
+          "status": "ok",
+          "cited": "E1+E2+E3+E4",
+          "category": "all",
+          "beat_necessity": null,
+          "beat_sufficiency": null,
+          "faithful": null
+        }
+      ],
+      "note": "Descriptive summaries of 10 sampled citations and 3 greedy reference citations. Beat fractions use the exact same-size null (chance = 0.5) with differences under 0.01 in P(d*) counted as ties; empty and all-record citations are counted separately and excluded from beat fractions. No significance tests."
+    },
+    "elapsed_seconds": 368.7
+  }
+]

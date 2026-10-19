@@ -1,0 +1,152 @@
+{
+  "run_id": "full_20261017T223452Z",
+  "protocol_version": "0.2",
+  "protocol_amendments": [
+    1,
+    2
+  ],
+  "started_utc": "20261017T223452Z",
+  "mock": false,
+  "gates": {
+    "G1_freeze": true,
+    "G2_labels": {
+      "blocking": [],
+      "record_disagreements": [],
+      "inter_labeler_disagreements": [],
+      "agreement": {
+        "labeler_1_vs_frozen": "15/15",
+        "labeler_2_vs_frozen": "15/15",
+        "labeler_1_vs_labeler_2": "15/15"
+      },
+      "labelers": {
+        "labeler_1": {
+          "name": "GPT-6",
+          "date": "2026-10-17"
+        },
+        "labeler_2": {
+          "name": "Gemini",
+          "date": "2026-10-17"
+        }
+      },
+      "files": {
+        "labeler_1.json": "e6434405c028400bb45dc7d380a7c3810c1a64d342151f5525430072000274b2",
+        "labeler_2.json": "38f8ae33421014509b64cce5cd2a8415e238134f90e0d21d8813453ee9b8a6b7"
+      },
+      "validation_kind": "independent AI-assisted rubric validation",
+      "human_annotation": false,
+      "declared_labelers_match": true
+    },
+    "G3_approved_by": "Farnoosh Memari",
+    "G3_confirmed": true
+  },
+  "freeze": {
+    "frozen_at_utc": "2026-10-17T21:05:42Z",
+    "protocol": "v0.2 + amendments 1-2",
+    "before_any_model_test_of": [
+      "s_redundant",
+      "s_conflict",
+      "macro_a",
+      "macro_b",
+      "macro_c"
+    ],
+    "files": {
+      "scenarios/s_single.json": "43a81fc20b0a831b4a6738d154f5757ca3ad459b62d0845a0698cd98e802db8a",
+      "scenarios/s_redundant.json": "bc98e8d98fea811a964eec8c77ad4e74ae0e2c70cb2b43dc4a6b7a908866e588",
+      "scenarios/s_conflict.json": "a9f23166b3b4752370089dc283dfc31919a0c7a2cbcb2b9f7be7ae1e71243587",
+      "scenarios/macro_a.json": "7bbbd01465efef1bb36bca962e6a04bce29378ce740a65956b6bde3797e23fc8",
+      "scenarios/macro_b.json": "800fc302e55afe37a92d8e58a535cac836de9d0d9f029d55e049ea9c58927cb1",
+      "scenarios/macro_c.json": "963cfa90bec02ee5fcd2828e2f337c821a658c7c5d13c11f3fef07461719b777",
+      "scenarios/rubric_macro_v1.json": "6a0c287f04c76f5de3d4d05f02e4093ea8c0bbc80b23445e678fb91b7e1309d3",
+      "scenarios/validation_criteria.json": "8327c97061f31da191dcf8d8ff3bc464ebd64b814db6f683b3f89ebca2aa9134"
+    },
+    "design_fingerprints": {
+      "s_single": "151b929fe0a7350acec310a225596e84172106b145bb27ce2071931efe7ce69d",
+      "s_redundant": "fad257f6b46a1de0e92c9cc607fc8c691f880b11cd294c0feb6cab53b8de62d8",
+      "s_conflict": "a2f6869dbdce62b7e2acc08b6cb97b1008636e4d066a48fdd4fd3741bd8f6309",
+      "macro_a": "64dd7b4f92b36ea890c0a0338b7aada8e86b29a2dc196cd4a304335ce03445b6",
+      "macro_b": "2d8007c462baebfe68a071e040019d3d7e53e1f9ee913467627e5cdc0c48f270",
+      "macro_c": "8533ac1724e5bcb4b6de46fb4794f557ea91a0348b556d0d08fde9a29dda59a8"
+    },
+    "validation_report_sha256": "a1ba6882f7ed3af18e500b448901887a69fb6ca814e7244802d7e4e70fff34f3"
+  },
+  "rubric_validation": {
+    "kind": "independent AI-assisted rubric validation",
+    "human_annotation": false,
+    "declared_labelers": {
+      "labeler_1": "GPT-6",
+      "labeler_2": "Gemini"
+    },
+    "provenance_file": "records/AI_LABELING_PROVENANCE.txt",
+    "protocol_amendment": 4,
+    "statement": "The two G2 labelers were AI models (GPT-6 and Gemini), each filling its own file independently. This is AI-assisted rubric validation, not human annotation, and does not establish human inter-rater reliability.",
+    "provenance_sha256": "996fad13df2970ae4cc95c3e1ac421a97a356e77ef99c30bbd0ea7df1c153444"
+  },
+  "scenarios": [
+    "s_single",
+    "s_redundant",
+    "s_conflict",
+    "macro_a",
+    "macro_b",
+    "macro_c"
+  ],
+  "design_fingerprints": {
+    "s_single": "151b929fe0a7350acec310a225596e84172106b145bb27ce2071931efe7ce69d",
+    "s_redundant": "fad257f6b46a1de0e92c9cc607fc8c691f880b11cd294c0feb6cab53b8de62d8",
+    "s_conflict": "a2f6869dbdce62b7e2acc08b6cb97b1008636e4d066a48fdd4fd3741bd8f6309",
+    "macro_a": "64dd7b4f92b36ea890c0a0338b7aada8e86b29a2dc196cd4a304335ce03445b6",
+    "macro_b": "2d8007c462baebfe68a071e040019d3d7e53e1f9ee913467627e5cdc0c48f270",
+    "macro_c": "8533ac1724e5bcb4b6de46fb4794f557ea91a0348b556d0d08fde9a29dda59a8"
+  },
+  "criteria_version": "amendment-2",
+  "citation_config": {
+    "samples_per_scenario": 10,
+    "samples_per_ordering": [
+      4,
+      3,
+      3
+    ],
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 40,
+    "seed_rule": "seed = 10000 + 100 * scenario_index + sample_index (scenario_index from the experiment's scenario order; sample_index 0-9)",
+    "greedy_reference_per_ordering": 1,
+    "decision_in_context": "d* of the scenario, from the scoring stage of the same run",
+    "analysis_statuses": [
+      "ok",
+      "empty"
+    ]
+  },
+  "analysis_parameters": {
+    "tie_tolerance": 0.01
+  },
+  "scorer": {
+    "backend": "hf",
+    "model_name": "microsoft/Phi-3-mini-4k-instruct",
+    "revision_requested": "f39ac1d28e925b323eae81227eaba4464caced4e",
+    "revision_source": "pinned_sha",
+    "commit_hash": "f39ac1d28e925b323eae81227eaba4464caced4e",
+    "revision_verified": true,
+    "config_commit_hash": null,
+    "storage_dtype": "float16",
+    "compute_dtype": "float32",
+    "dtype": "float16 storage / float32 compute",
+    "fp16_subnormal_weight_fraction": 0.001439263413691943,
+    "device": "cuda",
+    "device_name": "Tesla T4",
+    "attn_implementation": "eager",
+    "torch_version": "2.11.0+cu130",
+    "transformers_version": "5.18.0",
+    "python_version": "3.13.15",
+    "logits_dtype": "torch.float32",
+    "layer_weight_dtypes_before": [
+      "torch.float16"
+    ],
+    "layer_weight_dtypes_after": [
+      "torch.float16"
+    ],
+    "weights_unchanged_dtype": true
+  },
+  "status": "completed",
+  "elapsed_seconds": 2225.6
+}

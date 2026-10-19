@@ -1,0 +1,37 @@
+{
+  "scenario_id": "macro_b",
+  "kind": "realistic",
+  "structure": "rubric",
+  "status": "frozen (amendment 2)",
+  "question": "What is the 12-month signal for Economy B's broad equity market?",
+  "records": {
+    "E1": "Economy B's central bank raised its policy rate by 75 basis points to 6.50% at its latest meeting, its third increase in a row.",
+    "E2": "Consumer-price inflation in Economy B rose to 6.8% a year from 5.1% three months earlier, well above the central bank's 3% target.",
+    "E3": "Economy B's services purchasing managers' index rose to 55.2, its strongest reading in two years.",
+    "E4": "Analysts cut their consensus forecast for Economy B's listed-company earnings over the next 12 months by 6% during the past quarter."
+  },
+  "rubric": {
+    "rubric_id": "rubric_macro_v1",
+    "scores": {
+      "E1": {"component": "P", "score": -1, "why": "75 bp hike, third in a row"},
+      "E2": {"component": "I", "score": -1, "why": "inflation rising, well above target"},
+      "E3": {"component": "G", "score": 1, "why": "services PMI 55.2 and rising"},
+      "E4": {"component": "E", "score": -1, "why": "earnings forecasts revised down 6%"}
+    },
+    "total": -2,
+    "reference_answer": "Negative"
+  },
+  "flip": {
+    "target": "E2",
+    "record": "Consumer-price inflation in Economy B fell to 2.1% a year from 3.8% three months earlier, below the central bank's 3% target.",
+    "score": 1,
+    "why": "the inflation record reversed from rising above target to falling below target",
+    "total": 0,
+    "reference_answer": "Neutral",
+    "selection_rule": "Chosen at authoring time, before any model output: the inflation record, so that the three flips cover three different components (policy, inflation, earnings). Reversing it moves the rubric score from -2 to 0."
+  },
+  "designed": {
+    "answer_rule": {"type": "rubric", "thresholds": {"positive_min": 2, "negative_max": -2}},
+    "notes": "Mixed evidence: three negative records and one contrary record (strong services activity)."
+  }
+}

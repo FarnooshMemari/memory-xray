@@ -1,0 +1,15 @@
+{
+  "rubric_id": "rubric_macro_v1",
+  "purpose": "Transparent, pre-specified reference answer for the de-identified macro scenarios. It is a deliberately simple scoring rule, not a claim about the correct financial answer, and it is never shown to the model. It is used only for the accuracy comparison (C5) and the flip design; attribution and citation consistency are measured against the model's own behavior, not the rubric.",
+  "components": {
+    "P": {"name": "policy rate", "+1": "rate cut, or explicit easing bias", "-1": "rate hike, or explicit tightening bias", "0": "unchanged with no stated bias"},
+    "I": {"name": "inflation", "+1": "falling and at, near or below target", "-1": "rising, or well above target", "0": "stable at target"},
+    "G": {"name": "growth and labor", "+1": "PMI at or above 50 and rising, or labor market improving", "-1": "PMI below 50, or unemployment rising / employment falling", "0": "mixed or flat"},
+    "E": {"name": "earnings expectations", "+1": "consensus 12-month earnings forecasts revised up by 1% or more", "-1": "revised down by 1% or more", "0": "revisions smaller than 1%"},
+    "F": {"name": "financial conditions", "+1": "credit spreads narrowing or credit standards easing", "-1": "credit spreads widening or credit standards tightening", "0": "little change"}
+  },
+  "scoring": "Each evidence record maps to exactly one component and receives -1, 0 or +1. The scenario score S is the sum over the records present.",
+  "thresholds": {"positive_min": 2, "negative_max": -2},
+  "decision": "Positive if S >= +2; Negative if S <= -2; otherwise Neutral.",
+  "note_on_subsets": "With thresholds of +/-2 no single record decides the signal alone, so the rubric answer for every single-record subset is Neutral. Subset-level rubric answers are reported descriptively only."
+}
